@@ -1,4 +1,5 @@
 site_name: Drillbotics® Guidelines
+site_description: Official, versioned Drillbotics competition rules and resources.
 site_url: https://<org-or-user>.github.io/drillbotics-guidelines
 repo_url: https://github.com/<org-or-user>/drillbotics-guidelines
 repo_name: Drillbotics Guidelines
@@ -13,11 +14,15 @@ theme:
     - navigation.sections
     - navigation.instant
     - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.top
     - content.action.edit
     - content.code.copy
     - search.suggest
     - search.highlight
     - toc.integrate
+    - toc.follow
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -46,6 +51,9 @@ plugins:
   - search
   - git-revision-date-localized:
       fallback_to_build_date: true
+  - glightbox
+  - redirects
+  - htmlproofer
 
 extra_css:
   - _assets/styles/extra.css
@@ -53,18 +61,22 @@ extra_css:
 markdown_extensions:
   - admonition
   - attr_list
+  - abbr
   - def_list
   - md_in_html
   - tables
   - toc:
       permalink: true
+  - pymdownx.snippets
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: material.extensions.emoji.twemoji
+      emoji_generator: material.extensions.emoji.to_svg
+
+strict: true
 
 nav:
   - Home: index.md
@@ -87,7 +99,7 @@ nav:
           - Deliverables & Testing: tracks/group-b/deliverables.md
           - Judging: tracks/group-b/judging.md
   - Resources:
-      - FAQ: 2024/faq.md
+      - FAQ: faq.md
       - Downloads: resources/downloads.md
       - Logos & Branding: resources/branding.md
   - Archive:
