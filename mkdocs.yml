@@ -17,35 +17,38 @@ theme:
     - navigation.indexes
     - navigation.tracking
     - navigation.top
-    - content.action.edit
+    - content.action.view
     - content.code.copy
     - search.suggest
     - search.highlight
-    - toc.integrate
     - toc.follow
   icon:
     repo: fontawesome/brands/github
   palette:
     - scheme: default
       primary: blue
-      accent: blue
+      accent: cyan
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
       primary: blue
-      accent: blue
+      accent: cyan
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
 
 extra:
-  version:
-    provider: mike
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/<org-or-user>/drillbotics-guidelines
+    - icon: fontawesome/solid/envelope
+      link: mailto:competition@Drillbotics.com
   generator: false
+  status:
+    new: Recently added
+    updated: Updated this release
+    deprecated: Deprecated
 
 plugins:
   - search
@@ -53,10 +56,18 @@ plugins:
       fallback_to_build_date: true
   - glightbox
   - redirects
-  - htmlproofer
+  - htmlproofer:
+      validate_external_urls: false
+      ignore_urls:
+        - 'http*'
+        - 'mailto:*'
 
 extra_css:
   - _assets/styles/extra.css
+
+extra_javascript:
+  - _assets/scripts/announcement.js
+  - _assets/scripts/copy-markdown.js
 
 markdown_extensions:
   - admonition
@@ -75,6 +86,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 strict: false
 
