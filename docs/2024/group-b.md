@@ -10,32 +10,9 @@ tags:
 !!! info "Archive: 2024"
     This page preserves the original 2024 guidelines content as‑is for historical reference. For the current rules, see the pages under "Competition" and "Tracks".
 
-<table>
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 48%" />
-<col style="width: 28%" />
-</colgroup>
-<tbody>
-<tr>
-<td><img
-src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image1.jpg"
-alt="SPE / Drillbotics graphic"
-style="width:1.43194in;height:1.73194in" /></td>
-<td style="text-align: center;"><p>Society of Petroleum Engineers</p>
-<p>Drilling Systems Automation Technical Section (DSATS)</p>
-<p>International University Competition</p>
-<p>2023-2024</p>
-<p>Drillbotics<sup>®</sup> Guidelines</p>
-<p>Group B</p>
-<p>Revised 11 October 2023</p></td>
-<td style="text-align: center;"><img
-src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image2.png"
-alt="DSATS / SPE logo"
-style="width:1.78125in;height:0.97639in" /></td>
-</tr>
-</tbody>
-</table>
+|  |  |  |
+|:--:|:--:|:--:|
+| [![SPE / Drillbotics graphic](../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image1.jpg){ width="140px" }](../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image1.jpg) | Society of Petroleum Engineers<br>Drilling Systems Automation Technical Section (DSATS)<br>International University Competition<br>2023–2024<br>Drillbotics® Guidelines<br>Group B<br>Revised 11 October 2023 | [![DSATS / SPE logo](../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image2.png){ width="180px" }](../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image2.png) |
 
 <p><strong>Version History</strong></p>
 <table>

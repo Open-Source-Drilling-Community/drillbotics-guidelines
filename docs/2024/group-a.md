@@ -10,33 +10,9 @@ tags:
 !!! info "Archive: 2024"
     This page preserves the original 2024 guidelines content as‑is for historical reference. For the current rules, see the pages under "Competition" and "Tracks".
 
-<table>
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 48%" />
-<col style="width: 28%" />
-</colgroup>
-<tbody>
-<tr>
-<td><img
-src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image1.jpg"
-alt="SPE / Drillbotics graphic"
-style="width:1.43194in;height:1.73194in" /></td>
-<td style="text-align: center;"><p>Society of Petroleum Engineers</p>
-<p>Drilling Systems Automation Technical Section (DSATS)</p>
-<p>International University Competition</p>
-<p>2023-2024</p>
-<p>Drillbotics<sup>®</sup> Guidelines</p>
-<p>Group A</p>
-<p>Revised 11 October 2023</p>
-</td>
-<td style="text-align: center;"><img
-src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image2.png"
-alt="DSATS / SPE logo"
-style="width:1.78125in;height:0.97639in" /></td>
-</tr>
-</tbody>
-</table>
+|  |  |  |
+|:--:|:--:|:--:|
+| [![SPE / Drillbotics graphic](../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image1.jpg){ width="140px" }](../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image1.jpg) | Society of Petroleum Engineers<br>Drilling Systems Automation Technical Section (DSATS)<br>International University Competition<br>2023–2024<br>Drillbotics® Guidelines<br>Group A<br>Revised 11 October 2023 | [![DSATS / SPE logo](../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image2.png){ width="180px" }](../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image2.png) |
 
 <p><strong>Version History</strong></p>
 <table>
@@ -1499,50 +1475,44 @@ challenge is to drill a directional well virtually to specified targets.
 
 3. The bit model currently provided is:
 
-> function \[ROP, ROPlateral, TOB\] =
-> rop_tob_drillbotics(formation_aggressivenss,  
-> bit_aggressiveness_factor, WOB,RPM,Eff, D, CCS, side_force,
-> side_cutting_factor)  
->
-> %% This function predicts ROP, Lateral ROP of the bit, and Bit
-> Torque  
-> % Output Variables, Units:  
-> % ROP, \[ft/hr\] (axial ROP)  
-> % ROPlateral, \[ft/hr\] (lateral ROP)  
-> % TOB, \[ft-lbs\] (bit torque)  
->
-> % Input Variables, Units:  
-> % formation_aggressivenss, \[ \] (drilling agressiveness, Torque/WOB
-> ratio  
-> % which is heavily influenced by formation type. based on paper by  
-> % Pessier and Fear in SPE 24584 (1992)) Contest will provide this.  
-> % bit_aggressiveness_factor, \[ \] (range from 0.7 for unaggressive
-> bits to  
-> % 1.3 for aggressive bits) Contestants or contest will choose a bit  
-> % which will have an associated bit_aggressiveness_factor.  
-> % WOB, \[lbs\] (axial force on the bit)  
-> % RPM, \[RPM} (revolutions per minute of the bit)  
-> % Eff, \[ \] (drilling efficiency, usually 0.3 to 0.4)  
-> % D, \[inches\] (bit diameter)  
-> % CCS, \[psi\] (confined compressive strength of the rock)  
-> % side_cutting_factor, \[ \] (scaling factor for side cutting
-> aggressiveness  
-> % of the bit)  
->
-> mu = formation_aggressivenss\*bit_aggressiveness_factor;  
->
-> ROP = (13.33\*RPM.\*mu.\*WOB)\*(Eff)/(D\*CCS); % \[ft/hr\]; Derived
-> from Teale MSE  
-> concept (1965).  
->
-> TOB = D\*(mu.\*WOB)./36; % \[ft-lbs\]; Derived from Pessier and Fear,
-> SPE 24584  
-> (1992)  
->
-> ROPlateral = side_cutting_factor\*side_force\*RPM/(D\*CCS); %
-> \[ft/hr\]  
->
-> End
+```matlab
+function [ROP, ROPlateral, TOB] = rop_tob_drillbotics( ...
+  formation_aggressivenss, bit_aggressiveness_factor, WOB, RPM, Eff, ...
+  D, CCS, side_force, side_cutting_factor)
+
+%% This function predicts ROP, Lateral ROP of the bit, and Bit Torque
+% Output Variables, Units:
+% ROP, [ft/hr] (axial ROP)
+% ROPlateral, [ft/hr] (lateral ROP)
+% TOB, [ft-lbs] (bit torque)
+
+% Input Variables, Units:
+% formation_aggressivenss, [ ] (drilling agressiveness, Torque/WOB ratio
+% which is heavily influenced by formation type. Based on Pessier and Fear,
+% SPE 24584 (1992)). Contest will provide this.
+% bit_aggressiveness_factor, [ ] (range from 0.7 for unaggressive bits to
+% 1.3 for aggressive bits). Contestants or contest will choose a bit which
+% will have an associated bit_aggressiveness_factor.
+% WOB, [lbs] (axial force on the bit)
+% RPM, [RPM] (revolutions per minute of the bit)
+% Eff, [ ] (drilling efficiency, usually 0.3 to 0.4)
+% D, [inches] (bit diameter)
+% CCS, [psi] (confined compressive strength of the rock)
+% side_cutting_factor, [ ] (scaling factor for side cutting aggressiveness
+% of the bit)
+
+mu = formation_aggressivenss * bit_aggressiveness_factor;
+
+ROP = (13.33 * RPM .* mu .* WOB) * (Eff) / (D * CCS); % [ft/hr]; Derived
+% from Teale MSE concept (1965).
+
+TOB = D * (mu .* WOB) ./ 36; % [ft-lbs]; Derived from Pessier and Fear,
+% SPE 24584 (1992)
+
+ROPlateral = side_cutting_factor * side_force * RPM / (D * CCS); % [ft/hr]
+
+End
+```
 
 4. If teams wish to provide their own bit model, please explain why
     they want a separate bit model and please provide the code at least
