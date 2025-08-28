@@ -1,9 +1,13 @@
 site_name: Drillbotics® Guidelines
 site_description: Official, versioned Drillbotics competition rules and resources.
 site_url: https://drillbotics.com/
-repo_url: https://e-zl.github.io/drillbotics-guidelines
+repo_url: https://github.com/e-zl/drillbotics-guidelines
 repo_name: Drillbotics Guidelines
 edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2015 - 2025 SPE Drillbotics
+
 
 theme:
   name: material
@@ -12,41 +16,53 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.instant
-    - navigation.footer
     - navigation.indexes
     - navigation.tracking
+    - navigation.footer
     - navigation.top
-    - content.action.view
+    - navigation.instant
+    - navigation.instant.progress
+    - toc.integrate
+    - content.action.edit
     - content.code.copy
     - content.tabs.link
     - search.suggest
     - search.highlight
+    - search.share
     - toc.follow
+    - announce.dismiss
+    - content.action.view
+    - content.code.annotate
+    
+
+  
   icon:
     repo: fontawesome/brands/github
     annotation: material/arrow-right-circle
   palette:
     - scheme: default
-      primary: blue
-      accent: cyan
+      primary: indigo
+      accent: blue
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
-      primary: blue
-      accent: cyan
+      primary: indigo
+      accent: blue
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/<org-or-user>/drillbotics-guidelines
+      link: https://github.com/e-zl/drillbotics-guidelines
     - icon: fontawesome/solid/envelope
       link: mailto:competition@Drillbotics.com
-  generator: false
+  generator: true
   status:
     new: Recently added
     updated: Updated this release
@@ -56,22 +72,34 @@ extra:
 
 plugins:
   - search
+  - tags:
+      tags_file: tags.md
   - git-revision-date-localized:
       fallback_to_build_date: true
   - glightbox
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
   - redirects
   - htmlproofer:
+      raise_error: true
       validate_external_urls: false
+      timeout: 5
+      retry_count: 2
+      retry_delay: 2
+      requests_per_second: 1
       ignore_urls:
-        - 'http*'
-        - 'mailto:*'
+        - 'mailto:'
+        - 'https://github.com/<org-or-user>/*'
 
 extra_css:
-  - _assets/styles/extra.css
+  - stylesheets/extra.css
 
 extra_javascript:
   - _assets/scripts/announcement.js
   - _assets/scripts/copy-markdown.js
+  - _assets/scripts/mermaid-theme.js
 
 markdown_extensions:
   - admonition
@@ -84,7 +112,11 @@ markdown_extensions:
       permalink: true
   - pymdownx.snippets
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -101,12 +133,15 @@ exclude_docs: |
 nav:
   - Home: index.md
   - Competition:
-      - Overview: competition/overview.md
+      - Overview: competition/index.md
+      - Competition Overview: competition/overview.md
       - Timeline & Milestones: competition/timeline.md
       - Upcoming Dates: competition/upcoming.md
       - Rules & Scoring: competition/rules-scoring.md
       - Safety: competition/safety.md
   - Tracks:
+      - Overview: tracks/index.md
+      - Deliverables (A vs B): tracks/deliverables.md
       - Group A (Virtual):
           - Overview: tracks/group-a/overview.md
           - Technical Specs: tracks/group-a/technical-specs.md
@@ -122,6 +157,7 @@ nav:
   - Resources:
       - FAQ: faq.md
       - Downloads: resources/downloads.md
+      - Tags: tags.md
   - Archive:
       - 2024:
           - Group A (Virtual): 2024/group-a.md
