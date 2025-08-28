@@ -1,0 +1,99 @@
+site_name: Drillbotics® Guidelines
+site_url: https://<org-or-user>.github.io/drillbotics-guidelines
+repo_url: https://github.com/<org-or-user>/drillbotics-guidelines
+repo_name: Drillbotics Guidelines
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: _assets/images/logos/drillbotics-logo-bw.png
+  favicon: _assets/images/logos/favicon-bw.svg
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.footer
+    - content.action.edit
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/<org-or-user>/drillbotics-guidelines
+  generator: false
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+
+extra_css:
+  - _assets/styles/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Competition:
+      - Overview: competition/overview.md
+      - Timeline & Milestones: competition/timeline.md
+      - Rules & Scoring: competition/rules-scoring.md
+      - Safety: competition/safety.md
+  - Tracks:
+      - Group A (Virtual):
+          - Overview: tracks/group-a/overview.md
+          - Technical Specs: tracks/group-a/technical-specs.md
+          - Deliverables: tracks/group-a/deliverables.md
+          - Judging: tracks/group-a/judging.md
+      - Group B (Physical):
+          - Overview: tracks/group-b/overview.md
+          - Safety & Risk: tracks/group-b/safety.md
+          - Hardware: tracks/group-b/hardware.md
+          - Autonomy & Control: tracks/group-b/autonomy.md
+          - Deliverables & Testing: tracks/group-b/deliverables.md
+          - Judging: tracks/group-b/judging.md
+  - Resources:
+      - FAQ: 2024/faq.md
+      - Downloads: resources/downloads.md
+      - Logos & Branding: resources/branding.md
+  - Archive:
+      - 2024:
+          - Group A (Virtual): 2024/group-a.md
+          - Group B (Physical): 2024/group-b.md
+          - FAQ: 2024/faq.md
+  - Changelog: changelog.md
+  - Contributor Guide: contributor-guide.md
