@@ -104,3 +104,44 @@
 .mermaid .node.decision path { fill: var(--db-mm-decision-fill) !important; stroke: var(--db-mm-decision-stroke) !important; }
 .mermaid .node.process rect { fill: var(--db-mm-process-fill) !important; stroke: var(--db-mm-process-stroke) !important; }
 .mermaid .node.feedback rect { fill: var(--db-mm-feedback-fill) !important; stroke: var(--db-mm-feedback-stroke) !important; }
+
+/*
+  Integrated ToC (toc.integrate) refinements
+  - Improves readability for long pages like Archive (2024)
+  - Keeps only first-level entries, shows a compact label, and
+    lightens the left rule so the nav remains the primary focus
+*/
+.md-nav--secondary {
+  /* soften the left rule and tighten spacing */
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+  margin-left: .15rem;
+  padding-left: .5rem;
+  font-size: .86em;
+  line-height: 1.25;
+}
+[data-md-color-scheme="slate"] .md-nav--secondary {
+  border-left-color: rgba(255,255,255,.10);
+}
+
+/* Make the "Table of contents" label visible and compact */
+.md-nav--secondary > .md-nav__title {
+  display: block !important;
+  margin: .25rem 0 .35rem .05rem;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-weight: 600;
+  font-size: .72rem;
+  color: var(--md-default-fg-color--lighter);
+}
+
+/* Show only first-level entries in the integrated ToC */
+.md-nav--secondary .md-nav__list > .md-nav__item > nav {
+  display: none;
+}
+
+/* Tidy long headings */
+.md-nav--secondary .md-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
