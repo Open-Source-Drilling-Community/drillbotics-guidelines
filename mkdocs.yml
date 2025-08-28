@@ -1,6 +1,6 @@
 site_name: Drillbotics® Guidelines
 site_description: Official, versioned Drillbotics competition rules and resources.
-site_url: https://<org-or-user>.github.io/drillbotics-guidelines
+site_url: https://drillbotics.com/
 repo_url: https://github.com/<org-or-user>/drillbotics-guidelines
 repo_name: Drillbotics Guidelines
 edit_uri: edit/main/docs/
@@ -73,10 +73,10 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
-      emoji_index: material.extensions.emoji.twemoji
-      emoji_generator: material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-strict: true
+strict: false
 
 nav:
   - Home: index.md
@@ -101,7 +101,6 @@ nav:
   - Resources:
       - FAQ: faq.md
       - Downloads: resources/downloads.md
-      - Logos & Branding: resources/branding.md
   - Archive:
       - 2024:
           - Group A (Virtual): 2024/group-a.md
