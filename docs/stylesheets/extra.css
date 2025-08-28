@@ -1,0 +1,106 @@
+/* Minimal, non‑Insiders tweaks for Material */
+
+/* Subtle hero styling on the homepage */
+.hero {
+  margin: 0 0 1rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.06);
+  background: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.01));
+}
+[data-md-color-scheme="slate"] .hero {
+  border-color: rgba(255,255,255,.12);
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
+}
+.hero .md-button { margin: .125rem .25rem; }
+
+/* Small spacing refinements for grid cards */
+.md-typeset .grid.cards { gap: .6rem; }
+.md-typeset .grid.cards > ul > li { padding: .75rem .8rem; }
+
+/* Keep the announcement banner readable with minimal styling */
+.db-announcement {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .5rem .75rem;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  background: rgba(0,0,0,.02);
+  color: inherit;
+}
+[data-md-color-scheme="slate"] .db-announcement {
+  border-bottom-color: rgba(255,255,255,.12);
+  background: rgba(255,255,255,.03);
+}
+.db-announcement__link { font-weight: 600; text-decoration: none; }
+.db-announcement__close { border: 0; background: transparent; font-size: 18px; line-height: 1; cursor: pointer; opacity: .7; }
+
+/* Make the header logo larger */
+.md-header__button.md-logo img {
+  height: 45px;
+  width: auto;
+}
+@media (max-width: 600px) {
+  .md-header__button.md-logo img { height: 52px; }
+}
+
+/* Ensure the logo is visible in dark mode */
+[data-md-color-scheme="slate"] .md-header__button.md-logo img {
+  /* Invert the black logo to white for contrast */
+  filter: brightness(0) invert(1);
+}
+
+/* Hide the repo link next to search and in the drawer */
+.md-header__source,
+.md-nav__source {
+  display: none !important;
+}
+
+/* Mermaid: adaptive colors for light/dark mode */
+:root {
+  --db-mm-edge: var(--md-default-fg-color--lighter);
+  --db-mm-text: var(--md-default-fg-color);
+  /* Light palette for custom classes */
+  --db-mm-startEnd-fill: #e1f5fe;
+  --db-mm-startEnd-stroke: #01579b;
+  --db-mm-decision-fill: #fff3e0;
+  --db-mm-decision-stroke: #e65100;
+  --db-mm-process-fill: #f3e5f5;
+  --db-mm-process-stroke: #4a148c;
+  --db-mm-feedback-fill: #ffebee;
+  --db-mm-feedback-stroke: #c62828;
+}
+
+[data-md-color-scheme="slate"] {
+  --db-mm-edge: var(--md-default-fg-color--lightest);
+  --db-mm-text: var(--md-default-fg-color);
+  /* Dark palette tuned for contrast on slate */
+  --db-mm-startEnd-fill: #0b3b57;
+  --db-mm-startEnd-stroke: #4fc3f7;
+  --db-mm-decision-fill: #3b2a17;
+  --db-mm-decision-stroke: #ffb74d;
+  --db-mm-process-fill: #2c1b36;
+  --db-mm-process-stroke: #ce93d8;
+  --db-mm-feedback-fill: #3a1a1a;
+  --db-mm-feedback-stroke: #ef9a9a;
+}
+
+/* Apply base text/edge colors */
+.mermaid svg { color: var(--db-mm-text); }
+.mermaid .edgePath path,
+.mermaid .flowchart-link { stroke: var(--db-mm-edge) !important; }
+.mermaid .edgeLabel { color: var(--db-mm-text) !important; fill: var(--db-mm-text) !important; }
+.mermaid .label, .mermaid text { fill: var(--db-mm-text) !important; color: var(--db-mm-text) !important; }
+
+/* Override classDef colors for better dark-mode contrast */
+.mermaid .node.startEnd rect,
+.mermaid .node.startEnd circle { fill: var(--db-mm-startEnd-fill) !important; stroke: var(--db-mm-startEnd-stroke) !important; }
+.mermaid .node.decision polygon,
+.mermaid .node.decision path { fill: var(--db-mm-decision-fill) !important; stroke: var(--db-mm-decision-stroke) !important; }
+.mermaid .node.process rect { fill: var(--db-mm-process-fill) !important; stroke: var(--db-mm-process-stroke) !important; }
+.mermaid .node.feedback rect { fill: var(--db-mm-feedback-fill) !important; stroke: var(--db-mm-feedback-stroke) !important; }

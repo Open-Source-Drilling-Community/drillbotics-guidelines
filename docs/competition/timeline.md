@@ -1,10 +1,10 @@
+---
+tags:
+  - timeline
+---
+
 # Timeline & Milestones
 
 > Replace the placeholders below with the dates from your current release.
 
-| Milestone | Target date | Notes |
-|---|---:|---|
-| Registration opens | 2025-09-15 | |
-| Registration closes | 2025-10-17 | |
-| Final P1 submission | 2025-12-31 | |
-| Judging | 2026-07 | |
+--8<-- "_includes/upcoming.md"
