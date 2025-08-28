@@ -3,9 +3,9 @@
 <div class="hero" markdown>
 ### Canonical competition rules and resources
 
-[:octicons-arrow-right-24: Start here](competition/overview.md){ .md-button .md-button--primary }
-[Group A (Virtual)](tracks/group-a/overview.md){ .md-button }
-[Group B (Physical)](tracks/group-b/overview.md){ .md-button }
+[:octicons-arrow-right-24: 🚀 Start here](competition/overview.md){ .md-button .md-button--primary }
+[💻 Group A (Virtual)](tracks/group-a/overview.md){ .md-button }
+[🛠️ Group B (Physical)](tracks/group-b/overview.md){ .md-button }
 </div>
  
 ??? tip "New to Drillbotics? (expand)"
