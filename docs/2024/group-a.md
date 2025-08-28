@@ -1,3 +1,12 @@
+---
+title: Group A — 2024 Guidelines (Archive)
+description: Archived copy of the 2023–2024 Drillbotics Group A guidelines. See Competition and Tracks for current rules.
+tags:
+  - archive
+  - 2024
+  - group-a
+---
+
 !!! info "Archive: 2024"
     This page preserves the original 2024 guidelines content as‑is for historical reference. For the current rules, see the pages under "Competition" and "Tracks".
 
@@ -11,6 +20,7 @@
 <tr>
 <td><img
 src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image1.jpg"
+alt="SPE / Drillbotics graphic"
 style="width:1.43194in;height:1.73194in" /></td>
 <td style="text-align: center;"><p>Society of Petroleum Engineers</p>
 <p>Drilling Systems Automation Technical Section (DSATS)</p>
@@ -22,6 +32,7 @@ style="width:1.43194in;height:1.73194in" /></td>
 </td>
 <td style="text-align: center;"><img
 src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image2.png"
+alt="DSATS / SPE logo"
 style="width:1.78125in;height:0.97639in" /></td>
 </tr>
 </tbody>
@@ -135,8 +146,6 @@ style="width:1.78125in;height:0.97639in" /></td>
   final Phase II test. Teams can drill a 2D or an optional 3D
   trajectory.
 
--
-
 - Option 2: Teams may use the D-WIS interface standard to connect to an
   OpenLab simulator offered by Norce to detect and control an influx
   (kick).
@@ -220,7 +229,7 @@ style="width:1.78125in;height:0.97639in" /></td>
 Contents
 
 - 1. Introduction
-- 2. Objectives for the 2022 Competition
+- 2. Objectives for the 2024 Competition
 - 3. Background
 - 4. General Competition Guidelines
 - 5. Team Members
@@ -247,7 +256,7 @@ Contents
 - Appendix B: Automation & Interface Design from a Human Factors Perspective
 - Appendix C: Additional References
 
-### Objectives for the 2022 Competition
+### Objectives for the 2024 Competition
 
 1. During the school year, beginning in the fall of 2023, a team of
     students will organize themselves to solve a drilling-related
@@ -889,7 +898,7 @@ Appendix A.
 
     1. All engineering calculations shall be included in the Phase I
         report, even if the rig is built using previous years’ designs.
-        This ensures that the 2022 team reviewed and understood the
+        This ensures that the 2024 team reviewed and understood the
         previous design assumptions and calculations.
 
     2. Calculations should include each formula considered in the
@@ -1027,7 +1036,7 @@ Example
 5. Well Control Challenge:
 
     1. Review the OpenLab Drilling simulator
-        (https://openlab.app/) application. This will be the
+        (<https://openlab.app/>) application. This will be the
         simulator we will use for the well control challenge.
 
     2. The interface should use the vocabulary of the D-WIS semantics
@@ -1598,7 +1607,7 @@ challenge is to drill a directional well virtually to specified targets.
 #### Overview
 
 Teams will use the OpenLab Drilling simulator
-(https://openlab.app/) as the model for the drilling process and
+(<https://openlab.app/>) as the model for the drilling process and
 develop appropriate controls to detect and control a well control issue.
 
 1. We will package in a Docker container an OPC UA server with the
@@ -1776,7 +1785,7 @@ kick with relatively variable appearance.
 
 2. Phase II Testing
 
-    1. In the spring term of 2022-2023, qualifying teams will present
+    1. In the spring term of 2024-2023, qualifying teams will present
         their model to efficiently drill a deviated well to hit the
         required targets while controlling drilling dysfunctions as the
         primary technical objective of the competition.
@@ -1857,7 +1866,7 @@ following criteria, with the weighting of individual items as indicated:
 Drilling performance will be observed and measured by Drillbotics judges
 invited to attend and witness the test. This could be an in-person or
 virtual event depending on travel restrictions. The details will be
-announced in April 2022.
+announced in April 2024.
 
 ### Final Report and Paper
 
