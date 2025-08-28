@@ -1,3 +1,15 @@
+---
+title: Group B — 2024 Guidelines (Archive)
+description: Archived copy of the 2023–2024 Drillbotics Group B guidelines. See Competition and Tracks for current rules.
+tags:
+  - archive
+  - 2024
+  - group-b
+---
+
+!!! info "Archive: 2024"
+    This page preserves the original 2024 guidelines content as‑is for historical reference. For the current rules, see the pages under "Competition" and "Tracks".
+
 <table>
 <colgroup>
 <col style="width: 23%" />
@@ -8,6 +20,7 @@
 <tr>
 <td><img
 src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image1.jpg"
+alt="SPE / Drillbotics graphic"
 style="width:1.43194in;height:1.73194in" /></td>
 <td style="text-align: center;"><p>Society of Petroleum Engineers</p>
 <p>Drilling Systems Automation Technical Section (DSATS)</p>
@@ -18,6 +31,7 @@ style="width:1.43194in;height:1.73194in" /></td>
 <p>Revised 11 October 2023</p></td>
 <td style="text-align: center;"><img
 src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image2.png"
+alt="DSATS / SPE logo"
 style="width:1.78125in;height:0.97639in" /></td>
 </tr>
 </tbody>
