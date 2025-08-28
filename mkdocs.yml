@@ -72,8 +72,7 @@ extra:
 
 plugins:
   - search
-  - tags:
-      tags_file: tags.md
+  - tags
   - git-revision-date-localized:
       fallback_to_build_date: true
   - glightbox
@@ -85,10 +84,6 @@ plugins:
   - htmlproofer:
       raise_error: true
       validate_external_urls: false
-      timeout: 5
-      retry_count: 2
-      retry_delay: 2
-      requests_per_second: 1
       ignore_urls:
         - 'mailto:'
         - 'https://github.com/<org-or-user>/*'
