@@ -1,3 +1,9 @@
+---
+tags:
+  - group-b
+  - overview
+---
+
 # Group B — Physical (Overview)
 
 Build and operate a small‑scale drilling rig that autonomously drills a directional well. Group B emphasizes safety, robust hardware, closed‑loop control using downhole data, and clear reporting.

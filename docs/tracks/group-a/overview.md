@@ -1,3 +1,9 @@
+---
+tags:
+  - group-a
+  - overview
+---
+
 # Group A — Virtual (Overview)
 
 Design, simulate, and control a virtual drilling system using standardized interfaces. Group A emphasizes closed‑loop control, data semantics, and clear reporting over hardware.

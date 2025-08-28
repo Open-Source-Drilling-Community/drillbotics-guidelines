@@ -1,3 +1,9 @@
+---
+tags:
+  - competition
+  - overview
+---
+
 # Competition Overview
 
 This site hosts the official Drillbotics® competition guidelines in a versioned, diff‑friendly format.

@@ -1,3 +1,9 @@
+---
+tags:
+  - group-b
+  - autonomy
+---
+
 # Group B — Autonomy & Control
 
 Automation requirements (per 2024 guidelines):

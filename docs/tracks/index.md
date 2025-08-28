@@ -2,6 +2,8 @@
 title: Tracks
 hide:
   - toc
+tags:
+  - tracks
 ---
 
 # Choose your track
@@ -29,4 +31,3 @@ hide:
     [:octicons-arrow-right-24: FAQ »](../faq.md)
 
 </div>
-

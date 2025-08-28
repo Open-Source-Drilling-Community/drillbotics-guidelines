@@ -113,6 +113,8 @@
 .mermaid svg { color: var(--db-mm-text); }
 .mermaid .edgePath path,
 .mermaid .flowchart-link { stroke: var(--db-mm-edge) !important; }
+.mermaid marker path,
+.mermaid .arrowheadPath { fill: var(--db-mm-edge) !important; stroke: var(--db-mm-edge) !important; }
 .mermaid .edgeLabel { color: var(--db-mm-text) !important; fill: var(--db-mm-text) !important; }
 .mermaid .label, .mermaid text { fill: var(--db-mm-text) !important; color: var(--db-mm-text) !important; }
 
@@ -123,6 +125,9 @@
 .mermaid .node.decision path { fill: var(--db-mm-decision-fill) !important; stroke: var(--db-mm-decision-stroke) !important; }
 .mermaid .node.process rect { fill: var(--db-mm-process-fill) !important; stroke: var(--db-mm-process-stroke) !important; }
 .mermaid .node.feedback rect { fill: var(--db-mm-feedback-fill) !important; stroke: var(--db-mm-feedback-stroke) !important; }
+
+/* Optional: subgraph clusters */
+.mermaid .cluster rect { stroke: var(--db-mm-edge) !important; }
 
 /*
   Integrated ToC (toc.integrate) refinements

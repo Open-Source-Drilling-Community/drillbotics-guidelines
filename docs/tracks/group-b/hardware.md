@@ -1,3 +1,9 @@
+---
+tags:
+  - group-b
+  - hardware
+---
+
 # Group B — Hardware
 
 Expectations from the 2024 guidelines:

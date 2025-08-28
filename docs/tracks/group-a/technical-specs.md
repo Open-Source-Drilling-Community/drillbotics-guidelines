@@ -1,3 +1,9 @@
+---
+tags:
+  - group-a
+  - technical-specs
+---
+
 # Group A — Technical Specifications
 
 Connectivity and interfaces (D‑WIS + OpenLab):

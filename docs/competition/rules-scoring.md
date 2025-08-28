@@ -1,3 +1,10 @@
+---
+tags:
+  - competition
+  - rules
+  - scoring
+---
+
 # Rules & Scoring
 
 > Outline the general rules that apply to all tracks. Put track-specific rules on the respective pages.
