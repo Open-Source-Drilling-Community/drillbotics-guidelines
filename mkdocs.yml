@@ -100,6 +100,8 @@ extra_javascript:
   - _assets/scripts/announcement.js
   - _assets/scripts/copy-markdown.js
   - _assets/scripts/mermaid-theme.js
+  - _assets/scripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:
   - admonition
@@ -110,7 +112,12 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
-  - pymdownx.snippets
+  # Ensure snippet includes like `--8<-- "_includes/file.md"` work
+  - pymdownx.snippets:
+      check_paths: true
+      base_path:
+        - docs
+        - .
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
@@ -124,6 +131,9 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
 
 strict: false
 
