@@ -86,11 +86,6 @@ git push -u origin main
 
 ---
 
-## Traditional pip/venv alternative
+## Authors
 
-```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-mkdocs serve
-mike deploy 2024 && mike alias 2024 latest && mike set-default latest
-```
+Developed by Enrique Z. [@e-zl](https://github.com/e-zl). For questions and support, reach out to Drillbotics committee: [competition@Drillbotics.com](mailto:competition@Drillbotics.com)
