@@ -30,7 +30,7 @@
 
 - :material-help-circle: **FAQ**  
   Common questions with canonical answers and links.  
-  [FAQ »](2024/faq/)
+  [FAQ »](faq/)
 
 - :material-update: **What changed?**  
   Human‑readable summaries and Git diffs per release.  
