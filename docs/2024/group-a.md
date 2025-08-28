@@ -15,12 +15,22 @@ style="width:1.43194in;height:1.73194in" /></td>
 <p>2023-2024</p>
 <p>Drillbotics<sup>®</sup> Guidelines</p>
 <p>Group A</p>
-<p>Revised 30 August 2023</p>
-<p><strong><mark>Draft 0</mark></strong></p></td>
+<p>Revised 11 October 2023</p>
+</td>
 <td style="text-align: center;"><img
 src="../_assets/2024 Drillbotics Guidelines-Group A_assets/media/image2.png"
 style="width:1.78125in;height:0.97639in" /></td>
 </tr>
+</tbody>
+</table>
+
+<p><strong>Version History</strong></p>
+<table>
+<thead>
+<tr><th>Version</th><th>Date</th><th>Section</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>2024.01</td><td>11 October 2023</td><td>All</td><td>Initial release</td></tr>
 </tbody>
 </table>
 
@@ -51,6 +61,30 @@ style="width:1.78125in;height:0.97639in" /></td>
 > controlling a well control event (e.g., kick). Group B will drill a
 > 2-dimensional directional well under similar guidelines to last year,
 > but may opt to drill a 3-dimensional well.
+>
+> New for 2024
+>
+> Continue with two groups
+>
+> A – Virtual
+>
+> B – Physical
+>
+> Separate guidelines for each group to reduce confusion
+>
+> Group A:
+>
+> - Create model (or option to use publicly available models) to simulate a virtual rig, or
+>
+> - Use their rig model to interface with a well control model provided by Norce using their OpenLab simulator.
+>
+> Group B:
+>
+> - Build and operate a physical rig to drill a 2D directional well or an optional 3D well.
+>
+> For A & B: Additional credit for teams that develop a D-WIS compatible API for data interoperability.
+>
+> Okay for two schools to join together for their entry.
 >
 > New Group A teams are highly encouraged to use the OpenLab Drilling
 > Simulator ([<u>https://openlab.app/</u>](https://openlab.app/)) and
@@ -399,7 +433,7 @@ considered to be an official revision to these Guidelines.**
 6. Questions should be directed to the competition email at
     [competition@drillbotics.com](competition@drillbotics.com).
     Teams must provide the reference number of the section of the
-    guideless when you ask questions. Questions and answers will be
+    guidelines when you ask questions. Questions and answers will be
     incorporated into the FAQs periodically.
 
 ### *General Competition Guidelines*
