@@ -1,3 +1,8 @@
+---
+tags:
+  - deliverables
+---
+
 # Group B — Deliverables & Testing
 
 Phase I — Design (2023–2024):

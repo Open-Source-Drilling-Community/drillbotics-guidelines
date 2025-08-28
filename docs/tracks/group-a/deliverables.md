@@ -1,3 +1,8 @@
+---
+tags:
+  - deliverables
+---
+
 # Group A — Deliverables
 
 Phase I — Design (2023–2024):
