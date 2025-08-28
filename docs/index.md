@@ -3,52 +3,67 @@
 <div class="hero" markdown>
 ### Canonical competition rules and resources
 
-[Get started](competition/overview.md){ .md-button .md-button--primary }
-[Group A (Virtual)](tracks/group-a/overview.md){ .md-button .md-button--secondary }
-[Group B (Physical)](tracks/group-b/overview.md){ .md-button .md-button--secondary }
-
-[:material-rocket-launch: Overview](competition/overview.md){ .md-button .md-button--secondary }
-[:material-calendar-star: Timeline](competition/timeline.md){ .md-button .md-button--secondary }
-[:material-help-circle: FAQ](faq.md){ .md-button .md-button--secondary }
-[:material-download: Downloads](resources/downloads.md){ .md-button .md-button--secondary }
-[:material-source-pull: Contribute](contributor-guide.md){ .md-button .md-button--secondary }
+[:octicons-arrow-right-24: Start here](competition/overview.md){ .md-button .md-button--primary }
+[Group A (Virtual)](tracks/group-a/overview.md){ .md-button }
+[Group B (Physical)](tracks/group-b/overview.md){ .md-button }
 </div>
-
+ 
+??? tip "New to Drillbotics? (expand)"
+    Skim the [Overview](competition/overview.md), then jump to the Quick Start below.
 
 
 ## Track Quick Start
 
-<div class="track-cards grid cards" markdown>
+Group A uses OpenLab and D‑WIS.
 
-- ![A](_assets/images/track-a.svg){ .track-icon } **Group A — Virtual**  \
-  OpenLab simulator, D‑WIS interface, virtual drilling and well control.  \
-  [Overview »](tracks/group-a/overview.md) · [Technical specs »](tracks/group-a/technical-specs.md) · [Deliverables »](tracks/group-a/deliverables.md)
+*[D‑WIS]: Drilling‑Well Information System
+*[OpenLab]: Drilling simulation environment used in Group A
 
-- ![B](_assets/images/track-b.svg){ .track-icon } **Group B — Physical**  \
-  Mini‑rig hardware, autonomy, safety, and testing regimes.  \
-  [Overview »](tracks/group-b/overview.md) · [Hardware »](tracks/group-b/hardware.md) · [Deliverables »](tracks/group-b/deliverables.md)
+!!! info inline end "Submission window"
+    See [Timeline & Milestones](competition/timeline.md) for current open/close dates.
 
+=== "Group A (Virtual)"
+
+_Requires: OpenLab + D‑WIS._
+
+<div class="btn-row" markdown>
+[:octicons-rocket-24: Overview](tracks/group-a/overview.md){ .md-button .md-button--primary }
+[:octicons-gear-24: Technical specs](tracks/group-a/technical-specs.md){ .md-button }
+[:octicons-checklist-24: Deliverables](tracks/group-a/deliverables.md){ .md-button }
+[:octicons-trophy-24: Judging](tracks/group-a/judging.md){ .md-button }
+</div>
+
+=== "Group B (Physical)"
+
+_Requires: Lab safety training + rig readiness._
+
+<div class="btn-row" markdown>
+[:octicons-rocket-24: Overview](tracks/group-b/overview.md){ .md-button .md-button--primary }
+[:octicons-shield-24: Safety & risk](tracks/group-b/safety.md){ .md-button }
+[:octicons-cpu-24: Hardware](tracks/group-b/hardware.md){ .md-button }
+[:octicons-checklist-24: Deliverables & testing](tracks/group-b/deliverables.md){ .md-button }
+[:octicons-trophy-24: Judging](tracks/group-b/judging.md){ .md-button }
 </div>
 
 ## For Participants
 
 <div class="grid cards" markdown>
 
-- :material-flag-variant: **1) Understand the rules**  \
-  Read the goals, governance, and common rules.  \
-  [Overview »](competition/overview.md) · [Rules & Scoring »](competition/rules-scoring.md) · [Safety »](competition/safety.md)
+- :material-gavel: **1) Understand the rules**  \
+  Read goals, governance, scoring, and safety.  \
+  [:octicons-book-24: Rules & Scoring](competition/rules-scoring.md){ .md-button }
 
-- :material-select-group: **2) Choose your track**  \
-  Start from the track landing page for specs and interfaces.  \
-  [Group A (Virtual) »](tracks/group-a/overview.md) · [Group B (Physical) »](tracks/group-b/overview.md)
+- :material-compare: **2) Choose your track**  \
+  Pick **A (Virtual)** or **B (Physical)** interfaces.  \
+  [:octicons-arrow-right-24: Compare A vs B](#track-quick-start){ .md-button }
 
-- :material-clipboard-text-clock-outline: **3) Plan deliverables & dates**  \
-  Know what you must submit and when.  \
-  [Group A Deliverables »](tracks/group-a/deliverables.md) · [Group B Deliverables »](tracks/group-b/deliverables.md) · [Timeline »](competition/timeline.md)
+- :material-calendar-check: **3) Plan deliverables & dates**  \
+  Know what’s due and when.  \
+  [:octicons-milestone-24: Timeline](competition/timeline.md){ .md-button }
 
-- :material-help-circle: **4) Get help & resources**  \
-  FAQs and original PDFs for reference.  \
-  [FAQ »](faq.md) · [Downloads »](resources/downloads.md)
+- :material-lifebuoy: **4) Get help & resources**  \
+  FAQs and original PDFs.  \
+  [:octicons-question-24: FAQ](faq.md){ .md-button }
 
 </div>
 
@@ -64,6 +79,20 @@ Use this quick checklist to set up your team. See the linked pages for details.
 - [ ] Prepare your environment  
       Group A: OpenLab + D‑WIS;  Group B: rig, sensors, and safety procedures — [Safety](competition/safety.md)
 - [ ] Submit Phase I materials; schedule Phase II planning — Deliverables pages
+
+## At-a-glance flow
+
+```mermaid
+graph LR
+  A[Kickoff] --> B{Group?}
+  B -->|A (Virtual)| C[OpenLab setup]
+  B -->|B (Physical)| D[Safety & rig readiness]
+  C --> E[Phase I deliverables]
+  D --> E
+  E --> F{Advancing?}
+  F -->|Yes| G[Phase II]
+  F -->|No| H[Feedback & iterate]
+```
 
 ## Upcoming
 
