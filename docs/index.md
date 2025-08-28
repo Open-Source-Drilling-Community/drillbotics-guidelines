@@ -1,7 +1,7 @@
 # Drillbotics® Guidelines
 
 <div class="hero" markdown>
-### Canonical competition rules and resources
+### Competition rules and resources
 
 [:octicons-arrow-right-24: 🚀 Start here](competition/overview.md){ .md-button .md-button--primary }
 [💻 Group A (Virtual)](tracks/group-a/overview.md){ .md-button }
@@ -16,14 +16,14 @@
 
 ```mermaid
 graph LR
-    A[Kickoff] --> B[Group Assignment]
-    B -->|A - Virtual| C[OpenLab Setup]
-    B -->|B - Physical| D[Safety & Rig Readiness]
-    C --> E[Phase I Deliverables]
+    A[Team Registration<br/>& Kickoff] --> B[Group Selection]
+    B -->|A - Virtual<br/>Modeling/Simulation| C[OpenLab/D-WIS<br/>Interface Setup]
+    B -->|B - Physical<br/>Rig Construction| D[Safety Plan &<br/>Rig Development]
+    C --> E[Phase I Design Report<br/>& Safety Documentation]
     D --> E
-    E --> F{Advancing?}
-    F -->|Yes| G[Phase II]
-    F -->|No| H[Feedback & Iterate]
+    E --> F{Judge Review<br/>& Advancement?}
+    F -->|Yes| G[Phase II Testing<br/>& Competition]
+    F -->|No| H[Design Feedback<br/>& Iteration]
     H --> E
     
     classDef startEnd fill:#e1f5fe,stroke:#01579b,stroke-width:2px
