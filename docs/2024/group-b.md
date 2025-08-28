@@ -12,7 +12,7 @@ tags:
 
 |  |  |  |
 |:--:|:--:|:--:|
-| [![SPE / Drillbotics graphic](../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image1.jpg){ width="140px" }](../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image1.jpg) | Society of Petroleum Engineers<br>Drilling Systems Automation Technical Section (DSATS)<br>International University Competition<br>2023–2024<br>Drillbotics® Guidelines<br>Group B<br>Revised 11 October 2023 | [![DSATS / SPE logo](../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image2.png){ width="180px" }](../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image2.png) |
+| [![SPE / Drillbotics graphic](../_assets/2024 Drillbotics Guidelines-Group B_assets/media/image1.jpg){ width="140px" }](../_assets/2024 Drillbotics Guidelines-Group B_assets/media/image1.jpg) | Society of Petroleum Engineers<br>Drilling Systems Automation Technical Section (DSATS)<br>International University Competition<br>2023–2024<br>Drillbotics® Guidelines<br>Group B<br>Revised 11 October 2023 | [![DSATS / SPE logo](../_assets/2024 Drillbotics Guidelines-Group B_assets/media/image2.png){ width="180px" }](../_assets/2024 Drillbotics Guidelines-Group B_assets/media/image2.png) |
 
 <p><strong>Version History</strong></p>
 <table>
@@ -1711,10 +1711,7 @@ Example
 2. For the final test, the teams will need to procure the rock and get
     the rock tested.    A typical sample has the following properties:
 
-> <img
-> src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image3.png"
-> style="width:5.72917in;height:3.4375in"
-> alt="Table Description automatically generated" />
+> ![Table Description automatically generated](../_assets/2024 Drillbotics Guidelines-Group B_assets/media/image3.png){ style="width:5.72917in;height:3.4375in" }
 
 3. The sample should be prepared per the following:
 
@@ -1825,10 +1822,7 @@ Example
         Swagelock.  In 2018, the winning team used a fitting from
         Vertex.
 
-    4. <img
-        src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image4.png"
-        style="width:1.63542in;height:2.1875in"
-        alt="A picture containing lighter Description automatically generated" />A
+    4. ![A picture containing lighter Description automatically generated](../_assets/2024 Drillbotics Guidelines-Group B_assets/media/image4.png){ style="width:1.63542in;height:2.1875in" } A
         fitting used successfully in 2016, but which did not work well
         in 2017, is available from Lenz
         (<http://lenzinc.com/products/o-ring-seal-hydraulic-tube-fitting/hydraulic-straight-connectors>)
