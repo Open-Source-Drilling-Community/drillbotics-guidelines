@@ -29,10 +29,24 @@ source .venv/bin/activate      # optional; uv can run without activation
 uv pip install -r requirements.txt
 ```
 
-### 3) Preview locally
+### 3) Preview locally (with mike)
+
+First time only, bootstrap a local version so the version switcher works:
 
 ```bash
-uv run mkdocs serve
+uv run mike deploy --update-aliases dev latest
+```
+
+Then serve with mike (includes `/versions.json`):
+
+```bash
+uv run mike serve
+```
+
+Or simply:
+
+```bash
+make serve
 ```
 
 Open <http://127.0.0.1:8000>
@@ -67,6 +81,8 @@ git push -u origin main
 ### 7) Enable GitHub Pages
 
 **Settings → Pages**: Source = *Deploy from a branch*, Branch = `gh-pages` (created by `mike deploy`).
+
+If using a custom domain, set it in Pages settings and add a `CNAME` file on the `gh-pages` branch (e.g., commit a `CNAME` file once after the first deploy).
 
 ---
 
