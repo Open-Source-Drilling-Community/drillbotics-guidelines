@@ -22,3 +22,14 @@
 
 /* Brand logo sizing for the branding page */
 .brand-logos img { height: 56px; margin: .5rem 1rem; }
+
+/* PDF viewer styling */
+.pdf-embed {
+  width: 100%;
+  height: min(85vh, 1000px);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 8px;
+}
+[data-md-color-scheme="slate"] .pdf-embed {
+  border-color: rgba(255,255,255,.12);
+}
