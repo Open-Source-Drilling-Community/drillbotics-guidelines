@@ -7,7 +7,7 @@
 <tbody>
 <tr>
 <td><img
-src="../_assets/2024 Drillbotics Guidelines-Group B_assets/media/image1.jpg"
+src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image1.jpg"
 style="width:1.43194in;height:1.73194in" /></td>
 <td style="text-align: center;"><p>Society of Petroleum Engineers</p>
 <p>Drilling Systems Automation Technical Section (DSATS)</p>
@@ -17,15 +17,21 @@ style="width:1.43194in;height:1.73194in" /></td>
 <p>Group B</p>
 <p>Revised 11 October 2023</p></td>
 <td style="text-align: center;"><img
-src="../_assets/2024 Drillbotics Guidelines-Group B_assets/media/image2.png"
+src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image2.png"
 style="width:1.78125in;height:0.97639in" /></td>
 </tr>
 </tbody>
 </table>
 
-| Version | Date              | Section | Description     |
-| ------- | ----------------- | ------- | --------------- |
-| 2024.01 | 11 October 2023   | All     | initial release |
+<p><strong>Version History</strong></p>
+<table>
+<thead>
+<tr><th>Version</th><th>Date</th><th>Section</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>2024.01</td><td>11 October 2023</td><td>All</td><td>Initial release</td></tr>
+</tbody>
+</table>
 
 ### Introduction
 
@@ -56,32 +62,31 @@ style="width:1.78125in;height:0.97639in" /></td>
 > but may opt to drill a 3-dimensional well.
 >
 > New for 2024
+>
 > Continue with two groups
+>
 > A – Virtual
+>
 > B – Physical
-> Separate guidelines for each group
-> to reduce confusion
+>
+> Separate guidelines for each group to reduce confusion
+>
 > Group A:
-> - Create model (or option to use
->   publicly available models) to
->   simulate a virtual rig, or
-> - Use their rig model to interface
->   with a well control model provided
->   by Norce using their OpenLab
->   simulator.
+>
+> - Create model (or option to use publicly available models) to simulate a virtual rig, or
+>
+> - Use their rig model to interface with a well control model provided by Norce using their OpenLab simulator.
+>
 > Group B:
-> - Build and operate a physical rig
->   to drill a 2D directional well or an
->   optional 3D well.
-> For A & B: Additional credit for
-> teams that develop a D-WIS
-> compatible API for data
-> interoperability.
-> Okay for two schools to join
-> together for their entry.
+>
+> - Build and operate a physical rig to drill a 2D directional well or an optional 3D well.
+>
+> For A & B: Additional credit for teams that develop a D-WIS compatible API for data interoperability.
+>
+> Okay for two schools to join together for their entry.
 >
 > New Group A teams are highly encouraged to use the OpenLab Drilling
-> Simulator ([<u>https://openlab.app/</u>](https://openlab.app/)) and
+> Simulator (<https://openlab.app/>) and
 > focus on designing the controls system. The D-WIS interface and
 > connectivity will be used to send set-points to the simulator and
 > receive surface and downhole sensor data. Webinar training on how to
@@ -95,7 +100,7 @@ style="width:1.78125in;height:0.97639in" /></td>
 > Groups A and B. The general information items that are common to both
 > groups are identical. Rules specific to each group are listed in an
 > appendix. Teams must also monitor the website
-> ([<u>www.Drillbotics.com</u>](http://www.drillbotics.com)) to check
+> (<https://drillbotics.com>) to check
 > any Frequently Asked Questions (FAQs) since they become part of these
 > guidelines.
 >
@@ -125,8 +130,6 @@ style="width:1.78125in;height:0.97639in" /></td>
   targets provided by the Drillbotics Committee immediately before the
   final Phase II test. Teams can drill a 2D or an optional 3D
   trajectory.
-
--
 
 - Option 2: Teams may use the D-WIS interface standard to connect to an
   OpenLab simulator offered by Norce to detect and control an influx
@@ -208,126 +211,26 @@ style="width:1.78125in;height:0.97639in" /></td>
 
 **The Drillbotics® Committee**
 
-Contents
+### Contents
 
-*1.* Introduction 2
+- [Introduction](#introduction)
+- [Objectives for the 2022 Competition](#objectives-for-the-2022-competition)
+- [Background](#background)
+- [General Competition Guidelines](#general-competition-guidelines)
+- [Team Members](#team-members)
+- [Safety](#safety)
+- [Expenditures](#expenditures)
+- [Other Considerations](#other-considerations)
+- [Project Timeline](#project-timeline)
+- [Project Reports](#project-reports)
+- [Group A and Group B Prizes](#group-a-and-group-b-prizes)
+- [Terms and Conditions](#terms-and-conditions)
+- [Marketing](#marketing)
+- [Appendix A: Group B Project Definition](#appendix-a-group-b-project-definition)
+- [Appendix B: Automation & Interface Design](#appendix-b-automation-interface-design-from-a-human-factors-perspective)
+- [Appendix C: Additional References](#appendix-c-additional-references)
 
-*2.* *Objectives for the 2022 Competition* 7
-
-*3.* *Background* 7
-
-*4.* *General Competition Guidelines* 9
-
-*5.* *Team Members* 10
-
-*6.* *Safety* 10
-
-*7.* *Expenditures* 11
-
-*8.* *Other Considerations* 11
-
-*9.* *Project Timeline* 12
-
-*10.* *Project reports* 12
-
-10.1. Report File Names 12
-
-10.2. Monthly Report Contents 13
-
-10.3. Other items of interest 13
-
-10.4. Phase I Design Report 13
-
-10.5. Final report, presentation and paper 13
-
-*11.* *Group A and Group B Prizes* 14
-
-*12.* *Terms and Conditions* 15
-
-*13.* *Marketing* 16
-
-Appendix A: Group B Project Definition 17
-
-*A.* ***Overview*** 17
-
-*B.* ***Directional Objective Requirements*** 17
-
-1\. **Objectives** 17
-
-**2.** **Automation Requirements** 17
-
-**3.** **Deliverables Requirements (Magnetic surveying)** 17
-
-*C.* ***Safety*** 18
-
-***D.*** ***Phase I – Design Competition*** 19
-
-***E.*** ***Phase I Design Report*** 20
-
-***F.*** ***Design Criteria*** 20
-
-a\. Overview 20
-
-b\. Objectives 21
-
-c\. Rig Design 21
-
-d\. Design Calculations 22
-
-e\. Automation Requirements 24
-
-f\. Steering 24
-
-g\. Downhole sensors are mandatory, and it is also mandatory to
-implement their data into the control algorithm of the rig.  A severe
-penalty will be applied to teams who do not use downhole sensors.
-Closed loop control of the rig based on downhole data is mandatory in
-this year’s competition and not integrating this data set into the
-control algorithm is considered a “F- Failing grade” in this year’s
-competition. 25
-
-h\. Surveys 25
-
-i\. Deliverables Requirements (Magnetic surveying) 25
-
-j\. Plots 26
-
-k\. Data Logs 26
-
-l\. Formation/Rock 26
-
-m\. Targets 27
-
-n\. Trajectory 27
-
-o\. Bits 27
-
-p\. Drillstring 28
-
-q\. Automated Drilling 29
-
-r\. Sensors 30
-
-s\. Data collection and handling 30
-
-t\. Data visualization 30
-
-u\. Measure and analyze the performance 30
-
-v\. Not included in the 2021-2022 competition 31
-
-***G.*** ***Phase I Design Report*** 31
-
-***H.*** ***Phase II – Drilling Competition*** 31
-
-***I.*** ***Final Report and Paper*** 34
-
-Appendix B: Automation & Interface Design from a Human Factors
-Perspective 36
-
-Appendix C: Additional References 39
-
-### *Objectives for the 2022 Competition*
+### Objectives for the 2022 Competition
 
 1. During the school year, beginning in the fall of 2023, a team of
     students will organize themselves to solve a drilling-related
@@ -367,7 +270,7 @@ Appendix C: Additional References 39
     hands-on experience that will be directly applicable to a career in
     the upstream drilling industry.
 
-### *Background*
+### Background
 
 1. What is DSATS?
 
@@ -375,8 +278,7 @@ DSATS is a technical section of the Society of Petroleum Engineers (SPE)
 organized to promote the adoption of automation techniques using surface
 and downhole machines and instrumentation to improve the safety and
 efficiency of the drilling process. More information is available about
-DSATS at the [DSATS homepage](http://connect.spe.org/DSATS/Home/)
-(<https://www.spe-dsats.org/>) .
+DSATS at the [DSATS homepage](https://www.spe-dsats.org/).
 
 2. Why an international competition?
 
@@ -442,7 +344,7 @@ Requirements for human factors provisions are shown in Appendix A.
 5. Items posted on the website are part of these Guidelines
 
 The Drillbotics website at
-[<u>www.Drillbotics.com</u>](http://www.drillbotics.com/) includes
+(<https://drillbotics.com>) includes
 official updates to the competition guidelines and schedule, as well as
 FAQs, photos, and previous entrants’ submittals and reports and numerous
 reference documents. **Any updates to the guidelines posted on the
@@ -450,16 +352,16 @@ Drillbotics website via FAQs or blog entries from the Committee are
 considered to be an official revision to these Guidelines.**
 
 6. Questions should be directed to the competition email at
-    [competition@drillbotics.com](file:///C:\Users\Fred\Downloads\competition@drillbotics.com).
+    [competition@drillbotics.com](mailto:competition@drillbotics.com).
     Teams must provide the reference number of the section of the
     guideless when you ask questions. Questions and answers will be
     incorporated into the FAQs periodically.
 
-### *General Competition Guidelines*
+### General Competition Guidelines
 
 1. Entrants to Group A challenge have the option to sign up to do a
     well control challenge. They will need to use OpenLab Drilling
-    simulator (<https://openlab.app/> ) with the D-WIS interface.
+    simulator (<https://openlab.app/>) with the D-WIS interface.
 
 2. Teams also have the option to work on a 2D or optional 3D steering
     challenge. They will develop a drilling system model that represents
@@ -489,8 +391,8 @@ considered to be an official revision to these Guidelines.**
 
 6. Judges want to see evidence that teams know about drilling and
     modeling aspects of well construction. Because teams will either
-    build or model a physical rig and downhole conditions, they <u>must
-    specify the assumptions</u> made about their project. Allowing
+    build or model a physical rig and downhole conditions, they must
+    specify the assumptions made about their project. Allowing
     judges to understand “why” you made certain choices affecting the
     evaluation of your project.
 
@@ -509,11 +411,11 @@ considered to be an official revision to these Guidelines.**
     designs that worked or didn’t work and students thoughts about their
     earlier choices.
 
-### *Team Members*
+### Team Members
 
 1. DSATS envisions that the students would be at least at the senior
     undergraduate or Masters level, well versed in the disciplines
-    needed for such a project. The <u>core</u> team shall consist of at
+    needed for such a project. The core team shall consist of at
     least three (3) team members and no more than five (5).
     Contributions from other team members is allowed, and all
     contributors should be recognized in the Phase I Design Report. The
@@ -559,7 +461,7 @@ considered to be an official revision to these Guidelines.**
     (Well Control or 2D or 3D Steering) that the team will be
     participating in.
 
-### *Safety*
+### Safety
 
 1. The team’s safety plan should consider all foreseeable hazards and
     methods to mitigate them. Personal protective equipment is part of a
@@ -571,7 +473,7 @@ considered to be an official revision to these Guidelines.**
     plan. This applies to both Group A and Group B.
 
 2. Because most of the Group B rigs have equipment spinning at high
-    RPMs, some form of protective cover <u>must</u> be included in the
+    RPMs, some form of protective cover must be included in the
     team’s rig design. A broken coupling, a loose screw or similar item
     becomes a projectile that can lead to serious injury to the team
     members, judges or visitors. Judges may decide to deny a team from
@@ -583,12 +485,12 @@ considered to be an official revision to these Guidelines.**
     comprehensive list of links:
 
     1. OSHA Pocket Guide, Worker Safety Series:
-        [<u>https://www.osha.gov/Publications/OSHA3252/3252.html</u>](https://www.osha.gov/Publications/OSHA3252/3252.html)
+        <https://www.osha.gov/Publications/OSHA3252/3252.html>
 
     2. OSHA Checklist for General Industry:
-        [<u>http://www.scosha.llronline.com/pdfs/genind.pdf</u>](http://www.scosha.llronline.com/pdfs/genind.pdf)
+        <http://www.scosha.llronline.com/pdfs/genind.pdf>
 
-### *Expenditures*
+### Expenditures
 
 1. Teams selected to advance to the second phase must limit the cost of
     the physical or virtual rig and materials to US\$ 10,000 per year or
@@ -626,7 +528,7 @@ considered to be an official revision to these Guidelines.**
     maintenance or operating costs incurred after the competition will
     not be paid by DSATS.
 
-### *Other Considerations*
+### Other Considerations
 
 1. University coursework and credit: Each university will decide
     whether or not this project qualifies as a credit(s) towards any
@@ -651,7 +553,7 @@ considered to be an official revision to these Guidelines.**
     original work done by others. Teams are also encouraged to share
     their models with the OSDC.
 
-### *Project Timeline*
+### Project Timeline
 
 > Phase I - Design: Fall 2023
 
@@ -677,17 +579,16 @@ Group B: Model & controls development/Construction Spring 2024
 
 Group A and B Phase II Test May/June 2024
 
-### *Project reports*
+### Project Reports
 
 #### Report File Names
 
 To avoid extra work by the committee to rename all files, teams
-<u>must</u> use this convention for all reports:
+must use this convention for all reports:
 
 Monthly Reports
 
-> Year-Month# University Name (abbreviated) Note: this is the
-> competition <u>year (spring term</u>.
+> Year-Month# University Name (abbreviated). Note: this is the competition year (spring term).
 >
 > Example: for the October 2023 entry from the University of Drillbotics
 > Competition (UDC)
@@ -710,7 +611,7 @@ Starting in October for the fall term, the student team shall submit to
 DSATS a short monthly project report that is no more than one page in
 length (additional pages will be ignored) due on or before the last day
 of each month. Send all reports via email to
-<u><competition@drillbotics.com></u> . The monthly report should
+ [competition@drillbotics.com](mailto:competition@drillbotics.com). The monthly report should
 include:
 
 Phase I Monthly Report Contents
@@ -774,7 +675,7 @@ Appendix A.
     shall be in the English language. The presentation must be made by
     at least one member of the student team, not the team supervisor.
 
-### *Group A and Group B Prizes*
+### Group A and Group B Prizes
 
 1. The program committee of the Drilling Conference awarded the
     Drillbotics subcommittee a permanent slot[^3] in one of the drilling
@@ -850,7 +751,7 @@ Appendix A.
 6. Individual award certificates will be presented to all participants
     upon request, with special certificates given to all finalists. Team
     members wanting a certificate should send an email to
-    <competition@Drillbotics.com> with the spelling of their name as they
+    [competition@drillbotics.com](mailto:competition@drillbotics.com) with the spelling of their name as they
     wish it to appear on the certificate.
 
 7. DSATS may provide additional awards, at its sole discretion.
@@ -858,7 +759,7 @@ Appendix A.
 8. The evaluation and all decisions on any matter in the competition by
     the Drillbotics judges and DSATS board are final.
 
-### *Terms and Conditions*
+### Terms and Conditions
 
 1. In no event will SPE, including its directors, officers, employees
     and agents, as well as DSATS members and officers, and sponsors of
@@ -882,7 +783,7 @@ Appendix A.
         participation in the competition is an agreement to all of the
         rules, regulations, terms and conditions in this document,
         including revisions and FAQs posted to the DSATS and Drillbotics
-        websites (see section <u>3.1</u>).
+        websites (see section 3.1).
 
     3. Winning teams and finalists must agree to the publication of
         their names, photographs and final paper on the DSATS web site.
@@ -904,7 +805,7 @@ Appendix A.
 5. Participants must comply with all local laws applicable to this
     contest.
 
-### *Marketing*
+### Marketing
 
 1. Upon request, DSATS will provide a link on its website to all
     participating universities.
@@ -921,28 +822,26 @@ Appendix A.
 4. Any team that wishes to use the trademark on signs, tee shirts,
     technical papers or for other purposes may receive a no-cost license
     upon request. Send the request by email to the committee at
-    [competition@Drillbotics.com](competition@Drillbotics.com).
+    [competition@drillbotics.com](mailto:competition@drillbotics.com).
     Upon completion of the license agreement, access to the files with
     the logo will be made available. Unfortunately, trademark law
     requires us to enforce this for everyone to maintain our trademark,
     so please ask for license before you use our mark.
 
-##
-
-###
+ 
 
 ## Appendix A: Group B Project Definition
 
-### ***Overview***
+### Overview
 
 The following attached pages describe the directional objectives as well
 as the data/deliverables requirements. Scoring for the directional
 competition objective will be primarily based on how accurately the
 directional targets are intersected by the calculated well trajectory.
 
-### ***Directional Objective Requirements***
+### Directional Objective Requirements
 
-#### **Objectives**
+#### Objectives
 
 1. Hit one or more targets at one or more vertical depth(s) and X/Y
     coordinates
@@ -958,7 +857,7 @@ directional targets are intersected by the calculated well trajectory.
     within the specified parameters, so the coordinates will not be
     provided in advance of the test.
 
-#### **Automation Requirements**
+#### Automation Requirements
 
 1. Drilling mode/survey mode switching must be automated (i.e. built-in
     survey interval and drill string movement for on/off-bottom,
@@ -981,7 +880,7 @@ directional targets are intersected by the calculated well trajectory.
     plan must be autonomously calculated at each survey station and
     shown on the rig floor display
 
-#### **Deliverables Requirements (Magnetic surveying)**
+#### Deliverables Requirements (Magnetic surveying)
 
 1. All teams are required to provide a definitive directional survey
     (TXT, LAS, or CSV format) meeting the following minimum
@@ -1082,7 +981,7 @@ directional targets are intersected by the calculated well trajectory.
     5. If secondary (i.e. human) qualification is also used, both
         acceptance indicators must be shown
 
-### ***Safety***
+### Safety
 
 1) The team’s safety plan should consider all foreseeable hazards and
     methods to mitigate them.  Personal protective equipment is part of
@@ -1108,7 +1007,7 @@ directional targets are intersected by the calculated well trajectory.
 > OSHA Checklist for General Industry:
 > <http://www.scosha.llronline.com/pdfs/genind.pdf>
 
-### ***Phase I – Design Competition***
+### Phase I – Design Competition
 
 1) Prepare a safety plan at the beginning of the project and update it
     continually as needed.
@@ -1170,7 +1069,7 @@ directional targets are intersected by the calculated well trajectory.
 
 3. Teams may use all or part of a previous year’s rig.
 
-### ***Phase I Design Report***
+### Phase I Design Report
 
 The design submittal by the students shall include:
 
@@ -1245,7 +1144,7 @@ Additional optional items:
 3. The committee will advance as many teams as is economically possible
     as finalists for Phase II.
 
-### ***Design Criteria***
+### Design Criteria
 
 #### Overview
 
@@ -1822,7 +1721,7 @@ Example
     the rock tested.    A typical sample has the following properties:
 
 > <img
-> src="../_assets/2024 Drillbotics Guidelines-Group B_assets/media/image3.png"
+> src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image3.png"
 > style="width:5.72917in;height:3.4375in"
 > alt="Table Description automatically generated" />
 
@@ -1831,7 +1730,7 @@ Example
     1. A homogeneous sandstone samples appx. 12” W x 24” L x 24” H (30
         x 60 x 60 cm) for the final demonstration
 
-4. Please contact Drillbotics at  <competition@drillbotics.com> if you
+4. Please contact Drillbotics at [competition@drillbotics.com](mailto:competition@drillbotics.com) if you
     have difficulty obtaining your sample.
 
 #### Targets
@@ -1910,7 +1809,7 @@ Example
 
     2. There is no restriction on drill pipe diameter or hole diameter.
 
-    3. DSATS will <u>not</u> be providing tubing to the competition
+    3. DSATS will not be providing tubing to the competition
         teams.
 
     4. The use of a metric equivalent of the tubing is permitted.
@@ -1936,7 +1835,7 @@ Example
         Vertex.
 
     4. <img
-        src="../_assets/2024 Drillbotics Guidelines-Group B_assets/media/image4.png"
+        src="../../_assets/2024%20Drillbotics%20Guidelines-Group%20B_assets/media/image4.png"
         style="width:1.63542in;height:2.1875in"
         alt="A picture containing lighter Description automatically generated" />A
         fitting used successfully in 2016, but which did not work well
@@ -2094,7 +1993,7 @@ Example
 2. A rig move, walking or skidding is not required, but the mobility of
     the rig will be considered in the design phase.  
 
-### ***Phase I Design Report***
+### Phase I Design Report
 
 1. Teams will submit a detailed report containing detailed literature
     review, model assumptions, overall plan of the virtual system,
@@ -2130,7 +2029,7 @@ Example
     will this affect equipment selection?  The teams are encouraged to
     perform control simulations to verify the control scheme.
 
-### ***Phase II – Drilling Competition***
+### Phase II – Drilling Competition
 
 1. Phase II Activities
 
@@ -2421,7 +2320,7 @@ discretion</td>
 </tbody>
 </table>
 
-### ***Final Report and Paper***
+### Final Report and Paper
 
 The finalists shall prepare a project report that addresses the items
 below.  We suggest you use the format of most SPE papers.  For
@@ -2469,7 +2368,7 @@ reference, please see <http://spe.org/authors/resources/>
 
     7. Note that the SPE audience already knows a lot of the background
         information that you presented the judges to demonstrate your
-        capabilities, so adjust the paper content according***ly***.
+        capabilities, so adjust the paper content accordingly.
 
 ## Appendix B: Automation & Interface Design from a Human Factors Perspective
 
@@ -2646,7 +2545,7 @@ comprehensive with some good case study examples included.*
 ## Appendix C: Additional References
 
 18. Florence, F., Losoya, E., Drillbotics with Fred Florence and Enrique
-    Losoya (2020, August 18), SPE Podcast, <u>Link</u>.
+    Losoya (2020, August 18), SPE Podcast, Link.
 
 19. Pessier, R. C., & Fear, M. J. (1992, January 1). Quantifying Common
     Drilling Problems With Mechanical Specific Energy and a Bit-Specific
@@ -2704,13 +2603,13 @@ comprehensive with some good case study examples included.*
 
 32. Webinar: Machine Learning and Physics-based Solutions for Drilling
     Automation by SPE Distinguished Lecturer Prof. John Hedengren,
-    Brigham Young University, YouTube <u>Video.</u>
+    Brigham Young University, YouTube Video.
 
 33. Webinar: Drilling Automation and Downhole Monitoring with
-    Physics-based Models. <u>Link.</u>
+    Physics-based Models. Link.
 
 34. Video and Webinar Series: Understanding Control Systems by
-    Mathworks. <u>Link.</u>
+    Mathworks. Link.
 
 [^1]: Publication is subject to the SPE program committee’s acceptance
     of the abstract/paper. If the abstract is not accepted, DSATS will
@@ -2732,3 +2631,5 @@ comprehensive with some good case study examples included.*
 
 [^6]: A housing unit could be a shared property from such sources as
     Expedia, Air B&B or similar entities.
+!!! info "Archive: 2024"
+    This page preserves the original 2024 guidelines content as‑is for historical reference. For the current rules, see the pages under "Competition" and "Tracks".
