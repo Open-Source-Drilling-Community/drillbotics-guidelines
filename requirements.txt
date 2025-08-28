@@ -4,3 +4,4 @@ mkdocs-git-revision-date-localized-plugin>=1.2
 # Optional visual enhancements
 mkdocs-glightbox>=0.4
 mkdocs-redirects>=1.2
+mkdocs-htmlproofer-plugin>=0.14
