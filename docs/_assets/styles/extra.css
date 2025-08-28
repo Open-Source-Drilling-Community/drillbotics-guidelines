@@ -92,4 +92,17 @@
 .db-announcement__close:hover { opacity: 1; }
 [data-md-color-scheme="slate"] .db-announcement { border-bottom-color: rgba(255,255,255,.12); }
 
-/* (Optional) Repo link footer styling removed for simplicity */
+/* Hide the repo link in header and mobile drawer */
+.md-header__source,
+.md-nav__source { display: none !important; }
+
+/* Add a labeled GitHub link in the footer */
+.md-footer .md-social__link[href*="github.com"]::after {
+  content: " GitHub Drillbotics Guidelines";
+  display: inline-block;
+  margin-left: .375rem;
+  font-weight: 600;
+}
+@media (max-width: 700px) {
+  .md-footer .md-social__link[href*="github.com"]::after { display: none; }
+}
