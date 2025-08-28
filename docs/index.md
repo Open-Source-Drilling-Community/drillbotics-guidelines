@@ -12,10 +12,32 @@
     Skim the [Overview](competition/overview.md), then jump to the Quick Start below.
 
 
-## Track Quick Start
+## At-a-glance flow
 
-Group A uses OpenLab and D‑WIS.
+```mermaid
+graph LR
+    A[Kickoff] --> B[Group Assignment]
+    B -->|A - Virtual| C[OpenLab Setup]
+    B -->|B - Physical| D[Safety & Rig Readiness]
+    C --> E[Phase I Deliverables]
+    D --> E
+    E --> F{Advancing?}
+    F -->|Yes| G[Phase II]
+    F -->|No| H[Feedback & Iterate]
+    H --> E
+    
+    classDef startEnd fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef decision fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef process fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef feedback fill:#ffebee,stroke:#c62828,stroke-width:2px
+    
+    class A,G startEnd
+    class F decision
+    class B,C,D,E process
+    class H feedback
+```
 
+ 
 *[D‑WIS]: Drilling‑Well Information System
 *[OpenLab]: Drilling simulation environment used in Group A
 
@@ -55,7 +77,7 @@ _Requires: Lab safety training + rig readiness._
 
 - :material-compare: **2) Choose your track**  \
   Pick **A (Virtual)** or **B (Physical)** interfaces.  \
-  [:octicons-arrow-right-24: Compare A vs B](#track-quick-start){ .md-button }
+  [:octicons-arrow-right-24: Compare A vs B](tracks/deliverables.md){ .md-button }
 
 - :material-calendar-check: **3) Plan deliverables & dates**  \
   Know what’s due and when.  \
@@ -80,19 +102,6 @@ Use this quick checklist to set up your team. See the linked pages for details.
       Group A: OpenLab + D‑WIS;  Group B: rig, sensors, and safety procedures — [Safety](competition/safety.md)
 - [ ] Submit Phase I materials; schedule Phase II planning — Deliverables pages
 
-## At-a-glance flow
-
-```mermaid
-graph LR
-  A[Kickoff] --> B{Group?}
-  B -->|A (Virtual)| C[OpenLab setup]
-  B -->|B (Physical)| D[Safety & rig readiness]
-  C --> E[Phase I deliverables]
-  D --> E
-  E --> F{Advancing?}
-  F -->|Yes| G[Phase II]
-  F -->|No| H[Feedback & iterate]
-```
 
 ## Upcoming
 

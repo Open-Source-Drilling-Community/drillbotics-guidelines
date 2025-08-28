@@ -1,3 +1,8 @@
+---
+tags:
+  - faq
+---
+
 # FAQ (Active)
 
 This page answers common questions for the current competition year. For the 2024 archived FAQ, see Archive → 2024 → FAQ.
@@ -17,4 +22,3 @@ Open a pull request that edits the relevant Markdown under `docs/`, and add a sh
 ## Are PDFs the source of truth?
 
 No. PDFs may be attached for reference, but the Markdown pages here are authoritative.
-
