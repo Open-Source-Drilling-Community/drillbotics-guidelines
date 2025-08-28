@@ -12,7 +12,7 @@ tags:
 
 |  |  |  |
 |:--:|:--:|:--:|
-| [![SPE / Drillbotics graphic](../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image1.jpg){ width="140px" }](../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image1.jpg) | Society of Petroleum Engineers<br>Drilling Systems Automation Technical Section (DSATS)<br>International University Competition<br>2023–2024<br>Drillbotics® Guidelines<br>Group A<br>Revised 11 October 2023 | [![DSATS / SPE logo](../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image2.png){ width="180px" }](../../_assets/2024%20Drillbotics%20Guidelines-Group%20A_assets/media/image2.png) |
+| [![SPE / Drillbotics graphic](../_assets/2024 Drillbotics Guidelines-Group A_assets/media/image1.jpg){ width="140px" }](../_assets/2024 Drillbotics Guidelines-Group A_assets/media/image1.jpg) | Society of Petroleum Engineers<br>Drilling Systems Automation Technical Section (DSATS)<br>International University Competition<br>2023–2024<br>Drillbotics® Guidelines<br>Group A<br>Revised 11 October 2023 | [![DSATS / SPE logo](../_assets/2024 Drillbotics Guidelines-Group A_assets/media/image2.png){ width="180px" }](../_assets/2024 Drillbotics Guidelines-Group A_assets/media/image2.png) |
 
 <p><strong>Version History</strong></p>
 <table>
