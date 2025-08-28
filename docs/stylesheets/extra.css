@@ -1,5 +1,23 @@
 /* Minimal, non‑Insiders tweaks for Material */
 
+/*
+  Brand/header color override
+  - Sets a deeper blue for the primary color used by the header/nav
+  - Applies to both light (default) and dark (slate) schemes
+  - Adjust the --db-primary value below to fine‑tune
+*/
+:root { --db-primary: #0d47a1; } /* Material Blue 900 */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--db-primary);
+  --md-primary-fg-color--light: #1565c0; /* Blue 800 */
+  --md-primary-fg-color--dark: #0b3c91;  /* Deeper blue */
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--db-primary);
+  --md-primary-fg-color--light: #1976d2; /* Blue 700 */
+  --md-primary-fg-color--dark: #0b3c91;
+}
+
 /* Subtle hero styling on the homepage */
 .hero {
   margin: 0 0 1rem;
@@ -49,9 +67,10 @@
   .md-header__button.md-logo img { height: 52px; }
 }
 
-/* Ensure the logo is visible in dark mode */
+/* Ensure the logo is visible in both light and dark modes */
+[data-md-color-scheme="default"] .md-header__button.md-logo img,
 [data-md-color-scheme="slate"] .md-header__button.md-logo img {
-  /* Invert the black logo to white for contrast */
+  /* Force the black logo to white for contrast on dark header */
   filter: brightness(0) invert(1);
 }
 
