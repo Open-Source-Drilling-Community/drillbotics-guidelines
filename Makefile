@@ -1,5 +1,7 @@
 serve:
-	mkdocs serve
+	# Bootstrap a local "dev" version and serve via mike
+	mike deploy --update-aliases dev latest
+	mike serve
 
 build:
 	mkdocs build --clean
