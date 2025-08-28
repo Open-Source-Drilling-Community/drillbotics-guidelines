@@ -37,7 +37,15 @@ uv run mkdocs serve
 
 Open <http://127.0.0.1:8000>
 
-### 4) Initialize versioned docs (example: 2024 first release)
+### 4) Build & check locally
+
+```bash
+uv run mkdocs build --strict
+```
+
+Link checking runs via `mkdocs-htmlproofer-plugin` during build. External links have a short timeout and a couple of retries.
+
+### 5) Initialize versioned docs (example: 2024 first release)
 
 ```bash
 uv run mike deploy 2024
@@ -45,7 +53,7 @@ uv run mike alias 2024 latest
 uv run mike set-default latest
 ```
 
-### 5) Create GitHub repo and push
+### 6) Create GitHub repo and push
 
 ```bash
 git init
@@ -56,7 +64,7 @@ git remote add origin https://github.com/<org-or-user>/drillbotics-guidelines.gi
 git push -u origin main
 ```
 
-### 6) Enable GitHub Pages
+### 7) Enable GitHub Pages
 
 **Settings → Pages**: Source = *Deploy from a branch*, Branch = `gh-pages` (created by `mike deploy`).
 
@@ -72,6 +80,15 @@ git push -u origin main
 
 > The header shows a **version switcher** (powered by mike).
 
+### Section index pages
+- Each major section has an index page with grid cards for key entry points:
+  - `docs/competition/index.md`
+  - `docs/tracks/index.md`
+  - Home (`docs/index.md`) also uses grids and content tabs.
+
+### Tags
+- Tags are enabled site‑wide; see `docs/tags.md`. Add `tags:` in page front matter (e.g., `deliverables`, `safety`, `timeline`, `faq`).
+
 ---
 
 ## Daily editing
@@ -82,6 +99,18 @@ git push -u origin main
 
   ```bash
   uv run mike deploy 2025 && uv run mike alias 2025 latest
+
+### Cut a new version (summary)
+```bash
+uv run mike deploy 2025
+uv run mike alias 2025 latest
+uv run mike set-default latest
+```
+
+### CI & Deployment
+- GitHub Actions builds on pushes and PRs with `--strict` and link checking.
+- On pushes to `main`, CI deploys a `dev` preview version using `mike`.
+- You can add a release workflow or run `mike` manually for tagged versions.
   ```
 
 ---
