@@ -3,3 +3,4 @@ site/
 __pycache__/
 *.log
 .DS_Store
+/reference
