@@ -2,6 +2,8 @@
 title: Competition
 hide:
   - toc
+tags:
+  - competition
 ---
 
 # Canonical competition rules & resources
