@@ -9,8 +9,8 @@
   --db-track-b: #ffb74d;
 }
 .hero {
-  margin: 0 0 2rem;
-  padding: 2.75rem 1.25rem 2.25rem;
+  margin: 0 0 1.25rem;
+  padding: 2rem 1rem 1.75rem;
   text-align: center;
   border-radius: 12px;
   background:
@@ -18,7 +18,7 @@
     linear-gradient(135deg, rgba(30,136,229,.08), rgba(66,165,245,.06));
   box-shadow: 0 1px 0 rgba(0,0,0,.02), 0 8px 24px rgba(30,136,229,.05);
 }
-.hero .md-button { margin: .25rem .35rem; }
+.hero .md-button { margin: .15rem .25rem; }
 .hero .hero-actions { margin-top: .75rem; }
 .hero .md-button.md-button--primary { box-shadow: 0 4px 14px rgba(33,150,243,.18); }
 /* Calm secondary pills until hover */
@@ -37,8 +37,23 @@
 .track-icon { height: 22px; width: 22px; vertical-align: -4px; margin-right: 6px; }
 
 /* Participants grid spacing consistency */
-.md-typeset .grid.cards > ul > li { padding: .85rem .9rem; }
+.md-typeset .grid.cards { gap: .6rem; }
+.md-typeset .grid.cards > ul > li { padding: .75rem .8rem; }
 .md-typeset .grid.cards > ul > li p { margin: .35rem 0 0; }
+
+/* Button rows inside tabs */
+.md-typeset .btn-row .md-button { margin: .2rem .3rem .2rem 0; }
+.md-typeset .btn-row { margin-top: .35rem; }
+
+/* Tighter tabs and section spacing */
+.md-typeset .tabbed-set { margin: .6rem 0 0; }
+.md-typeset h2 { margin: 1.25rem 0 .5rem; }
+.md-typeset h3 { margin: 1rem 0 .35rem; }
+
+/* Compact admonitions */
+.md-typeset .admonition { margin: .6rem 0; }
+.md-typeset .admonition > .admonition-title { padding: .4rem .6rem; }
+.md-typeset .admonition > p, .md-typeset .admonition > :not(.admonition-title) { padding: .4rem .6rem; }
 
 /* Checklist spacing */
 .md-typeset ul.task-list { margin-top: .5rem; }
