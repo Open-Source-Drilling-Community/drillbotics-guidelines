@@ -57,6 +57,7 @@ uv run mike alias 2024 latest
 uv run mike set-default latest
 ```
 
+
 ### 6) Create GitHub repo and push
 
 ```bash
