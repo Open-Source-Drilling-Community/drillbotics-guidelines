@@ -42,6 +42,16 @@
   box-shadow: 0 10px 28px rgba(13,71,161,.08);
   transition: transform .18s ease, box-shadow .18s ease;
 }
+.md-typeset .grid.cards > ul > li .card-subtitle {
+  display: block;
+  margin-bottom: .35rem;
+  color: rgba(13,71,161,.75);
+  font-size: .78rem;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.md-typeset .grid.cards > ul > li p + .card-subtitle { margin-top: -.25rem; }
 .md-typeset .grid.cards > ul > li:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(13,71,161,.14);
@@ -84,6 +94,7 @@
   color: #e3f2fd;
 }
 .db-announcement__link { font-weight: 600; text-decoration: none; }
+.db-announcement__link:hover { text-decoration: underline; }
 .db-announcement__close {
   border: 0;
   background: transparent;
@@ -185,16 +196,15 @@
 
 /* Make the "Table of contents" label visible and compact */
 .md-nav--secondary > .md-nav__title {
-  display: block !important;
-  margin: .25rem 0 .35rem .05rem;
-  text-transform: uppercase;
-  letter-spacing: .02em;
-  font-weight: 600;
-  font-size: .72rem;
-  color: rgba(13,71,161,.55);
-}
-[data-md-color-scheme="slate"] .md-nav--secondary > .md-nav__title {
-  color: rgba(173,208,255,.72);
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Show only first-level entries in the integrated ToC */
@@ -207,4 +217,24 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Mobile drawer nav cards */
+@media (max-width: 960px) {
+  .md-nav--primary .md-nav__item { margin-bottom: .4rem; }
+  .md-nav--primary .md-nav__link {
+    border: 1px solid rgba(13,71,161,.16);
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(13,71,161,.08);
+    padding: .65rem .85rem;
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  .md-nav--primary .md-nav__link:hover,
+  .md-nav--primary .md-nav__link:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(13,71,161,.12);
+  }
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li .card-subtitle {
+  color: rgba(173,208,255,.82);
 }
