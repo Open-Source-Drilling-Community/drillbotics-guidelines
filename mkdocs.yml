@@ -87,7 +87,7 @@ plugins:
       validate_external_urls: false
       ignore_urls:
         - 'mailto:'
-        - 'https://github.com/<org-or-user>/*'
+        - 'https://github.com/e-zl/*'
 
 extra_css:
   - stylesheets/extra.css
