@@ -35,7 +35,34 @@
 
 /* Small spacing refinements for grid cards */
 .md-typeset .grid.cards { gap: .6rem; }
-.md-typeset .grid.cards > ul > li { padding: .75rem .8rem; }
+.md-typeset .grid.cards > ul > li {
+  padding: .85rem .95rem;
+  border-radius: 12px;
+  border: 1px solid rgba(13,71,161,.16);
+  box-shadow: 0 10px 28px rgba(13,71,161,.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(13,71,161,.14);
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
+  border-color: rgba(130,177,255,.35);
+  box-shadow: 0 10px 28px rgba(12,39,91,.55);
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover {
+  box-shadow: 0 12px 34px rgba(12,39,91,.7);
+}
+
+/* Highlight the active top-level navigation tab */
+.md-tabs__link--active {
+  border-bottom: 3px solid var(--db-primary);
+  margin-bottom: -3px;
+  font-weight: 600;
+}
+[data-md-color-scheme="slate"] .md-tabs__link--active {
+  border-bottom-color: var(--md-primary-fg-color--light);
+}
 
 /* Keep the announcement banner readable with minimal styling */
 .db-announcement {
@@ -46,17 +73,26 @@
   align-items: center;
   justify-content: center;
   gap: .5rem;
-  padding: .5rem .75rem;
-  border-bottom: 1px solid rgba(0,0,0,.06);
-  background: rgba(0,0,0,.02);
-  color: inherit;
+  padding: .65rem 1rem;
+  border-bottom: 1px solid rgba(13,71,161,.25);
+  background: rgba(13,71,161,.12);
+  color: var(--db-primary);
 }
 [data-md-color-scheme="slate"] .db-announcement {
-  border-bottom-color: rgba(255,255,255,.12);
-  background: rgba(255,255,255,.03);
+  border-bottom-color: rgba(130,177,255,.45);
+  background: rgba(25,118,210,.35);
+  color: #e3f2fd;
 }
 .db-announcement__link { font-weight: 600; text-decoration: none; }
-.db-announcement__close { border: 0; background: transparent; font-size: 18px; line-height: 1; cursor: pointer; opacity: .7; }
+.db-announcement__close {
+  border: 0;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: .7;
+  color: inherit;
+}
 
 /* Make the header logo larger */
 .md-header__button.md-logo img {
@@ -137,14 +173,14 @@
 */
 .md-nav--secondary {
   /* soften the left rule and tighten spacing */
-  border-left: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 1px solid rgba(13,71,161,.18);
   margin-left: .15rem;
   padding-left: .5rem;
   font-size: .86em;
   line-height: 1.25;
 }
 [data-md-color-scheme="slate"] .md-nav--secondary {
-  border-left-color: rgba(255,255,255,.10);
+  border-left-color: rgba(130,177,255,.32);
 }
 
 /* Make the "Table of contents" label visible and compact */
@@ -155,7 +191,10 @@
   letter-spacing: .02em;
   font-weight: 600;
   font-size: .72rem;
-  color: var(--md-default-fg-color--lighter);
+  color: rgba(13,71,161,.55);
+}
+[data-md-color-scheme="slate"] .md-nav--secondary > .md-nav__title {
+  color: rgba(173,208,255,.72);
 }
 
 /* Show only first-level entries in the integrated ToC */
