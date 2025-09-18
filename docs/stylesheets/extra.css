@@ -20,18 +20,20 @@
 
 /* Subtle hero styling on the homepage */
 .hero {
-  margin: 0 0 1rem;
-  padding: 1.5rem 1rem;
+  margin: 1.2rem 0 1.4rem;
+  padding: 2rem 1.5rem;
   text-align: center;
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,.06);
-  background: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.01));
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(13,71,161,.92), rgba(63,81,181,.8));
+  color: #fff;
+  box-shadow: 0 20px 45px rgba(13,71,161,.25);
 }
 [data-md-color-scheme="slate"] .hero {
-  border-color: rgba(255,255,255,.12);
-  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
+  background: linear-gradient(135deg, rgba(21,101,192,.85), rgba(92,107,192,.78));
+  box-shadow: 0 24px 45px rgba(9,19,40,.6);
 }
 .hero .md-button { margin: .125rem .25rem; }
+.hero h3 { margin-bottom: 1rem; letter-spacing: .015em; }
 
 /* Small spacing refinements for grid cards */
 .md-typeset .grid.cards { gap: .6rem; }
@@ -63,6 +65,27 @@
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover {
   box-shadow: 0 12px 34px rgba(12,39,91,.7);
 }
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li .card-subtitle {
+  color: rgba(173,208,255,.82);
+}
+
+/* Icon alignment inside cards */
+.md-typeset .grid.cards svg {
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: middle;
+  margin-right: .2rem;
+}
+
+/* Button rows */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .75rem 0 1.25rem;
+  justify-content: center;
+}
+.btn-row .md-button { flex: 0 1 auto; }
 
 /* Highlight the active top-level navigation tab */
 .md-tabs__link--active {
@@ -235,6 +258,57 @@
     box-shadow: 0 10px 22px rgba(13,71,161,.12);
   }
 }
+
+/* Upcoming table styling */
+.table-upcoming table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(13,71,161,.1);
+}
+.table-upcoming thead th,
+.table-upcoming tbody td {
+  padding: .85rem 1rem;
+}
+.table-upcoming thead th {
+  background: rgba(13,71,161,.12);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: .75rem;
+}
+.table-upcoming tbody tr:nth-child(even) td {
+  background: rgba(13,71,161,.04);
+}
+[data-md-color-scheme="slate"] .table-upcoming table {
+  box-shadow: 0 16px 38px rgba(4,9,20,.7);
+}
+[data-md-color-scheme="slate"] .table-upcoming thead th {
+  background: rgba(130,177,255,.2);
+}
+[data-md-color-scheme="slate"] .table-upcoming tbody tr:nth-child(even) td {
+  background: rgba(130,177,255,.12);
+}
+
+/* Footer styling */
+.md-footer {
+  background: linear-gradient(180deg, rgba(231,239,251,.94), rgba(218,231,248,.86));
+  border-top: 1px solid rgba(13,71,161,.22);
+  color: rgba(9,27,61,.88);
+}
+.md-footer a,
+.md-footer .md-footer__inner { color: inherit; }
+.md-footer a:hover { opacity: .85; }
+[data-md-color-scheme="default"] .md-footer__inner .md-icon { color: rgba(9,27,61,.8); }
+[data-md-color-scheme="slate"] .md-footer {
+  background: linear-gradient(180deg, rgba(11,24,49,.94), rgba(8,12,24,.9));
+  border-top-color: rgba(130,177,255,.36);
+  color: rgba(227,242,253,.86);
+}
+[data-md-color-scheme="slate"] .md-footer a { color: rgba(227,242,253,.88); }
+[data-md-color-scheme="slate"] .md-footer a:hover { opacity: 1; }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li .card-subtitle {
   color: rgba(173,208,255,.82);
 }
