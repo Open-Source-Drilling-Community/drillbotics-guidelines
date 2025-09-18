@@ -1,6 +1,6 @@
 site_name: Drillbotics® Guidelines
 site_description: Official, versioned Drillbotics competition rules and resources.
-site_url: https://drillbotics.com/
+site_url: https://e-zl.github.io/drillbotics-guidelines/latest/
 repo_url: https://github.com/e-zl/drillbotics-guidelines
 repo_name: Drillbotics Guidelines
 edit_uri: edit/main/docs/
@@ -14,7 +14,6 @@ theme:
   logo: _assets/images/logos/drillbotics-logo-bw.png
   favicon: _assets/images/logos/favicon-bw.svg
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.indexes
     - navigation.tracking
@@ -74,8 +73,7 @@ extra:
 
 plugins:
   - search
-  - tags:
-      tags_file: tags.md
+  - tags
   - git-revision-date-localized:
       fallback_to_build_date: true
   - glightbox
@@ -133,7 +131,7 @@ markdown_extensions:
       generic: true
   - footnotes
 
-strict: false
+strict: true
 
 exclude_docs: |
   _includes/**
