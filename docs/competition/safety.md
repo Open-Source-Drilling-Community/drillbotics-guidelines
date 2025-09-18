@@ -5,6 +5,9 @@ tags:
 
 # Safety (General)
 
+!!! warning "Draft in progress"
+    This section is being rewritten for the next release. Until it is finalized, rely on [https://e-zl.github.io/drillbotics-guidelines/latest/](https://e-zl.github.io/drillbotics-guidelines/latest/) and track pages for the complete safety requirements.
+
 High-level safety principles applicable to all teams and venues.
 
 - Lab conduct and supervision

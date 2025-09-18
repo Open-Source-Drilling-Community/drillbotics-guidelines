@@ -6,6 +6,9 @@ tags:
 
 # Competition Overview
 
+!!! warning "Draft in progress"
+    This section is being rewritten for the next release. Until the update is published, refer to the current site at [https://e-zl.github.io/drillbotics-guidelines/latest/](https://e-zl.github.io/drillbotics-guidelines/latest/) for authoritative rules.
+
 This site hosts the official Drillbotics® competition guidelines in a versioned, diff‑friendly format.
 
 ## How to use this site
