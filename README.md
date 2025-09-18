@@ -97,12 +97,14 @@ If using a custom domain, set it in Pages settings and add a `CNAME` file on the
 > The header shows a **version switcher** (powered by mike).
 
 ### Section index pages
+
 - Each major section has an index page with grid cards for key entry points:
   - `docs/competition/index.md`
   - `docs/tracks/index.md`
   - Home (`docs/index.md`) also uses grids and content tabs.
 
 ### Tags
+
 - Tags are enabled site‑wide; see `docs/tags.md`. Add `tags:` in page front matter (e.g., `deliverables`, `safety`, `timeline`, `faq`).
 
 ---
@@ -117,6 +119,7 @@ If using a custom domain, set it in Pages settings and add a `CNAME` file on the
   uv run mike deploy 2025 && uv run mike alias 2025 latest
 
 ### Cut a new version (summary)
+
 ```bash
 uv run mike deploy 2025
 uv run mike alias 2025 latest
@@ -124,9 +127,11 @@ uv run mike set-default latest
 ```
 
 ### CI & Deployment
+
 - GitHub Actions builds on pushes and PRs with `--strict` and link checking.
 - On pushes to `main`, CI deploys a `dev` preview version using `mike`.
 - You can add a release workflow or run `mike` manually for tagged versions.
+
   ```
 
 ---
