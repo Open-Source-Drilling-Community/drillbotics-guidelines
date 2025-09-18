@@ -1,7 +1,6 @@
 serve:
-	# Bootstrap a local "dev" version and serve via mike
-	mike deploy --update-aliases dev latest
-	mike serve
+	# Local preview without mutating gh-pages
+	mkdocs serve
 
 build:
 	mkdocs build --clean
