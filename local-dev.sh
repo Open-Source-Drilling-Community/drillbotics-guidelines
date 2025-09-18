@@ -5,11 +5,8 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-echo "Bootstrapping a local 'dev' version (aliased to 'latest') for mike..."
-mike deploy --update-aliases dev latest
+echo "Starting MkDocs dev server (does not touch gh-pages)..."
+mkdocs serve
 
 echo
-echo "Now serving with mike so versions.json is available:"
-echo "  mike serve"
-echo
-echo "Tip: you can also run 'make serve' (does the same)."
+echo "Tip: if you need the mike version switcher, run 'mike serve --dev-addr 127.0.0.1:8000' after fetching gh-pages."
