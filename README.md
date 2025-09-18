@@ -29,25 +29,15 @@ source .venv/bin/activate      # optional; uv can run without activation
 uv pip install -r requirements.txt
 ```
 
-### 3) Preview locally (with mike)
-
-First time only, bootstrap a local version so the version switcher works:
+### 3) Preview locally
 
 ```bash
-uv run mike deploy --update-aliases dev latest
+uv run mkdocs serve
 ```
 
-Then serve with mike (includes `/versions.json`):
+Need the mike version switcher? Fetch the `gh-pages` branch and run `uv run mike serve --dev-addr 127.0.0.1:8000` (no deploy step required).
 
-```bash
-uv run mike serve
-```
-
-Or simply:
-
-```bash
-make serve
-```
+`make serve` runs the same MkDocs dev server.
 
 Open <http://127.0.0.1:8000>
 
@@ -117,6 +107,7 @@ If using a custom domain, set it in Pages settings and add a `CNAME` file on the
 
   ```bash
   uv run mike deploy 2025 && uv run mike alias 2025 latest
+  ```
 
 ### Cut a new version (summary)
 
@@ -131,8 +122,6 @@ uv run mike set-default latest
 - GitHub Actions builds on pushes and PRs with `--strict` and link checking.
 - On pushes to `main`, CI deploys a `dev` preview version using `mike`.
 - You can add a release workflow or run `mike` manually for tagged versions.
-
-  ```
 
 ---
 
