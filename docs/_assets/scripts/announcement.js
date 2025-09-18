@@ -4,7 +4,7 @@
   const CONFIG = {
     key: 'db_announcement_v1',
     message: 'Registration closes on 2025-10-17 see Timeline »',
-    url: '/competition/timeline/',
+    url: 'competition/timeline/',
     theme: 'info' // info | warning | success (visual only)
   };
 
@@ -17,7 +17,7 @@
     banner.className = 'db-announcement ' + CONFIG.theme;
     const link = document.createElement('a');
     try {
-      const base = (document.querySelector('.md-header__button.md-logo') || document.querySelector('.md-header__title a'))?.href || '/';
+      const base = document.baseURI || (document.querySelector('.md-header__button.md-logo') || document.querySelector('.md-header__title a'))?.href || '/';
       link.href = new URL(CONFIG.url, base).href;
     } catch (_) { link.href = CONFIG.url; }
     link.textContent = CONFIG.message;
