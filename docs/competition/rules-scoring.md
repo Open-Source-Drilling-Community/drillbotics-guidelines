@@ -8,7 +8,7 @@ tags:
 # Rules & Scoring
 
 !!! warning "Draft in progress"
-    This section is being rewritten for the upcoming release. Until the update is live, use [https://e-zl.github.io/drillbotics-guidelines/latest/](https://e-zl.github.io/drillbotics-guidelines/latest/) for the current official rules.
+    This section is being rewritten for the upcoming release. Until the update is live, use [https://Open-Source-Drilling-Community.github.io/drillbotics-guidelines/latest/](https://Open-Source-Drilling-Community.github.io/drillbotics-guidelines/latest/) for the current official rules.
 
 > Outline the general rules that apply to all tracks. Put track-specific rules on the respective pages.
 

@@ -1,7 +1,7 @@
 site_name: Drillbotics® Guidelines
 site_description: Official, versioned Drillbotics competition rules and resources.
-site_url: https://e-zl.github.io/drillbotics-guidelines/latest/
-repo_url: https://github.com/e-zl/drillbotics-guidelines
+site_url: https://Open-Source-Drilling-Community.github.io/drillbotics-guidelines/latest/
+repo_url: https://github.com/Open-Source-Drilling-Community/drillbotics-guidelines 
 repo_name: Drillbotics Guidelines
 edit_uri: edit/main/docs/
 
@@ -60,7 +60,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/e-zl/drillbotics-guidelines
+      link: https://github.com/Open-Source-Drilling-Community/drillbotics-guidelines 
     - icon: fontawesome/solid/envelope
       link: mailto:competition@Drillbotics.com
   generator: true
@@ -87,7 +87,7 @@ plugins:
       validate_external_urls: false
       ignore_urls:
         - 'mailto:'
-        - 'https://github.com/e-zl/*'
+        - 'https://github.com/Open-Source-Drilling-Community/*'
 
 extra_css:
   - stylesheets/extra.css
