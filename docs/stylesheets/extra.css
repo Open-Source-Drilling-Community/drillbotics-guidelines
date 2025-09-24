@@ -1,21 +1,53 @@
 /* Minimal, non‑Insiders tweaks for Material */
 
 /*
-  Brand/header color override
-  - Sets a deeper blue for the primary color used by the header/nav
-  - Applies to both light (default) and dark (slate) schemes
-  - Adjust the --db-primary value below to fine‑tune
+  Brand tokens derived from the active Material palette
+  - Keeps overrides aligned with the configured palette colors
+  - Uses color-mix so light/dark schemes stay in family
 */
-:root { --db-primary: #0d47a1; } /* Material Blue 900 */
-[data-md-color-scheme="default"] {
-  --md-primary-fg-color: var(--db-primary);
-  --md-primary-fg-color--light: #1565c0; /* Blue 800 */
-  --md-primary-fg-color--dark: #0b3c91;  /* Deeper blue */
+:root {
+  /* Ensure Material uses our deep blue as the brand primary */
+  --md-primary-fg-color: #0d47a1;
+  --md-primary-fg-color--light: #5472d3;
+  --md-primary-fg-color--dark: #002171;
+
+  --db-primary: var(--md-primary-fg-color);
+  --db-primary-outline: color-mix(in srgb, var(--db-primary) 20%, transparent);
+  --db-primary-shadow: color-mix(in srgb, var(--db-primary) 14%, transparent);
+  --db-primary-subtitle: color-mix(in srgb, var(--db-primary) 72%, white);
+  --db-hero-grad-start: color-mix(in srgb, var(--db-primary) 92%, black 8%);
+  --db-hero-grad-end: color-mix(in srgb, var(--db-primary) 75%, black 25%);
+  /* Match header/banner exactly to the configured primary */
+  --db-header-bg: var(--md-primary-fg-color);
+  --db-accent: var(--md-accent-fg-color);
+  --db-accent-outline: color-mix(in srgb, var(--db-accent) 25%, transparent);
+  --db-accent-bg: color-mix(in srgb, var(--db-accent) 12%, transparent);
 }
+
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: var(--db-primary);
-  --md-primary-fg-color--light: #1976d2; /* Blue 700 */
-  --md-primary-fg-color--dark: #0b3c91;
+  /* Keep brand primary identical in dark mode */
+  --md-primary-fg-color: #0d47a1;
+  --md-primary-fg-color--light: #5e87e0;
+  --md-primary-fg-color--dark: #082a63;
+
+  --db-primary-outline: color-mix(in srgb, var(--db-primary) 42%, transparent);
+  --db-primary-shadow: color-mix(in srgb, var(--db-primary) 65%, transparent);
+  --db-primary-subtitle: color-mix(in srgb, var(--db-primary) 68%, white);
+  --db-hero-grad-start: color-mix(in srgb, var(--db-primary) 88%, black 12%);
+  --db-hero-grad-end: color-mix(in srgb, var(--db-primary) 70%, black 30%);
+  --db-header-bg: var(--md-primary-fg-color);
+  --db-accent-outline: color-mix(in srgb, var(--db-accent) 55%, transparent);
+  --db-accent-bg: color-mix(in srgb, var(--db-accent) 20%, transparent);
+}
+
+/* Header/tab background tuned for legacy deep-blue tone */
+.md-header {
+  background: var(--db-header-bg);
+}
+
+.md-tabs {
+  background: color-mix(in srgb, var(--db-header-bg) 88%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--db-header-bg) 55%, transparent);
 }
 
 /* Subtle hero styling on the homepage */
@@ -24,13 +56,12 @@
   padding: 2rem 1.5rem;
   text-align: center;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(13,71,161,.92), rgba(63,81,181,.8));
+  background: linear-gradient(135deg, var(--db-hero-grad-start), var(--db-hero-grad-end));
   color: #fff;
-  box-shadow: 0 20px 45px rgba(13,71,161,.25);
+  box-shadow: 0 20px 45px var(--db-primary-shadow);
 }
 [data-md-color-scheme="slate"] .hero {
-  background: linear-gradient(135deg, rgba(21,101,192,.85), rgba(92,107,192,.78));
-  box-shadow: 0 24px 45px rgba(9,19,40,.6);
+  box-shadow: 0 24px 45px color-mix(in srgb, var(--db-primary) 70%, transparent);
 }
 .hero .md-button { margin: .125rem .25rem; }
 .hero h3 { margin-bottom: 1rem; letter-spacing: .015em; }
@@ -40,14 +71,14 @@
 .md-typeset .grid.cards > ul > li {
   padding: .85rem .95rem;
   border-radius: 12px;
-  border: 1px solid rgba(13,71,161,.16);
-  box-shadow: 0 10px 28px rgba(13,71,161,.08);
+  border: 1px solid var(--db-primary-outline);
+  box-shadow: 0 10px 28px var(--db-primary-shadow);
   transition: transform .18s ease, box-shadow .18s ease;
 }
 .md-typeset .grid.cards > ul > li .card-subtitle {
   display: block;
   margin-bottom: .35rem;
-  color: rgba(13,71,161,.75);
+  color: var(--db-primary-subtitle);
   font-size: .78rem;
   letter-spacing: .01em;
   text-transform: uppercase;
@@ -56,17 +87,17 @@
 .md-typeset .grid.cards > ul > li p + .card-subtitle { margin-top: -.25rem; }
 .md-typeset .grid.cards > ul > li:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(13,71,161,.14);
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--db-primary) 18%, transparent);
 }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
-  border-color: rgba(130,177,255,.35);
-  box-shadow: 0 10px 28px rgba(12,39,91,.55);
+  border-color: color-mix(in srgb, var(--db-primary) 55%, transparent);
+  box-shadow: 0 10px 28px color-mix(in srgb, var(--db-primary) 58%, transparent);
 }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover {
-  box-shadow: 0 12px 34px rgba(12,39,91,.7);
+  box-shadow: 0 12px 34px color-mix(in srgb, var(--db-primary) 68%, transparent);
 }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li .card-subtitle {
-  color: rgba(173,208,255,.82);
+  color: color-mix(in srgb, var(--db-primary) 65%, white);
 }
 
 /* Icon alignment inside cards */
@@ -87,6 +118,22 @@
 }
 .btn-row .md-button { flex: 0 1 auto; }
 
+.md-typeset .md-button.md-button--secondary {
+  border: 1px solid var(--db-accent-outline);
+  color: var(--db-accent);
+  background: var(--db-accent-bg);
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--db-accent) 14%, transparent);
+  transition: background .15s ease, color .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.md-typeset .md-button.md-button--secondary:hover,
+.md-typeset .md-button.md-button--secondary:focus {
+  border-color: color-mix(in srgb, var(--db-accent) 45%, transparent);
+  background: color-mix(in srgb, var(--db-accent) 22%, transparent);
+  color: color-mix(in srgb, var(--db-accent) 85%, white);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--db-accent) 24%, transparent);
+}
+
 /* Highlight the active top-level navigation tab */
 .md-tabs__link--active {
   border-bottom: 3px solid var(--db-primary);
@@ -94,7 +141,7 @@
   font-weight: 600;
 }
 [data-md-color-scheme="slate"] .md-tabs__link--active {
-  border-bottom-color: var(--md-primary-fg-color--light);
+  border-bottom-color: color-mix(in srgb, var(--db-primary) 70%, white);
 }
 
 /* Keep the announcement banner readable with minimal styling */
@@ -107,14 +154,16 @@
   justify-content: center;
   gap: .5rem;
   padding: .65rem 1rem;
-  border-bottom: 1px solid rgba(13,71,161,.25);
-  background: rgba(13,71,161,.12);
-  color: var(--db-primary);
+  border-bottom: 1px solid var(--db-primary-outline);
+  /* Match the site header color exactly */
+  background: var(--md-primary-fg-color);
+  color: #fff;
 }
 [data-md-color-scheme="slate"] .db-announcement {
-  border-bottom-color: rgba(130,177,255,.45);
-  background: rgba(25,118,210,.35);
-  color: #e3f2fd;
+  border-bottom-color: color-mix(in srgb, var(--db-primary) 55%, transparent);
+  /* Keep banner identical to header in dark mode too */
+  background: var(--md-primary-fg-color);
+  color: #fff;
 }
 .db-announcement__link { font-weight: 600; text-decoration: none; }
 .db-announcement__link:hover { text-decoration: underline; }
@@ -167,7 +216,8 @@
 
 [data-md-color-scheme="slate"] {
   --db-mm-edge: var(--md-default-fg-color--lightest);
-  --db-mm-text: var(--md-default-fg-color);
+  /* Force high-contrast text in dark mode */
+  --db-mm-text: rgba(255,255,255,.92);
   /* Dark palette tuned for contrast on slate */
   --db-mm-startEnd-fill: #0b3b57;
   --db-mm-startEnd-stroke: #4fc3f7;
@@ -185,8 +235,13 @@
 .mermaid .flowchart-link { stroke: var(--db-mm-edge) !important; }
 .mermaid marker path,
 .mermaid .arrowheadPath { fill: var(--db-mm-edge) !important; stroke: var(--db-mm-edge) !important; }
+/* Cover both <text> and <foreignObject> labels */
 .mermaid .edgeLabel { color: var(--db-mm-text) !important; fill: var(--db-mm-text) !important; }
-.mermaid .label, .mermaid text { fill: var(--db-mm-text) !important; color: var(--db-mm-text) !important; }
+.mermaid .nodeLabel,
+.mermaid .label,
+.mermaid text,
+.mermaid foreignObject div,
+.mermaid foreignObject span { color: var(--db-mm-text) !important; fill: var(--db-mm-text) !important; }
 
 /* Override classDef colors for better dark-mode contrast */
 .mermaid .node.startEnd rect,
