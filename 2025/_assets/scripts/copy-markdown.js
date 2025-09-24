@@ -1,6 +1,28 @@
 // Adds a "Copy Markdown" button next to the "View source" action.
 // It fetches the raw .md and copies it to the clipboard.
 (function () {
+  function toRawUrl(url) {
+    try {
+      const parsed = new URL(url, window.location.origin);
+      const segments = parsed.pathname.split('/').filter(Boolean);
+
+      if (parsed.hostname.endsWith('github.com') && segments.length > 4) {
+        const kind = segments[2];
+        if (kind === 'blob' || kind === 'edit') {
+          const owner = segments[0];
+          const repo = segments[1];
+          const branch = segments[3];
+          const filePath = segments.slice(4).join('/');
+          return `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${filePath}`;
+        }
+      }
+
+      return parsed.href;
+    } catch (_) {
+      return url;
+    }
+  }
+
   function mount() {
     try {
       // Find the existing "View source of this page" link
@@ -20,11 +42,13 @@
       async function copyMarkdown() {
         const url = viewLink.getAttribute('href');
         if (!url) return;
+        const rawUrl = toRawUrl(url);
         const prevTitle = btn.title;
         try {
           btn.disabled = true;
           btn.title = 'Copying…';
-          const res = await fetch(url, { cache: 'no-store' });
+          const res = await fetch(rawUrl, { cache: 'no-store' });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
           const text = await res.text();
           await navigator.clipboard.writeText(text);
           btn.title = 'Copied!';
@@ -52,4 +76,3 @@
     mount();
   }
 })();
-

@@ -12,13 +12,44 @@
     if (window.localStorage.getItem(CONFIG.key) === 'dismissed') return;
   } catch (_) {}
 
+  function siteRoot() {
+    const { hostname, pathname } = window.location;
+    const parts = pathname.split('/').filter(Boolean);
+    const versionPattern = /^(latest|next|stable|dev|v\d+|\d{4}(?:\.\d+)?)$/i;
+
+    if (!parts.length) return '/';
+
+    if (versionPattern.test(parts[0])) {
+      return `/${parts[0]}/`;
+    }
+
+    if (parts.length > 1 && versionPattern.test(parts[1])) {
+      return `/${parts.slice(0, 2).join('/')}/`;
+    }
+
+    if (hostname.endsWith('.github.io') && parts.length) {
+      return `/${parts[0]}/`;
+    }
+
+    return '/';
+  }
+
+  function resolveUrl(target) {
+    if (!target) return '#';
+    if (/^(?:[a-z]+:)?\/\//i.test(target)) return target;
+    if (target.startsWith('/')) {
+      return new URL(target, window.location.origin).href;
+    }
+    const root = siteRoot();
+    return new URL(target, window.location.origin + root).href;
+  }
+
   function buildBanner() {
     const banner = document.createElement('div');
     banner.className = 'db-announcement ' + CONFIG.theme;
     const link = document.createElement('a');
     try {
-      const base = document.baseURI || (document.querySelector('.md-header__button.md-logo') || document.querySelector('.md-header__title a'))?.href || '/';
-      link.href = new URL(CONFIG.url, base).href;
+      link.href = resolveUrl(CONFIG.url);
     } catch (_) { link.href = CONFIG.url; }
     link.textContent = CONFIG.message;
     link.className = 'db-announcement__link';
