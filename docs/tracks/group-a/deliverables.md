@@ -9,8 +9,8 @@ Phase I — Design (2023–2024):
 
 - Monthly reports: due on or before the final day of each month starting in October (short progress update, issues/risks, next steps).
 - Phase I Design Report: due 31 Dec 2023, midnight UTC. Use “2024 <School Abbrev> Phase I Design Report” as the filename prefix.
-- Optional Design Video: ≤ 5 minutes, due by 15 Jan (property of the university; DSATS may use in sites/events).
-- Finalists announced: early/mid‑February 2024.
+- Optional Design Video: ≤ 5 minutes, due by 23 Jan 2026 (property of the university; DSATS may use in sites/events).
+- Finalists announced: early February 2026.
 
 Phase II — Implementation and testing:
 

@@ -9,8 +9,8 @@ Phase I — Design (2023–2024):
 
 - Monthly reports: due on or before the final day of each month starting in October.
 - Phase I Design Report: due 31 Dec 2023, midnight UTC; use the naming convention “2024 <School Abbrev> Phase I Design Report”.
-- Optional Design Video: ≤ 5 minutes, due by 15 Jan.
-- Finalists announced: early/mid‑February 2024.
+- Optional Design Video: ≤ 5 minutes, due by 23 Jan 2026.
+- Finalists announced: early February 2026.
 
 Phase II — Implementation and testing:
 

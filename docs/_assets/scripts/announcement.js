@@ -3,7 +3,7 @@
 (function () {
   const CONFIG = {
     key: 'db_announcement_v1',
-    message: 'Registration closes on 2025-10-17 see Timeline »',
+    message: 'Registration closes on 2025-11-28 — see Timeline »',
     url: 'competition/timeline/',
     theme: 'info' // info | warning | success (visual only)
   };
