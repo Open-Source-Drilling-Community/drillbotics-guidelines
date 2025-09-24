@@ -11,7 +11,6 @@
 ??? tip "New to Drillbotics? (expand)"
     Skim the [Overview](competition/overview.md), then jump to the Quick Start below.
 
-
 ## At-a-glance flow
 
 ```mermaid
@@ -37,7 +36,6 @@ graph LR
     class H feedback
 ```
 
- 
 *[D‑WIS]: Drilling‑Well Information System
 *[OpenLab]: Drilling simulation environment used in Group A
 
@@ -101,7 +99,6 @@ Use this quick checklist to set up your team. See the linked pages for details.
 - [ ] Prepare your environment  
       Group A: OpenLab + D‑WIS;  Group B: rig, sensors, and safety procedures — [Safety](competition/safety.md)
 - [ ] Submit Phase I materials; schedule Phase II planning — Deliverables pages
-
 
 ## Upcoming
 
