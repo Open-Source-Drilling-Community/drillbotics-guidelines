@@ -3,9 +3,9 @@
 <div class="hero" markdown>
 ### Competition rules and resources
 
-[:octicons-arrow-right-24: 🚀 Start here](competition/overview.md){ .md-button .md-button--primary }
-[💻 Group A (Virtual)](tracks/group-a/overview.md){ .md-button }
-[🛠️ Group B (Physical)](tracks/group-b/overview.md){ .md-button }
+[:material-rocket-launch: Start here](competition/overview.md){ .md-button .md-button--primary }
+[:material-laptop: Group A (Virtual)](tracks/group-a/overview.md){ .md-button .md-button--secondary }
+[:material-cog: Group B (Physical)](tracks/group-b/overview.md){ .md-button .md-button--secondary }
 </div>
  
 ??? tip "New to Drillbotics? (expand)"
@@ -49,10 +49,10 @@ graph LR
 _Requires: OpenLab + D‑WIS._
 
 <div class="btn-row" markdown>
-[:octicons-rocket-24: Overview](tracks/group-a/overview.md){ .md-button .md-button--primary }
-[:octicons-gear-24: Technical specs](tracks/group-a/technical-specs.md){ .md-button }
-[:octicons-checklist-24: Deliverables](tracks/group-a/deliverables.md){ .md-button }
-[:octicons-trophy-24: Judging](tracks/group-a/judging.md){ .md-button }
+[:material-rocket-launch: Overview](tracks/group-a/overview.md){ .md-button .md-button--primary }
+[:material-chip: Specs](tracks/group-a/technical-specs.md){ .md-button .md-button--secondary }
+[:material-clipboard-text-outline: Deliverables](tracks/group-a/deliverables.md){ .md-button }
+[:material-trophy-outline: Judging](tracks/group-a/judging.md){ .md-button }
 </div>
 
 === "Group B (Physical)"
@@ -60,31 +60,31 @@ _Requires: OpenLab + D‑WIS._
 _Requires: Lab safety training + rig readiness._
 
 <div class="btn-row" markdown>
-[:octicons-rocket-24: Overview](tracks/group-b/overview.md){ .md-button .md-button--primary }
-[:octicons-shield-24: Safety & risk](tracks/group-b/safety.md){ .md-button }
-[:octicons-cpu-24: Hardware](tracks/group-b/hardware.md){ .md-button }
-[:octicons-checklist-24: Deliverables & testing](tracks/group-b/deliverables.md){ .md-button }
-[:octicons-trophy-24: Judging](tracks/group-b/judging.md){ .md-button }
+[:material-rocket-launch: Overview](tracks/group-b/overview.md){ .md-button .md-button--primary }
+[:material-shield-check: Safety & risk](tracks/group-b/safety.md){ .md-button .md-button--secondary }
+[:material-cog: Hardware](tracks/group-b/hardware.md){ .md-button }
+[:material-clipboard-text-outline: Deliverables](tracks/group-b/deliverables.md){ .md-button }
+[:material-trophy-outline: Judging](tracks/group-b/judging.md){ .md-button }
 </div>
 
 ## For Participants
 
 <div class="grid cards" markdown>
 
-- :material-gavel: **1) Understand the rules**  \
-  Read goals, governance, scoring, and safety.  \
+- :material-gavel: **1) Understand the rules**  
+  Read goals, governance, scoring, and safety.  
   [:octicons-book-24: Rules & Scoring](competition/rules-scoring.md){ .md-button }
 
-- :material-compare: **2) Choose your track**  \
-  Pick **A (Virtual)** or **B (Physical)** interfaces.  \
+- :material-compare: **2) Choose your track**  
+  Pick **A (Virtual)** or **B (Physical)** interfaces.  
   [:octicons-arrow-right-24: Compare A vs B](tracks/deliverables.md){ .md-button }
 
-- :material-calendar-check: **3) Plan deliverables & dates**  \
-  Know what’s due and when.  \
+- :material-calendar-check: **3) Plan deliverables & dates**  
+  Know what’s due and when.  
   [:octicons-milestone-24: Timeline](competition/timeline.md){ .md-button }
 
-- :material-lifebuoy: **4) Get help & resources**  \
-  FAQs and original PDFs.  \
+- :material-lifebuoy: **4) Get help & resources**  
+  FAQs and original PDFs.  
   [:octicons-question-24: FAQ](faq.md){ .md-button }
 
 </div>
@@ -113,28 +113,28 @@ Use this quick checklist to set up your team. See the linked pages for details.
 
 <div class="grid cards" markdown>
 
-- :material-rocket-launch: **Competition Overview**  \
-  Summary of goals, eligibility, deliverables, and governance.  \
+- :material-rocket-launch: **Competition Overview**  
+  Summary of goals, eligibility, deliverables, and governance.  
   [Read more »](competition/overview.md)
 
-- :material-robot-outline: **Group A – Virtual**  \
-  D‑WIS semantics, OpenLab, simulation interfaces, and requirements.  \
+- :material-robot-outline: **Group A – Virtual**  
+  D‑WIS semantics, OpenLab, simulation interfaces, and requirements.  
   [Start here »](tracks/group-a/overview.md)
 
-- :material-cogs: **Group B – Physical**  \
-  Mini‑rig hardware, safety, autonomy, and testing regimes.  \
+- :material-cogs: **Group B – Physical**  
+  Mini‑rig hardware, safety, autonomy, and testing regimes.  
   [Start here »](tracks/group-b/overview.md)
 
-- :material-calendar-star: **Timeline & Milestones**  \
-  Registration, checkpoints, final submissions, judging.  \
+- :material-calendar-star: **Timeline & Milestones**  
+  Registration, checkpoints, final submissions, judging.  
   [See dates »](competition/timeline.md)
 
-- :material-help-circle: **FAQ**  \
-  Common questions with canonical answers and links.  \
+- :material-help-circle: **FAQ**  
+  Common questions with canonical answers and links.  
   [FAQ »](faq.md)
 
-- :material-update: **What changed?**  \
-  Human‑readable summaries and Git diffs per release.  \
+- :material-update: **What changed?**  
+  Human‑readable summaries and Git diffs per release.  
   [Changelog »](changelog.md)
 
 </div>
