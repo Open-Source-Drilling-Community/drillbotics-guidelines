@@ -42,14 +42,14 @@ theme:
     annotation: material/arrow-right-circle
   palette:
     - scheme: default
-      primary: indigo
-      accent: blue
+      primary: "#0d47a1"
+      accent: teal
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
-      primary: indigo
-      accent: blue
+      primary: "#90caf9"
+      accent:  cyan
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
