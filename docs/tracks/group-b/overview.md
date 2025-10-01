@@ -35,8 +35,8 @@ Build and operate a small-scale drilling rig that autonomously drills a directio
 !!! tip "New team? Start here"
     Start with a simple, sturdy rig; instrument it well; implement safe operations and basic closed-loop control using downhole data before adding complexity.
 
-!!! note "Edge-deployable models"
-    You may prototype with larger cloud-hosted models during development, but final evaluation is on small, locally run models under limited inference hardware. Interop checks are read-only/shadow (no PLC writes), and AI runs must be offline during judging. See Competition → [Rules & Scoring](../../competition/rules-scoring.md).
+!!! note "Edge‑deployable models"
+    --8<-- "_includes/edge-ai.md"
 
 ## Phases & Timing
 

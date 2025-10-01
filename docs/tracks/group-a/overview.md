@@ -12,7 +12,7 @@ Design, simulate, and control a virtual drilling system using standardized inter
 
 === "Case 1 — Kick Sentinel"
 
-- Connect through D-WIS to the OpenLab Drilling Simulator and implement detection/response for a simulated influx (kick).
+- Connect through D‑WIS to the OpenLab Drilling Simulator and implement detection/response for a simulated influx (kick).
 - Focus on reliable signal handling, thresholds/logic for detection, appropriate automated actions, and clear operator feedback.
 - Validate against provided test cases; document assumptions, limits, and performance.
 
@@ -32,17 +32,17 @@ Design, simulate, and control a virtual drilling system using standardized inter
 
 ## Tooling & Interfaces
 
-- D-WIS semantics: standardized names/metadata for setpoints and measurements. See the vocabulary index at https://d-wis.org/vocabulary-index/.
+- D‑WIS semantics: standardized names/metadata for setpoints and measurements. See the vocabulary index at https://d-wis.org/vocabulary-index/.
 - OpenLab simulator: the plant used for Mode Virtual (V) scenarios. See https://openlab.app/.
 - Connectivity and discovery, expected signals, and example flows are described in Technical Specs.
 
 [:octicons-gear-24: Technical Specs](technical-specs.md){ .md-button }
 
-!!! note "Edge-deployable models"
-    You may prototype with larger cloud-hosted models during development, but final evaluation is on small, locally run models under limited inference hardware. See Competition → [Rules & Scoring](../../competition/rules-scoring.md) for constraints and offline requirements.
+!!! note "Edge‑deployable models"
+    --8<-- "_includes/edge-ai.md"
 
 !!! warning "Design for discovery"
-    On competition day, endpoints and available signals may change. Your software must discover available D-WIS signals and adapt accordingly.
+    On competition day, endpoints and available signals may change. Your software must discover available D‑WIS signals and adapt accordingly.
 
 ## Phases & Timing
 
@@ -84,7 +84,7 @@ Weights and rubrics are on the Judging page.
 
 ## Getting Started Checklist
 
-- [ ] Review the Technical Specs for D-WIS and OpenLab expectations.
+- [ ] Review the Technical Specs for D‑WIS and OpenLab expectations.
 - [ ] Review the three Mode V cases and pick your initial target.
 - [ ] Stand up a minimal data flow: connect, discover signals, and log data.
 - [ ] Implement a basic control loop with clear state display and logging.
@@ -95,5 +95,5 @@ Weights and rubrics are on the Judging page.
 - 2024 reference text (archival): 2024/group-a.md
 - Original PDFs: [Resources → Downloads](../../resources/downloads.md) → “2024 – Group A (Virtual)”
 
-*[D-WIS]: Drilling-Well Information System
+*[D‑WIS]: Drilling‑Well Information System
 *[OpenLab]: Drilling simulation environment used in Mode Virtual (V)

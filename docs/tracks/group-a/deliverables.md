@@ -17,8 +17,8 @@ Phase II — Implementation and testing:
 - Mode Virtual (V): model improvements/testing and controls development; Phase II test occurs May/June 2026.
 - Pre-recorded team presentation: submitted ~1 week before the test; judges prepare Q&A from it.
 
-!!! note "Edge-deployable models"
-    You may prototype with larger cloud models during development, but final deliverables and performance are evaluated using small, locally run models under limited inference hardware. AI runs must be offline during judging. See Competition → [Rules & Scoring](../../competition/rules-scoring.md).
+!!! note "Edge‑deployable models"
+    --8<-- "_includes/edge-ai.md"
 
 Data and documentation packages (Directional challenge excerpts):
 

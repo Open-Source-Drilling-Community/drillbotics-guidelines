@@ -12,8 +12,8 @@ tags:
 
 - :material-account-school: __Mode Virtual (V)__
 
-    <small class="card-subtitle">Simulation track using OpenLab + D-WIS.</small>
-    OpenLab simulator, D-WIS interface, virtual drilling, well control.
+    <small class="card-subtitle">Simulation track using OpenLab + D‑WIS.</small>
+    OpenLab simulator, D‑WIS interface, virtual drilling, well control.
     [:octicons-arrow-right-24: Mode V »](group-a/overview.md)
 
 - :material-robot-industrial: __Mode Physical (P)__

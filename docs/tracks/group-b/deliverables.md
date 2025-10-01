@@ -17,14 +17,14 @@ Phase II — Implementation and testing:
 - Mode Physical (P): model & controls development and rig construction; Phase II test occurs May/June 2026.
 - Pre-recorded team presentation: submitted ~1 week before the test; judges prepare Q&A from it.
 
-!!! note "Edge-deployable models"
-    You may prototype with larger cloud models during development, but final deliverables and performance are evaluated using small, locally run models under limited inference hardware. AI runs must be offline during judging; interop checks are read-only/shadow (no PLC writes). See Competition → [Rules & Scoring](../../competition/rules-scoring.md).
+!!! note "Edge‑deployable models"
+    --8<-- "_includes/edge-ai.md"
 
 Required artifacts (Magnetic surveying excerpts):
 
 - Definitive directional survey (TXT/LAS/CSV) including header info such as school name, survey date, well center (WGS-84), TVD reference (above block), grid convergence, geomagnetic model, magnetic declination, total azimuth correction, field dip/strength references, and the error model used.
 - Autonomous survey process and qualification; provide raw survey data logs with timestamps, measured depth, downhole sensor values (axes + qualifier values), and survey acceptance indicators.
-- Telemetry dataset: fixed-schema `drilling_timeseries.csv` (≥1 Hz; D-WIS names) with semantic headers and units for apples-to-apples scoring.
+- Telemetry dataset: fixed-schema `drilling_timeseries.csv` (≥1 Hz; D‑WIS names) with semantic headers and units for apples-to-apples scoring.
 - Static logs (suggested): LAS 2.0 `wellname_logs.las` with required curves and metadata.
 
 Testing notes:
