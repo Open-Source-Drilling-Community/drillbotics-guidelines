@@ -8,7 +8,7 @@ tags:
 ---
 
 !!! info "Archive: 2024"
-    This page preserves the original 2024 guidelines content as‑is for historical reference. For the current rules, see the pages under "Competition" and "Tracks".
+    This page preserves the original 2024 guidelines content as-is for historical reference. For the current rules, see the pages under "Competition" and "Tracks".
 
 |  |  |  |
 |:--:|:--:|:--:|
@@ -2617,4 +2617,4 @@ comprehensive with some good case study examples included.*
 [^6]: A housing unit could be a shared property from such sources as
     Expedia, Air B&B or similar entities.
 !!! info "Archive: 2024"
-    This page preserves the original 2024 guidelines content as‑is for historical reference. For the current rules, see the pages under "Competition" and "Tracks".
+    This page preserves the original 2024 guidelines content as-is for historical reference. For the current rules, see the pages under "Competition" and "Tracks".

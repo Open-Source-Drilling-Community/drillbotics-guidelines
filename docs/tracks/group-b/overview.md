@@ -6,7 +6,7 @@ tags:
 
 # Mode Physical (P) — Overview
 
-Build and operate a small‑scale drilling rig that autonomously drills a directional well. Mode Physical (P) emphasizes safety, robust hardware, closed‑loop control using downhole data, and clear reporting.
+Build and operate a small-scale drilling rig that autonomously drills a directional well. Mode Physical (P) emphasizes safety, robust hardware, closed-loop control using downhole data, and clear reporting.
 
 === "Safety & Risk"
 
@@ -24,8 +24,8 @@ Build and operate a small‑scale drilling rig that autonomously drills a direct
 
 === "Autonomy & Control"
 
-- Implement autonomous mode switching (drilling/survey), steering calculations (toolface, slide length), survey qualification, and real‑time metrics (DLS, plan deltas) on the rig display.
-- Closed‑loop control must use downhole data; log decisions and rationale for review.
+- Implement autonomous mode switching (drilling/survey), steering calculations (toolface, slide length), survey qualification, and real-time metrics (DLS, plan deltas) on the rig display.
+- Closed-loop control must use downhole data; log decisions and rationale for review.
 
 [:octicons-gear-24: Autonomy & Control](autonomy.md){ .md-button }
 
@@ -33,10 +33,10 @@ Build and operate a small‑scale drilling rig that autonomously drills a direct
     Rotating machinery, high torque, and energized systems present real hazards. Guards, interlocks, and an auditable safety plan are mandatory and graded.
 
 !!! tip "New team? Start here"
-    Start with a simple, sturdy rig; instrument it well; implement safe operations and basic closed‑loop control using downhole data before adding complexity.
+    Start with a simple, sturdy rig; instrument it well; implement safe operations and basic closed-loop control using downhole data before adding complexity.
 
-!!! note "Edge‑deployable models"
-    You may prototype with larger cloud‑hosted models during development, but final evaluation is on small, locally run models under limited inference hardware. Interop checks are read‑only/shadow (no PLC writes), and AI runs must be offline during judging. See Competition → [Rules & Scoring](../../competition/rules-scoring.md).
+!!! note "Edge-deployable models"
+    You may prototype with larger cloud-hosted models during development, but final evaluation is on small, locally run models under limited inference hardware. Interop checks are read-only/shadow (no PLC writes), and AI runs must be offline during judging. See Competition → [Rules & Scoring](../../competition/rules-scoring.md).
 
 ## Phases & Timing
 
@@ -52,7 +52,7 @@ Dates vary each year. See the living schedule for current windows.
 
 - Monthly updates, a Phase I design report (optional short video), and a Phase II test package (presentation, datasets, logs).
 - Directional survey data with required metadata and error model; logs that show autonomous survey processing and acceptance/override flags.
-- Evidence of closed‑loop control using downhole measurements, and test/calibration documentation for sensors.
+- Evidence of closed-loop control using downhole measurements, and test/calibration documentation for sensors.
 
 Full details and file naming live on the Deliverables & Testing page.
 
@@ -85,7 +85,7 @@ Weights and examples are on the Judging page.
 - [ ] Select surface/downhole sensors; calibrate and specify DAQ rates/sync; implement reliable logging.
 - [ ] Implement basic autonomous mode switching (drill/survey) and display key KPIs (DLS, plan deltas).
 - [ ] Close the loop using downhole data; validate with a simple test matrix before increasing complexity.
-- [ ] Prepare deliverables and a pre‑recorded presentation ahead of the Phase II test.
+- [ ] Prepare deliverables and a pre-recorded presentation ahead of the Phase II test.
 
 ## References
 

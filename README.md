@@ -96,7 +96,7 @@ If using a custom domain, set it in Pages settings and add a `CNAME` file on the
 
 ### Tags
 
-- Tags are enabled site‑wide; see `docs/tags.md`. Add `tags:` in page front matter (e.g., `deliverables`, `safety`, `timeline`, `faq`).
+- Tags are enabled site-wide; see `docs/tags.md`. Add `tags:` in page front matter (e.g., `deliverables`, `safety`, `timeline`, `faq`).
 
 ---
 

@@ -15,20 +15,20 @@ Phase I — Design (2025–2026):
 Phase II — Implementation and testing:
 
 - Mode Virtual (V): model improvements/testing and controls development; Phase II test occurs May/June 2026.
-- Pre‑recorded team presentation: submitted ~1 week before the test; judges prepare Q&A from it.
+- Pre-recorded team presentation: submitted ~1 week before the test; judges prepare Q&A from it.
 
-!!! note "Edge‑deployable models"
+!!! note "Edge-deployable models"
     You may prototype with larger cloud models during development, but final deliverables and performance are evaluated using small, locally run models under limited inference hardware. AI runs must be offline during judging. See Competition → [Rules & Scoring](../../competition/rules-scoring.md).
 
 Data and documentation packages (Directional challenge excerpts):
 
-- Minimum Curvature trajectory and plan‑vs‑actual plots (TVD vs. VS, vertical section, plan view).
+- Minimum Curvature trajectory and plan-vs-actual plots (TVD vs. VS, vertical section, plan view).
 - Directional survey raw data logs with timestamps, measured depth, downhole sensor values (axes + qualifier values), and survey acceptance flags.
-- Formation model import: prepared to ingest DSATS‑provided rock model immediately before Phase II.
+- Formation model import: prepared to ingest DSATS-provided rock model immediately before Phase II.
 
 File naming convention:
 
-- Monthly report: “YYYY‑MM <School Abbrev>” (e.g., 2025‑10 UDC)
+- Monthly report: “YYYY-MM <School Abbrev>” (e.g., 2025-10 UDC)
 - Design report: “2025 <School Abbrev> Phase I Design Report”
 
 Source: see the full 2024 text at 2024/group-a.md.

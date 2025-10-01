@@ -42,7 +42,7 @@ tags:
 
     <small class="card-subtitle">Live milestones and deadlines.</small>
 
-    Live status for near‑term deadlines.
+    Live status for near-term deadlines.
     [:octicons-arrow-right-24: View »](upcoming.md)
 
 - :octicons-question-24: __FAQ__

@@ -36,7 +36,7 @@ graph LR
     class H feedback
 ```
 
-*[D‑WIS]: Drilling‑Well Information System
+*[D-WIS]: Drilling-Well Information System
 *[OpenLab]: Drilling simulation environment used in Mode Virtual (V)
 
 !!! info inline end "Submission window"
@@ -44,7 +44,7 @@ graph LR
 
 === "Mode Virtual (V)"
 
-_Requires: OpenLab + D‑WIS._
+_Requires: OpenLab + D-WIS._
 
 <div class="btn-row" markdown>
 [:material-rocket-launch: Overview](tracks/group-a/overview.md){ .md-button .md-button--primary }
@@ -97,12 +97,12 @@ Use this quick checklist to set up your team. See the linked pages for details.
 - [ ] Set up your repo and communication channels — [Contributor Guide](contributor-guide.md)
 - [ ] Review deliverables and scoring — [Rules & Scoring](competition/rules-scoring.md)
 - [ ] Prepare your environment  
-      Mode Virtual (V): OpenLab + D‑WIS;  Mode Physical (P): rig, sensors, and safety procedures — [Safety](competition/safety.md)
+      Mode Virtual (V): OpenLab + D-WIS;  Mode Physical (P): rig, sensors, and safety procedures — [Safety](competition/safety.md)
 - [ ] Submit Phase I materials; schedule Phase II planning — Deliverables pages
 
 ## Upcoming
 
-> High‑signal dates and checkpoints for the active year.
+> High-signal dates and checkpoints for the active year.
 
 --8<-- "_includes/upcoming.md"
 
@@ -115,11 +115,11 @@ Use this quick checklist to set up your team. See the linked pages for details.
   [Read more »](competition/overview.md)
 
 - :material-robot-outline: **Mode Virtual (V)**  
-  D‑WIS semantics, OpenLab, simulation interfaces, and requirements.  
+  D-WIS semantics, OpenLab, simulation interfaces, and requirements.  
   [Start here »](tracks/group-a/overview.md)
 
 - :material-cogs: **Mode Physical (P)**  
-  Mini‑rig hardware, safety, autonomy, and testing regimes.  
+  Mini-rig hardware, safety, autonomy, and testing regimes.  
   [Start here »](tracks/group-b/overview.md)
 
 - :material-calendar-star: **Timeline & Milestones**  
@@ -131,7 +131,7 @@ Use this quick checklist to set up your team. See the linked pages for details.
   [FAQ »](faq.md)
 
 - :material-update: **What changed?**  
-  Human‑readable summaries and Git diffs per release.  
+  Human-readable summaries and Git diffs per release.  
   [Changelog »](changelog.md)
 
 </div>

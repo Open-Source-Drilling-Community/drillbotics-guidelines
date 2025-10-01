@@ -25,4 +25,4 @@ No. PDFs may be attached for reference, but the Markdown pages here are authorit
 
 ## Can we use cloud models for AI features?
 
-Yes, during development. For the final judged runs, all AI inference must be offline on limited local/edge hardware. Teams are evaluated on small, locally run multimodal models (see constraints in Competition → [Rules & Scoring](competition/rules-scoring.md)). Interop checks remain read‑only/shadow (no PLC writes).
+Yes, during development. For the final judged runs, all AI inference must be offline on limited local/edge hardware. Teams are evaluated on small, locally run multimodal models (see constraints in Competition → [Rules & Scoring](competition/rules-scoring.md)). Interop checks remain read-only/shadow (no PLC writes).
