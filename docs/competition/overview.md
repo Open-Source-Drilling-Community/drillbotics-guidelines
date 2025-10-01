@@ -8,7 +8,7 @@ tags:
 
 This site hosts the official Drillbotics® competition guidelines in a versioned, diff-friendly format.
 
-## How to use this site
+## How to Use This Site
 
 - Use the **version switcher** (top-left) to browse historical releases (e.g., 2024) or the latest.
 - Navigate by **Tracks** using the updated naming: **Mode Virtual (V)** and **Mode Physical (P)**. Abbreviations **Mode V** and **Mode P** are used where space is tight.
@@ -26,13 +26,13 @@ This site hosts the official Drillbotics® competition guidelines in a versioned
 [:octicons-milestone-24: Timeline & Milestones](timeline.md){ .md-button .md-button--primary }
 [:octicons-law-24: Rules & Scoring](rules-scoring.md){ .md-button }
 
-## Governance and scope
+## Governance and Scope
 
 - Competition goals and constraints
 - Eligibility, team composition, advisors
 - Code of conduct and communications
 
-## Deliverables (at a glance)
+## Deliverables (At a Glance)
 
 - Registration package, midterm reports, final report, demo assets, dataset submissions
 

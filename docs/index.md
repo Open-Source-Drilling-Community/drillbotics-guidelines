@@ -1,7 +1,7 @@
 # Drillbotics® Guidelines
 
 <div class="hero" markdown>
-### Competition rules and resources
+### Competition Rules and Resources
 
 [:material-rocket-launch: Start here](competition/overview.md){ .md-button .md-button--primary }
 [:material-laptop: Mode Virtual (V)](tracks/group-a/overview.md){ .md-button .md-button--secondary }
@@ -11,7 +11,7 @@
 ??? tip "New to Drillbotics? (expand)"
     Skim the [Overview](competition/overview.md), then jump to the Quick Start below.
 
-## At-a-glance flow
+## At-a-Glance Flow
 
 ```mermaid
 graph LR
@@ -56,7 +56,7 @@ _Requires: Lab safety training + rig readiness._
 
 <div class="btn-row" markdown>
 [:material-rocket-launch: Overview](tracks/group-b/overview.md){ .md-button .md-button--primary }
-[:material-shield-check: Safety & risk](tracks/group-b/safety.md){ .md-button .md-button--secondary }
+[:material-shield-check: Safety & Risk](tracks/group-b/safety.md){ .md-button .md-button--secondary }
 [:material-cog: Hardware](tracks/group-b/hardware.md){ .md-button }
 [:material-clipboard-text-outline: Deliverables](tracks/group-b/deliverables.md){ .md-button }
 [:material-trophy-outline: Judging](tracks/group-b/judging.md){ .md-button }

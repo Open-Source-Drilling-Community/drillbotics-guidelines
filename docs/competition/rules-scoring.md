@@ -17,7 +17,7 @@ This section summarizes the 2025.1 rules and how teams are scored. Track‑speci
 - Safety and compliance are mandatory. Judges grade both the plan and implementation.
 - Outcomes-first and algorithm-agnostic: judges score outcomes and evidence; no preference is given to specific algorithms or model families (e.g., PID vs MPC vs RL; CNN vs rules vs LLM), provided constraints and safety are met.
 
-### Innovation Uplift (applies in all categories)
+### Innovation Uplift (Applies in All Categories)
 
 Judges may award the top of a category’s band when a documented novelty (hardware, sensing, control, HF/UX, data tooling, compression/efficiency) materially improves outcomes, safety, or clarity. This does not exceed the category maximum; it recognizes innovation anywhere, not only via bonuses. Evidence should include:
 
@@ -42,14 +42,14 @@ Judges may award the top of a category’s band when a documented novelty (hardw
 
 - Trajectory / path quality / tortuosity: 20
 - Drilling efficiency (time to TD / ROP): 20
-- Safety & procedure compliance (E-Stop, guards, limits): 20
+- Safety & procedure compliance (E‑Stop, guards, limits): 20
 - Data quality (CSV schema + LAS completeness; calibration; 1 Hz+; semantic headers): 10
 - Human Factors & UI clarity: 10
 - Design & automation quality: 20
 - Interop demo: Pass/Fail gate before Phase II
 - Edge‑AI Bonus (optional): up to +10 (≤10% default; ≤15% committee max)
 
-## Edge‑AI Bonus (optional)
+## Edge‑AI Bonus (Optional)
 
 - Scored on correctness vs ground truth windows, grounding to CSV, latency/footprint, clarity/safety, and innovation. AI score is scaled to a maximum of +10 points.
 - Default cap is 10% of total; committee may raise to ≤15%.

@@ -6,7 +6,7 @@ tags:
   - competition
 ---
 
-# Canonical competition rules & resources
+# Canonical Competition Rules & Resources
 
 <div class="grid cards" markdown>
 

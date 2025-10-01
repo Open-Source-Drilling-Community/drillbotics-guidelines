@@ -32,8 +32,8 @@ Design, simulate, and control a virtual drilling system using standardized inter
 
 ## Tooling & Interfaces
 
-- D‑WIS semantics: standardized names/metadata for setpoints and measurements. See the vocabulary index at https://d-wis.org/vocabulary-index/.
-- OpenLab simulator: the plant used for Mode Virtual (V) scenarios. See https://openlab.app/.
+- D‑WIS semantics: standardized names/metadata for setpoints and measurements. See the [D‑WIS Vocabulary Index](https://d-wis.org/vocabulary-index/).
+- OpenLab simulator: the plant used for Mode Virtual (V) scenarios. See the [OpenLab website](https://openlab.app/).
 - Connectivity and discovery, expected signals, and example flows are described in Technical Specs.
 
 [:octicons-gear-24: Technical Specs](technical-specs.md){ .md-button }
@@ -92,7 +92,7 @@ Weights and rubrics are on the Judging page.
 
 ## References
 
-- 2024 reference text (archival): 2024/group-a.md
+- 2024 reference text (archival): [2024 – Group A](../../2024/group-a.md)
 - Original PDFs: [Resources → Downloads](../../resources/downloads.md) → “2024 – Group A (Virtual)”
 
 *[D‑WIS]: Drilling‑Well Information System

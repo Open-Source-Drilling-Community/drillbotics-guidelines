@@ -179,7 +179,7 @@
 
 /* Make the header logo larger */
 .md-header__button.md-logo img {
-  height: 45px;
+  height: 90px;
   width: auto;
 }
 @media (max-width: 600px) {

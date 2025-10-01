@@ -8,12 +8,12 @@ tags:
 
 Connectivity and interfaces (D‑WIS + OpenLab):
 
-- Use the D‑WIS semantics standard vocabulary for signal names and metadata: https://d-wis.org/vocabulary-index/
-- Drillbotics provides a Dockerized OPC UA server with D‑WIS connectivity from which teams connect to the OpenLab Drilling Simulator.
-- Teams connect to the local OPC UA endpoint, send setpoints, and receive surface and downhole measurements via the D‑WIS interface (per 2024 guidelines).
+- Use the D‑WIS semantics standard vocabulary for signal names and metadata: [D‑WIS Vocabulary Index](https://d-wis.org/vocabulary-index/)
+- Drillbotics provides a Dockerized OPC‑UA server with D‑WIS connectivity from which teams connect to the OpenLab Drilling Simulator.
+- Teams connect to the local OPC‑UA endpoint, send setpoints, and receive surface and downhole measurements via the D‑WIS interface (per 2024 guidelines).
 - On competition day, simulator access parameters may change; control software must rely on D‑WIS discovery to enumerate available signals and adapt accordingly.
 
-## Data outputs (2025.1)
+## Data Outputs (2025.1)
 
 - Time‑series: fixed‑schema `drilling_timeseries.csv` (≥1 Hz; D‑WIS names). Include semantic headers and units.
 - Static logs: a LAS 2.0 `wellname_logs.las` is suggested for key curves and metadata.
@@ -35,4 +35,4 @@ Notes
 - Where a non-standard survey error model is used, include the model description with standard variable/coefficient naming and justification in the design report.
 - All depths should reference the rotary/kelly bushing datum as per industry practice.
 
-Source: see the full 2024 text at 2024/group-a.md.
+Source: see the full 2024 text at [2024 – Group A](../../2024/group-a.md).

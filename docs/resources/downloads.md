@@ -10,7 +10,7 @@ Below are the original 2024 PDFs for archival reference.
 <div class="grid cards" markdown>
 
 - :material-file-pdf-box: **2024 – Group A (Virtual)**  \
-  OpenLab + D-WIS specifications, deliverables, and judging.  \
+  OpenLab + D‑WIS specifications, deliverables, and judging.  \
   Type: PDF · ~3–10 MB  \
   [:octicons-download-24: Download](../_assets/2024-Group-A.pdf){ .md-button .md-button--primary }
 

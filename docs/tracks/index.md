@@ -6,7 +6,7 @@ tags:
   - tracks
 ---
 
-# Choose your track
+# Choose Your Track
 
 <div class="grid cards" markdown>
 
