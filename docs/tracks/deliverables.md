@@ -11,6 +11,9 @@ Use the tabs to see deliverables by track.
 !!! warning "Deadlines"
     Always confirm dates on the [Timeline & Milestones](../competition/timeline.md) page.
 
+!!! note "Edge‑deployable models"
+    Teams may prototype with larger cloud‑hosted models, but final deliverables and performance are evaluated using small, locally run models under limited inference hardware. See Competition → [Rules & Scoring](../competition/rules-scoring.md) for constraints and offline requirements.
+
 === "Mode Virtual (V)"
 
 - Phase I (Design): monthly reports; Phase I Design Report; optional short video.

@@ -5,17 +5,20 @@ tags:
 
 # Mode Virtual (V) — Deliverables
 
-Phase I — Design (2023–2024):
+Phase I — Design (2025–2026):
 
 - Monthly reports: due on or before the final day of each month starting in October (short progress update, issues/risks, next steps).
-- Phase I Design Report: due 31 Dec 2023, midnight UTC. Use “2024 <School Abbrev> Phase I Design Report” as the filename prefix.
+- Phase I Design Report: due 31 Dec 2025, 23:59 local time. Use “2025 <School Abbrev> Phase I Design Report” as the filename prefix.
 - Optional Design Video: ≤ 5 minutes, due by 23 Jan 2026 (property of the university; DSATS may use in sites/events).
 - Finalists announced: early February 2026.
 
 Phase II — Implementation and testing:
 
-- Mode Virtual (V): model enhancement/testing and controls development; Phase II test occurs May/June 2024.
+- Mode Virtual (V): model improvements/testing and controls development; Phase II test occurs May/June 2026.
 - Pre‑recorded team presentation: submitted ~1 week before the test; judges prepare Q&A from it.
+
+!!! note "Edge‑deployable models"
+    You may prototype with larger cloud models during development, but final deliverables and performance are evaluated using small, locally run models under limited inference hardware. AI runs must be offline during judging. See Competition → [Rules & Scoring](../../competition/rules-scoring.md).
 
 Data and documentation packages (Directional challenge excerpts):
 
@@ -25,7 +28,7 @@ Data and documentation packages (Directional challenge excerpts):
 
 File naming convention:
 
-- Monthly report: “YYYY‑MM <School Abbrev>” (e.g., 2024‑10 UDC)
-- Design report: “2024 <School Abbrev> Phase I Design Report”
+- Monthly report: “YYYY‑MM <School Abbrev>” (e.g., 2025‑10 UDC)
+- Design report: “2025 <School Abbrev> Phase I Design Report”
 
 Source: see the full 2024 text at 2024/group-a.md.

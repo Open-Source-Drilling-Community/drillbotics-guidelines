@@ -5,17 +5,19 @@ tags:
 
 # Safety (General)
 
-!!! warning "Draft in progress"
-    This section is being rewritten for the next release. Until it is finalized, rely on [https://Open-Source-Drilling-Community.github.io/drillbotics-guidelines/latest/](https://Open-Source-Drilling-Community.github.io/drillbotics-guidelines/latest/) and track pages for the complete safety requirements.
+Baseline expectations that apply to all teams, venues, and modes.
 
-High-level safety principles applicable to all teams and venues.
+- Lab conduct and supervision: follow institutional policies; make sure adequate oversight for any powered testing.
+- Electrical and mechanical safety: enclose rotating parts; provide guards/shields; use appropriate fusing, grounding, and LOTO where applicable.
+- Emergency stops and interlocks: clearly labeled, tested E‑Stops are required for physical equipment; verify interlock behavior before demos.
+- Procedures and training: maintain a written safety plan; brief the team before each test; log incidents and near‑misses.
+- Data privacy and OpSec: keep credentials and control endpoints private; do not expose unsafe remote control pathways. Never commit secrets to public repos.
+- AI and automation: any AI components must run offline for judging; no PLC/actuator writes during “read‑only/shadow” interop checks.
 
-- Lab conduct and supervision
-- Electrical and mechanical safety
-- Data privacy / operational security (OpSec)
-- Incident reporting and escalation
+Track‑specific details are on the respective pages:
 
-Track-specific safety requirements are detailed on the respective pages.
+- Mode Physical (P) — Safety & Risk: ../../tracks/group-b/safety.md
+- Mode Virtual (V) — general safety is minimal; still follow lab policies for any hardware‑in‑the‑loop setups.
 
 !!! warning "Safety first"
-    Follow all lab safety procedures and local regulations before operating equipment. See track‑specific pages for additional requirements.
+    Always follow local regulations and lab procedures before operating equipment. Judges will grade both your safety plan and its implementation.
