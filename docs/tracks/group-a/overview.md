@@ -10,7 +10,7 @@ Design, simulate, and control a virtual drilling system using standardized inter
 
 ## Cases (2025.1)
 
-=== "Case 1 — Kick Sentinel"
+=== "Case 1 — Kick Detection"
 
 - Connect through D‑WIS to the OpenLab Drilling Simulator and implement detection/response for a simulated influx (kick).
 - Focus on reliable signal handling, thresholds/logic for detection, appropriate automated actions, and clear operator feedback.

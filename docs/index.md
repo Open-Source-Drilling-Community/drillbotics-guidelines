@@ -36,9 +36,6 @@ graph LR
     class H feedback
 ```
 
-*[D‑WIS]: Drilling‑Well Information System
-*[OpenLab]: Drilling simulation environment used in Mode Virtual (V)
-
 !!! info inline end "Submission window"
     See [Timeline & Milestones](competition/timeline.md) for current open/close dates.
 
@@ -135,3 +132,5 @@ Use this quick checklist to set up your team. See the linked pages for details.
   [Changelog »](changelog.md)
 
 </div>
+
+--8<-- "_includes/abbr.md"

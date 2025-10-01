@@ -367,3 +367,62 @@
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li .card-subtitle {
   color: rgba(173,208,255,.82);
 }
+
+/* Faster, accessible tooltips for abbreviations (replaces native title) */
+.md-typeset abbr[data-tooltip] {
+  position: relative;
+  cursor: help;
+  text-decoration: underline dotted 1px;
+  text-underline-offset: 2px;
+}
+
+.md-typeset abbr[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, -6px);
+  z-index: 30;
+  opacity: 0;
+  pointer-events: none;
+  padding: .3rem .5rem;
+  border-radius: 4px;
+  font-size: .74rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--md-default-bg-color);
+  background: var(--md-default-fg-color);
+  box-shadow: 0 6px 20px color-mix(in srgb, black 25%, transparent);
+  transition: opacity .12s ease 0s, transform .12s ease 0s;
+}
+
+.md-typeset abbr[data-tooltip]::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% - 2px);
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, 50%) rotate(45deg);
+  z-index: 29;
+  opacity: 0;
+  pointer-events: none;
+  background: var(--md-default-fg-color);
+  transition: opacity .12s ease 0s;
+}
+
+.md-typeset abbr[data-tooltip]:hover::after,
+.md-typeset abbr[data-tooltip]:focus::after,
+.md-typeset abbr[data-tooltip]:active::after {
+  opacity: 1;
+  transform: translate(-50%, -10px);
+  /* Show after 0.2s; hide immediately on mouseout */
+  transition-delay: .2s;
+}
+
+.md-typeset abbr[data-tooltip]:hover::before,
+.md-typeset abbr[data-tooltip]:focus::before,
+.md-typeset abbr[data-tooltip]:active::before {
+  opacity: 1;
+  transition-delay: .2s;
+}
