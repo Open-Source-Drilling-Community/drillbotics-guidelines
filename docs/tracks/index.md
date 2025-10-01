@@ -10,19 +10,19 @@ tags:
 
 <div class="grid cards" markdown>
 
-- :material-account-school: __Group A (Virtual)__
+- :material-account-school: __Mode Virtual (V)__
 
     <small class="card-subtitle">Simulation track using OpenLab + D‑WIS.</small>
     OpenLab simulator, D‑WIS interface, virtual drilling, well control.
-    [:octicons-arrow-right-24: Track A »](group-a/overview.md)
+    [:octicons-arrow-right-24: Mode V »](group-a/overview.md)
 
-- :material-robot-industrial: __Group B (Physical)__
+- :material-robot-industrial: __Mode Physical (P)__
 
     <small class="card-subtitle">Physical rig build with autonomous control.</small>
     Mini‑rig hardware, autonomy, safety, and testing.
-    [:octicons-arrow-right-24: Track B »](group-b/overview.md)
+    [:octicons-arrow-right-24: Mode P »](group-b/overview.md)
 
-- :octicons-checklist-24: __Deliverables (A vs B)__
+- :octicons-checklist-24: __Deliverables (V vs P)__
 
     <small class="card-subtitle">Side-by-side timeline and submission list.</small>
     Compare deliverables side‑by‑side with tabs.
