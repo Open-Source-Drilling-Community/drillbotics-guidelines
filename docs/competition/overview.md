@@ -6,9 +6,6 @@ tags:
 
 # Competition Overview
 
-!!! warning "Draft in progress"
-    This section is being rewritten for the next release. Until the update is published, refer to the current site at [https://Open-Source-Drilling-Community.github.io/drillbotics-guidelines/latest/](https://Open-Source-Drilling-Community.github.io/drillbotics-guidelines/latest/) for authoritative rules.
-
 This site hosts the official Drillbotics® competition guidelines in a versioned, diff‑friendly format.
 
 ## How to use this site
@@ -19,6 +16,15 @@ This site hosts the official Drillbotics® competition guidelines in a versioned
 
 !!! tip "Source PDFs"
     The original 2024 PDFs are available under **Resources → Downloads** for archival purposes.
+
+## 2025.1 Highlights
+
+- Tracks are standardized to **Mode Virtual (V)** and **Mode Physical (P)**. Short labels “Mode V / Mode P” are used in tight UI.
+- Timeline windows are set for 2025–2026. See the live schedule for exact dates.
+- Rules and scoring have been updated, including an optional **Edge‑AI Bonus** (≤10% default; ≤15% committee max).
+
+[:octicons-milestone-24: Timeline & Milestones](timeline.md){ .md-button .md-button--primary }
+[:octicons-law-24: Rules & Scoring](rules-scoring.md){ .md-button }
 
 ## Governance and scope
 
