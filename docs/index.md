@@ -4,8 +4,8 @@
 ### Competition rules and resources
 
 [:material-rocket-launch: Start here](competition/overview.md){ .md-button .md-button--primary }
-[:material-laptop: Group A (Virtual)](tracks/group-a/overview.md){ .md-button .md-button--secondary }
-[:material-cog: Group B (Physical)](tracks/group-b/overview.md){ .md-button .md-button--secondary }
+[:material-laptop: Mode Virtual (V)](tracks/group-a/overview.md){ .md-button .md-button--secondary }
+[:material-cog: Mode Physical (P)](tracks/group-b/overview.md){ .md-button .md-button--secondary }
 </div>
  
 ??? tip "New to Drillbotics? (expand)"
@@ -15,9 +15,9 @@
 
 ```mermaid
 graph LR
-    A[Team Registration<br/>& Kickoff] --> B[Group Selection]
-    B -->|A - Virtual<br/>Modeling/Simulation| C[OpenLab/D-WIS<br/>Interface Setup]
-    B -->|B - Physical<br/>Rig Construction| D[Safety Plan &<br/>Rig Development]
+    A[Team Registration<br/>& Kickoff] --> B[Mode Selection]
+    B -->|V - Mode Virtual<br/>Modeling/Simulation| C[OpenLab/D-WIS<br/>Interface Setup]
+    B -->|P - Mode Physical<br/>Rig Construction| D[Safety Plan &<br/>Rig Development]
     C --> E[Phase I Design Report<br/>& Safety Documentation]
     D --> E
     E --> F{Judge Review<br/>& Advancement?}
@@ -37,12 +37,12 @@ graph LR
 ```
 
 *[D‑WIS]: Drilling‑Well Information System
-*[OpenLab]: Drilling simulation environment used in Group A
+*[OpenLab]: Drilling simulation environment used in Mode Virtual (V)
 
 !!! info inline end "Submission window"
     See [Timeline & Milestones](competition/timeline.md) for current open/close dates.
 
-=== "Group A (Virtual)"
+=== "Mode Virtual (V)"
 
 _Requires: OpenLab + D‑WIS._
 
@@ -53,7 +53,7 @@ _Requires: OpenLab + D‑WIS._
 [:material-trophy-outline: Judging](tracks/group-a/judging.md){ .md-button }
 </div>
 
-=== "Group B (Physical)"
+=== "Mode Physical (P)"
 
 _Requires: Lab safety training + rig readiness._
 
@@ -74,8 +74,8 @@ _Requires: Lab safety training + rig readiness._
   [:octicons-book-24: Rules & Scoring](competition/rules-scoring.md){ .md-button }
 
 - :material-compare: **2) Choose your track**  
-  Pick **A (Virtual)** or **B (Physical)** interfaces.  
-  [:octicons-arrow-right-24: Compare A vs B](tracks/deliverables.md){ .md-button }
+  Pick **Mode Virtual (V)** or **Mode Physical (P)** interfaces.  
+  [:octicons-arrow-right-24: Compare V vs P](tracks/deliverables.md){ .md-button }
 
 - :material-calendar-check: **3) Plan deliverables & dates**  
   Know what’s due and when.  
@@ -92,12 +92,12 @@ _Requires: Lab safety training + rig readiness._
 Use this quick checklist to set up your team. See the linked pages for details.
 
 - [ ] Confirm eligibility, advisors, and team composition — [Overview](competition/overview.md)
-- [ ] Choose your track — [Group A](tracks/group-a/overview.md) or [Group B](tracks/group-b/overview.md)
+- [ ] Choose your track — [Mode Virtual (V)](tracks/group-a/overview.md) or [Mode Physical (P)](tracks/group-b/overview.md)
 - [ ] Register and note all deadlines — [Timeline](competition/timeline.md)
 - [ ] Set up your repo and communication channels — [Contributor Guide](contributor-guide.md)
 - [ ] Review deliverables and scoring — [Rules & Scoring](competition/rules-scoring.md)
 - [ ] Prepare your environment  
-      Group A: OpenLab + D‑WIS;  Group B: rig, sensors, and safety procedures — [Safety](competition/safety.md)
+      Mode Virtual: OpenLab + D‑WIS;  Mode Physical: rig, sensors, and safety procedures — [Safety](competition/safety.md)
 - [ ] Submit Phase I materials; schedule Phase II planning — Deliverables pages
 
 ## Upcoming
@@ -114,11 +114,11 @@ Use this quick checklist to set up your team. See the linked pages for details.
   Summary of goals, eligibility, deliverables, and governance.  
   [Read more »](competition/overview.md)
 
-- :material-robot-outline: **Group A – Virtual**  
+- :material-robot-outline: **Mode Virtual (V)**  
   D‑WIS semantics, OpenLab, simulation interfaces, and requirements.  
   [Start here »](tracks/group-a/overview.md)
 
-- :material-cogs: **Group B – Physical**  
+- :material-cogs: **Mode Physical (P)**  
   Mini‑rig hardware, safety, autonomy, and testing regimes.  
   [Start here »](tracks/group-b/overview.md)
 
