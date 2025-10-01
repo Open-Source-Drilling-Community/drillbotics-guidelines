@@ -38,6 +38,9 @@ Build and operate a small-scale drilling rig that autonomously drills a directio
 !!! note "Edge‑deployable models"
     --8<-- "_includes/edge-ai.md"
 
+!!! note "Competition sample variability"
+    A surprise rock layer may be included in the rock sample shipped to teams for the day of the competition. Design your sensing, procedures, and controllers to handle unexpected lithology transitions and sensor responses without manual retuning.
+
 ## Phases & Timing
 
 - Phase I — Design: monthly updates plus a design report and optional short video.
@@ -86,6 +89,10 @@ Weights and examples are on the Judging page.
 - [ ] Implement basic autonomous mode switching (drill/survey) and display key KPIs (DLS, plan deltas).
 - [ ] Close the loop using downhole data; validate with a simple test matrix before increasing complexity.
 - [ ] Prepare deliverables and a pre-recorded presentation ahead of the Phase II test.
+
+## Open-Source (OSDC)
+
+- We encourage teams to publish their work to the Open-Source Drilling Community (OSDC) as structured modules (code, data, docs). Module templates and examples will be provided.
 
 ## References
 
