@@ -8,17 +8,24 @@ tags:
 
 Design, simulate, and control a virtual drilling system using standardized interfaces. Mode Virtual (V) emphasizes closed‑loop control, data semantics, and clear reporting over hardware.
 
-=== "Option 1 — Directional Drilling"
+## Cases (2025.1)
 
-- Build a virtual drilling system model and a controller to steer a 2D (or optional 3D) trajectory through three targets provided just before Phase II.
-- Incorporate realistic constraints (e.g., slide/rotate modes, dogleg limits), virtual measurements with uncertainty, and automatic re‑planning to target based on as‑drilled surveys.
+=== "Case 1 — Kick Sentinel"
+
+- Connect through D‑WIS to the OpenLab Drilling Simulator and implement detection/response for a simulated influx (kick).
+- Focus on reliable signal handling, thresholds/logic for detection, appropriate automated actions, and clear operator feedback.
+- Validate against provided test cases; document assumptions, limits, and performance.
+
+=== "Case 2 — Adaptive Lithology Shift"
+
+- Build a virtual drilling system model and controller that adapts to changing lithology to maximize ROP under constraints.
+- Incorporate realistic constraints (e.g., slide/rotate modes, dogleg limits), virtual measurements with uncertainty, and automatic re‑planning based on as‑drilled surveys.
 - Produce trajectory data (Minimum Curvature) and plan‑vs‑actual plots; log surveys and controller decisions for review.
 
-=== "Option 2 — Well Control"
+=== "Case 3 — Stick‑Slip Sprint"
 
-- Connect through D‑WIS to the OpenLab Drilling Simulator and implement detection/response for a kick (influx) scenario.
-- Focus on reliable signal handling, thresholds/logic for detection, and appropriate automated actions with clear operator feedback.
-- Validate against provided test cases; document assumptions, limits, and performance.
+- Reach TD with low torsional oscillations; demonstrate dysfunction detection/mitigation while meeting constraints.
+- Emphasize robust control design and monitoring; present time‑aligned evidence from logs and plots.
 
 !!! tip "New team? Start here"
     Most first‑time teams are successful by starting with the OpenLab Drilling Simulator and focusing on the control system and data handling, rather than building a simulator from scratch.
@@ -30,6 +37,9 @@ Design, simulate, and control a virtual drilling system using standardized inter
 - Connectivity and discovery, expected signals, and example flows are described in Technical Specs.
 
 [:octicons-gear-24: Technical Specs](technical-specs.md){ .md-button }
+
+!!! note "Edge‑deployable models"
+    You may prototype with larger cloud‑hosted models during development, but final evaluation is on small, locally run models under limited inference hardware. See Competition → [Rules & Scoring](../../competition/rules-scoring.md) for constraints and offline requirements.
 
 !!! warning "Design for discovery"
     On competition day, endpoints and available signals may change. Your software must discover available D‑WIS signals and adapt accordingly.
@@ -75,7 +85,7 @@ Weights and rubrics are on the Judging page.
 ## Getting Started Checklist
 
 - [ ] Review the Technical Specs for D‑WIS and OpenLab expectations.
-- [ ] Decide on Option 1 (Directional) or Option 2 (Well Control).
+- [ ] Review the three Mode V cases and pick your initial target.
 - [ ] Stand up a minimal data flow: connect, discover signals, and log data.
 - [ ] Implement a basic control loop with clear state display and logging.
 - [ ] Build required plots/reports incrementally as you test.
