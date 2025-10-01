@@ -4,7 +4,7 @@ tags:
   - judging
 ---
 
-# Group A — Judging
+# Mode Virtual (V) — Judging
 
 Scoring criteria are defined in the 2024 guidelines and differ slightly by challenge. Judges may award bonus points for “above and beyond” achievements.
 

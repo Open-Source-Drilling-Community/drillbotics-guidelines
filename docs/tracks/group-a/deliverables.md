@@ -3,7 +3,7 @@ tags:
   - deliverables
 ---
 
-# Group A — Deliverables
+# Mode Virtual (V) — Deliverables
 
 Phase I — Design (2023–2024):
 
@@ -14,7 +14,7 @@ Phase I — Design (2023–2024):
 
 Phase II — Implementation and testing:
 
-- Group A: model enhancement/testing and controls development; Phase II test occurs May/June 2024.
+- Mode Virtual: model enhancement/testing and controls development; Phase II test occurs May/June 2024.
 - Pre‑recorded team presentation: submitted ~1 week before the test; judges prepare Q&A from it.
 
 Data and documentation packages (Directional challenge excerpts):

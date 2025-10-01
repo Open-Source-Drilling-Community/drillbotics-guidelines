@@ -4,9 +4,9 @@ tags:
   - overview
 ---
 
-# Group A — Virtual (Overview)
+# Mode Virtual (V) — Overview
 
-Design, simulate, and control a virtual drilling system using standardized interfaces. Group A emphasizes closed‑loop control, data semantics, and clear reporting over hardware.
+Design, simulate, and control a virtual drilling system using standardized interfaces. Mode Virtual emphasizes closed‑loop control, data semantics, and clear reporting over hardware.
 
 === "Option 1 — Directional Drilling"
 
@@ -26,7 +26,7 @@ Design, simulate, and control a virtual drilling system using standardized inter
 ## Tooling & Interfaces
 
 - D‑WIS semantics: standardized names/metadata for setpoints and measurements. See the vocabulary index at https://d-wis.org/vocabulary-index/.
-- OpenLab simulator: the plant used for Group A scenarios. See https://openlab.app/.
+- OpenLab simulator: the plant used for Mode Virtual scenarios. See https://openlab.app/.
 - Connectivity and discovery, expected signals, and example flows are described in Technical Specs.
 
 [:octicons-gear-24: Technical Specs](technical-specs.md){ .md-button }
@@ -86,4 +86,4 @@ Weights and rubrics are on the Judging page.
 - Original PDFs: [Resources → Downloads](../../resources/downloads.md) → “2024 – Group A (Virtual)”
 
 *[D‑WIS]: Drilling‑Well Information System
-*[OpenLab]: Drilling simulation environment used in Group A
+*[OpenLab]: Drilling simulation environment used in Mode Virtual (V)
