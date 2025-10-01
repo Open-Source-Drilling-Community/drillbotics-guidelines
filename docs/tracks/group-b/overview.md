@@ -96,5 +96,5 @@ Weights and examples are on the Judging page.
 
 ## References
 
-- 2024 reference text (archival): 2024/group-b.md
+- 2024 reference text (archival): [2024 – Group B](../../2024/group-b.md)
 - Original PDFs: [Resources → Downloads](../../resources/downloads.md) → “2024 – Group B (Physical)”
