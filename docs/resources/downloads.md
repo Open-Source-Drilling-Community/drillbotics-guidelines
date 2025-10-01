@@ -23,3 +23,7 @@ Below are the original 2024 PDFs for archival reference.
 
 !!! tip "Prefer the web version?"
     The web pages are the canonical, maintained source. Use PDFs for historical comparison only.
+
+!!! info "More information and previous reports"
+    - Official site: <https://drillbotics.com/>
+    - Archives (previous reports and winners): <https://drillbotics.com/archives/>

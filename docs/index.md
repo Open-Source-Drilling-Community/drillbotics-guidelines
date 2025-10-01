@@ -11,6 +11,17 @@
 ??? tip "New to Drillbotics? (expand)"
     Skim the [Overview](competition/overview.md), then jump to the Quick Start below.
 
+!!! info "Official Site, Archives, and Registration"
+    - For news and additional context, visit the official site: <https://drillbotics.com/>
+    - To review previous years’ reports and winners, see the Archives: <https://drillbotics.com/archives/>
+    - Team registration is submitted on the official site. The registration link updates each season — check the site header or Guidelines page on <https://drillbotics.com/> when the window opens.
+
+<div class="btn-row" markdown>
+[:material-open-in-new: Official Site](https://drillbotics.com/){ .md-button .md-button--secondary }
+[:material-archive-outline: Archives (Previous Reports)](https://drillbotics.com/archives/){ .md-button .md-button--secondary }
+[:material-form-select: Team Registration (on drillbotics.com)](https://drillbotics.com/){ .md-button }
+</div>
+
 ## At-a-Glance Flow
 
 ```mermaid

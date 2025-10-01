@@ -63,7 +63,7 @@ extra:
       link: https://github.com/Open-Source-Drilling-Community/drillbotics-guidelines 
     - icon: fontawesome/solid/envelope
       link: mailto:competition@Drillbotics.com
-  generator: true
+  generator: false
   status:
     new: Recently added
     updated: Updated this release
@@ -76,6 +76,8 @@ plugins:
   - tags
   - git-revision-date-localized:
       fallback_to_build_date: true
+      timezone: America/Chicago
+      type: date
   - glightbox
   - minify:
       minify_html: true
@@ -88,6 +90,10 @@ plugins:
       ignore_urls:
         - 'mailto:'
         - 'https://github.com/Open-Source-Drilling-Community/*'
+        - 'https://d-wis.org/*'
+        - 'https://www.osha.gov/*'
+        - 'https://webevents.spe.org/*'
+        - 'https://www.mathworks.com/*'
 
 extra_css:
   - stylesheets/extra.css
@@ -98,6 +104,7 @@ extra_javascript:
   - _assets/scripts/mermaid-theme.js
   - _assets/scripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - _assets/scripts/abbr-tooltips.js
 
 markdown_extensions:
   - admonition
@@ -164,6 +171,8 @@ nav:
       - FAQ: faq.md
       - Downloads: resources/downloads.md
       - Tags: tags.md
+      - Official Site (drillbotics.com): https://drillbotics.com/
+      - Archives (Previous Reports): https://drillbotics.com/archives/
   - Archive:
       - 2024:
           - Group A (Virtual): 2024/group-a.md
