@@ -35,6 +35,9 @@ Build and operate a small‑scale drilling rig that autonomously drills a direct
 !!! tip "New team? Start here"
     Start with a simple, sturdy rig; instrument it well; implement safe operations and basic closed‑loop control using downhole data before adding complexity.
 
+!!! note "Edge‑deployable models"
+    You may prototype with larger cloud‑hosted models during development, but final evaluation is on small, locally run models under limited inference hardware. Interop checks are read‑only/shadow (no PLC writes), and AI runs must be offline during judging. See Competition → [Rules & Scoring](../../competition/rules-scoring.md).
+
 ## Phases & Timing
 
 - Phase I — Design: monthly updates plus a design report and optional short video.
