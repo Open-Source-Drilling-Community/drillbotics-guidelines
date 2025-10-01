@@ -6,7 +6,7 @@ tags:
 
 # Mode Virtual (V) — Overview
 
-Design, simulate, and control a virtual drilling system using standardized interfaces. Mode Virtual emphasizes closed‑loop control, data semantics, and clear reporting over hardware.
+Design, simulate, and control a virtual drilling system using standardized interfaces. Mode Virtual (V) emphasizes closed‑loop control, data semantics, and clear reporting over hardware.
 
 === "Option 1 — Directional Drilling"
 
@@ -26,7 +26,7 @@ Design, simulate, and control a virtual drilling system using standardized inter
 ## Tooling & Interfaces
 
 - D‑WIS semantics: standardized names/metadata for setpoints and measurements. See the vocabulary index at https://d-wis.org/vocabulary-index/.
-- OpenLab simulator: the plant used for Mode Virtual scenarios. See https://openlab.app/.
+- OpenLab simulator: the plant used for Mode Virtual (V) scenarios. See https://openlab.app/.
 - Connectivity and discovery, expected signals, and example flows are described in Technical Specs.
 
 [:octicons-gear-24: Technical Specs](technical-specs.md){ .md-button }

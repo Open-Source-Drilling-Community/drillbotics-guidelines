@@ -16,8 +16,8 @@
 ```mermaid
 graph LR
     A[Team Registration<br/>& Kickoff] --> B[Mode Selection]
-    B -->|V - Mode Virtual<br/>Modeling/Simulation| C[OpenLab/D-WIS<br/>Interface Setup]
-    B -->|P - Mode Physical<br/>Rig Construction| D[Safety Plan &<br/>Rig Development]
+    B -->|Mode V<br/>Modeling/Simulation| C[OpenLab/D-WIS<br/>Interface Setup]
+    B -->|Mode P<br/>Rig Construction| D[Safety Plan &<br/>Rig Development]
     C --> E[Phase I Design Report<br/>& Safety Documentation]
     D --> E
     E --> F{Judge Review<br/>& Advancement?}
@@ -97,7 +97,7 @@ Use this quick checklist to set up your team. See the linked pages for details.
 - [ ] Set up your repo and communication channels — [Contributor Guide](contributor-guide.md)
 - [ ] Review deliverables and scoring — [Rules & Scoring](competition/rules-scoring.md)
 - [ ] Prepare your environment  
-      Mode Virtual: OpenLab + D‑WIS;  Mode Physical: rig, sensors, and safety procedures — [Safety](competition/safety.md)
+      Mode Virtual (V): OpenLab + D‑WIS;  Mode Physical (P): rig, sensors, and safety procedures — [Safety](competition/safety.md)
 - [ ] Submit Phase I materials; schedule Phase II planning — Deliverables pages
 
 ## Upcoming

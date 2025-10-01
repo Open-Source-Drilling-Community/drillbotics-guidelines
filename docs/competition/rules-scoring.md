@@ -23,4 +23,4 @@ tags:
 - Weighting of categories (safety, performance, innovation, documentation, etc.)
 - Pass/fail gates
 
-See **Tracks → Mode Virtual / Mode Physical → Judging** for rubric details.
+See **Tracks → Mode Virtual (V) / Mode Physical (P) → Judging** for rubric details.

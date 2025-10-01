@@ -6,7 +6,7 @@ tags:
 
 # Mode Physical (P) — Overview
 
-Build and operate a small‑scale drilling rig that autonomously drills a directional well. Mode Physical emphasizes safety, robust hardware, closed‑loop control using downhole data, and clear reporting.
+Build and operate a small‑scale drilling rig that autonomously drills a directional well. Mode Physical (P) emphasizes safety, robust hardware, closed‑loop control using downhole data, and clear reporting.
 
 === "Safety & Risk"
 

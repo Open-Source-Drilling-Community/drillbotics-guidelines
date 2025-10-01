@@ -8,6 +8,6 @@ Key expectations:
 - Guards and interlocks: rigs often spin components at high RPM; include protective covers/shields so loose parts cannot become projectiles. Provide emergency stops and appropriate interlocks.
 - Lab practices: supervision, lockout/tagout where applicable, and safe test procedures.
 
-This safety case applies to both tracks; Mode Physical carries additional risk due to physical equipment. See also Competition → Safety for general principles.
+This safety case applies to both tracks; Mode Physical (P) carries additional risk due to physical equipment. See also Competition → Safety for general principles.
 
 Source: see the full 2024 text at 2024/group-b.md.
