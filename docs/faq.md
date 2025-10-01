@@ -22,3 +22,7 @@ Open a pull request that edits the relevant Markdown under `docs/`, and add a sh
 ## Are PDFs the source of truth?
 
 No. PDFs may be attached for reference, but the Markdown pages here are authoritative.
+
+## Can we use cloud models for AI features?
+
+Yes, during development. For the final judged runs, all AI inference must be offline on limited local/edge hardware. Teams are evaluated on small, locally run multimodal models (see constraints in Competition → [Rules & Scoring](competition/rules-scoring.md)). Interop checks remain read‑only/shadow (no PLC writes).
