@@ -147,13 +147,13 @@ nav:
       - Safety: competition/safety.md
   - Tracks:
       - Overview: tracks/index.md
-      - Deliverables (A vs B): tracks/deliverables.md
-      - Group A (Virtual):
+      - Deliverables (V vs P): tracks/deliverables.md
+      - Mode Virtual (V):
           - Overview: tracks/group-a/overview.md
           - Technical Specs: tracks/group-a/technical-specs.md
           - Deliverables: tracks/group-a/deliverables.md
           - Judging: tracks/group-a/judging.md
-      - Group B (Physical):
+      - Mode Physical (P):
           - Overview: tracks/group-b/overview.md
           - Safety & Risk: tracks/group-b/safety.md
           - Hardware: tracks/group-b/hardware.md
