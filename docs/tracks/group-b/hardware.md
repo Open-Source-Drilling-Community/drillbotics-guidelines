@@ -4,7 +4,7 @@ tags:
   - hardware
 ---
 
-# Group B — Hardware
+# Mode Physical (P) — Hardware
 
 Expectations from the 2024 guidelines:
 

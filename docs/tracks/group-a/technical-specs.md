@@ -4,7 +4,7 @@ tags:
   - technical-specs
 ---
 
-# Group A — Technical Specifications
+# Mode Virtual (V) — Technical Specifications
 
 Connectivity and interfaces (D‑WIS + OpenLab):
 

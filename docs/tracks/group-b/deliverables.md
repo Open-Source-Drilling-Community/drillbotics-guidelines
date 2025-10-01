@@ -3,7 +3,7 @@ tags:
   - deliverables
 ---
 
-# Group B — Deliverables & Testing
+# Mode Physical (P) — Deliverables & Testing
 
 Phase I — Design (2023–2024):
 
@@ -14,7 +14,7 @@ Phase I — Design (2023–2024):
 
 Phase II — Implementation and testing:
 
-- Group B: model & controls development and rig construction; Phase II test occurs May/June 2024.
+- Mode Physical: model & controls development and rig construction; Phase II test occurs May/June 2024.
 - Pre‑recorded team presentation: submitted ~1 week before the test; judges prepare Q&A from it.
 
 Required artifacts (Magnetic surveying excerpts):

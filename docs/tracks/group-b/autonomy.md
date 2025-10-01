@@ -4,7 +4,7 @@ tags:
   - autonomy
 ---
 
-# Group B — Autonomy & Control
+# Mode Physical (P) — Autonomy & Control
 
 Automation requirements (per 2024 guidelines):
 

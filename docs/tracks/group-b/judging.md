@@ -4,7 +4,7 @@ tags:
   - judging
 ---
 
-# Group B — Judging
+# Mode Physical (P) — Judging
 
 Judging spans both the design phase and the final test. The 2024 guidelines define the categories below; detailed weightings are in the source document.
 
