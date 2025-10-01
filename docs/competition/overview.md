@@ -14,7 +14,7 @@ This site hosts the official Drillbotics® competition guidelines in a versioned
 ## How to use this site
 
 - Use the **version switcher** (top-left) to browse historical releases (e.g., 2024) or the latest.
-- Navigate by **Tracks** (Virtual = Group A, Physical = Group B).
+- Navigate by **Tracks** using the updated naming: **Mode Virtual (V)** and **Mode Physical (P)**. Abbreviations **Mode V** and **Mode P** are used where space is tight.
 - Check **Changelog** for human-readable summaries. For line-level diffs, use GitHub’s *History*.
 
 !!! tip "Source PDFs"
