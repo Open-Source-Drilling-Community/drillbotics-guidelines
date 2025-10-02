@@ -2,6 +2,7 @@
 tags:
   - group-a
   - technical-specs
+status: updated
 ---
 
 # Mode Virtual (V) — Technical Specifications
@@ -18,13 +19,14 @@ See the scenarios and objectives at [Overview → Cases](overview.md#cases-20251
 
 ## Connectivity & Discovery (D‑WIS + OpenLab)
 
-- Use the D‑WIS semantics vocabulary for signal names/metadata: [D‑WIS Vocabulary Index](https://d-wis.org/vocabulary-index/)
+- Use the D‑WIS semantics vocabulary for signal names/metadata: [D‑WIS Vocabulary Index](https://d-wis.org/vocabulary-index/).
 - Drillbotics provides a Dockerized OPC‑UA server exposing D‑WIS‑named nodes connected to the OpenLab Drilling Simulator.
 - Your control app connects to the local OPC‑UA endpoint, writes setpoints, and reads measurements through the D‑WIS interface.
 - Day‑of change: endpoint parameters and available signals may change; software must browse/discover and adapt to the active case.
 
-!!! warning "Design for discovery"
-    Do not hard‑code node IDs. Browse by category, match by D‑WIS names/units, and verify access modes (read/write) at startup.
+!!! warning "Design for Discovery"
+    - **MUST NOT** hard‑code node IDs.
+    - **MUST** browse by category, match by D‑WIS names/units, and verify access modes (read/write) at startup.
 
 ## Signals & Units
 
@@ -68,7 +70,7 @@ Submit a consistent package regardless of case. Keep headers semantic and includ
 - Static logs (optional but encouraged): LAS 2.0 `wellname_logs.las` for key curves and metadata.
 - Plots: include time‑aligned figures demonstrating objectives (e.g., flow in/out vs. SPP during connections; torque/RPM spectra for stick‑slip; plan‑vs‑actual for directional).
 
-!!! tip "Interoperability checks"
+!!! tip "Interoperability Checks"
     Verify OpenLab API/OPC‑UA connectivity during Feb–Mar readiness checks. All AI components must run offline during judging. See Edge‑AI note in Overview/Deliverables.
 
 ## Case‑Specific Notes

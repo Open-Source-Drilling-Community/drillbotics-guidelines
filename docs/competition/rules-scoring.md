@@ -3,6 +3,7 @@ tags:
   - competition
   - rules
   - scoring
+status: updated
 ---
 
 # Rules & Scoring
@@ -12,10 +13,15 @@ This section summarizes the 2025.1 rules and how teams are scored. Track‑speci
 ## General Rules
 
 - Eligibility and team composition follow prior years; cite all external sources and code. Publishable artifacts are encouraged (see Resources → Downloads and OSDC references).
-- Submissions must include required datasets and documentation. Use the fixed‑schema `drilling_timeseries.csv` (≥1 Hz; D‑WIS names) and a static LAS 2.0 log where suggested.
-- Interoperability checks are required prior to final tests. For Mode P these are read-only/shadow (no PLC writes). For Mode V, verify OpenLab API connectivity.
-- Safety and compliance are mandatory. Judges grade both the plan and implementation.
-- Outcomes-first and algorithm-agnostic: judges score outcomes and evidence; no preference is given to specific algorithms or model families (e.g., PID vs MPC vs RL; CNN vs rules vs LLM), provided constraints and safety are met.
+- Submissions **MUST** include required datasets and documentation. Use the fixed‑schema `drilling_timeseries.csv` (≥1 Hz; D‑WIS names) and a static LAS 2.0 log where suggested.
+- Interoperability checks are **REQUIRED** prior to final tests. For **Mode Physical (P)** these are read‑only/shadow (**no PLC writes**). For **Mode Virtual (V)**, verify OpenLab API connectivity.
+- Safety and compliance are **MANDATORY**. Judges grade both the plan and implementation.
+- Outcomes‑first and algorithm‑agnostic: judges score outcomes and evidence; no preference is given to specific algorithms or model families (e.g., PID vs MPC vs RL; CNN vs rules vs LLM), provided constraints and safety are met.
+
+!!! warning "Mandatory Rule"
+    - Teams **MUST** pass interoperability checks before Phase II testing.
+    - Mode P interop is read‑only/shadow; teams **MUST NOT** write to PLCs/actuators during checks.
+    - Safety compliance **SHALL** be demonstrated in both documentation and implementation.
 
 ### Innovation Uplift (Applies in All Categories)
 
@@ -30,29 +36,35 @@ Judges may award the top of a category’s band when a documented novelty (hardw
 
 === "Mode Virtual (V) — 100 pts (+AI)"
 
-- Trajectory / test / target accuracy: 25
-- Drilling efficiency (time to TD / ROP): 25
-- Well-control & dysfunction handling: 15
-- Safety & compliance: 10
-- Human Factors & UI clarity: 10
-- Automation quality & innovation: 15
-- Edge‑AI Bonus (optional): up to +10 (≤10% default; ≤15% committee max)
+| Category | Points |
+| --- | ---: |
+| Trajectory / Test / Target Accuracy | 25 |
+| Drilling Efficiency (Time to TD / ROP) | 25 |
+| Well‑Control & Dysfunction Handling | 15 |
+| Safety & Compliance | 10 |
+| Human Factors & UI Clarity | 10 |
+| Automation Quality & Innovation | 15 |
+| Edge‑AI Bonus (Optional) | +10 max |
 
 === "Mode Physical (P) — 100 pts (+AI)"
 
-- Trajectory / path quality / tortuosity: 20
-- Drilling efficiency (time to TD / ROP): 20
-- Safety & procedure compliance (E‑Stop, guards, limits): 20
-- Data quality (CSV schema + LAS completeness; calibration; 1 Hz+; semantic headers): 10
-- Human Factors & UI clarity: 10
-- Design & automation quality: 20
-- Interop demo: Pass/Fail gate before Phase II
-- Edge‑AI Bonus (optional): up to +10 (≤10% default; ≤15% committee max)
+| Category | Points |
+| --- | ---: |
+| Trajectory / Path Quality / Tortuosity | 20 |
+| Drilling Efficiency (Time to TD / ROP) | 20 |
+| Safety & Procedure Compliance (E‑Stop, Guards, Limits) | 20 |
+| Data Quality (CSV Schema + LAS, Calibration, ≥1 Hz, Semantic Headers) | 10 |
+| Human Factors & UI Clarity | 10 |
+| Design & Automation Quality | 20 |
+| Edge‑AI Bonus (Optional) | +10 max |
+
+!!! warning "Mandatory Rule"
+    Interop demo is a Pass/Fail gate before Phase II. Teams **MUST** pass interop to proceed.
 
 ## Edge‑AI Bonus (Optional)
 
-- Scored on correctness vs ground truth windows, grounding to CSV, latency/footprint, clarity/safety, and innovation. AI score is scaled to a maximum of +10 points.
-- Default cap is 10% of total; committee may raise to ≤15%.
+- Scored on correctness vs ground‑truth windows, grounding to CSV, latency/footprint, clarity/safety, and innovation. AI score is scaled to a maximum of **+10** points.
+- Default cap is **10%** of total; committee may raise to **≤15%**.
 
 --8<-- "_includes/edge-ai.md"
 
