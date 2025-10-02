@@ -199,6 +199,40 @@
   display: none !important;
 }
 
+/* Ensure custom Copy Markdown icon behaves like native action buttons */
+.db-copy-md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .2rem;
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.db-copy-text-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .2rem;
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.db-copy-rich-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .2rem;
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
 /* Mermaid: adaptive colors for light/dark mode */
 :root {
   --db-mm-edge: var(--md-default-fg-color--lighter);
