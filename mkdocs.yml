@@ -3,7 +3,7 @@ site_description: Official, versioned Drillbotics competition rules and resource
 site_url: https://Open-Source-Drilling-Community.github.io/drillbotics-guidelines/
 repo_url: https://github.com/Open-Source-Drilling-Community/drillbotics-guidelines 
 repo_name: Drillbotics Guidelines
-edit_uri: edit/main/docs/
+edit_uri: edit/master/docs/
 
 # Copyright
 copyright: Copyright &copy; 2015 - 2025 SPE Drillbotics
