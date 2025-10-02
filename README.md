@@ -1,6 +1,8 @@
-# Drillbotics® Guidelines (Docs-as-Code) — **uv** Workflow
+# SPE DSATS Drillbotics® Guidelines
 
-This repo hosts the official, versioned Drillbotics guidelines using **MkDocs + Material** and **mike**. It deploys to **GitHub Pages** and is easy to maintain via Markdown and pull requests.
+![Drillbotics Logo](docs/_assets/images/logos/drillbotics-logo-bw.png)
+
+This repo hosts the official, versioned Drillbotics guidelines using **MkDocs + Material** and **mike** (Docs-as-Code). It deploys to **GitHub Pages** and is easy to maintain via Markdown and pull requests.
 
 This README uses **[uv](https://github.com/astral-sh/uv)** for fast Python envs. (pip/venv also works — see the bottom.)
 
@@ -35,7 +37,12 @@ uv pip install -r requirements.txt
 uv run mkdocs serve
 ```
 
-Need the mike version switcher? Fetch the `gh-pages` branch and run `uv run mike serve --dev-addr 127.0.0.1:8000` (no deploy step required).
+Need the mike version switcher? First fetch the `gh-pages` branch locally, then run `uv run mike serve --dev-addr 127.0.0.1:8000` (no deploy step required).
+
+```bash
+git fetch origin gh-pages:gh-pages
+uv run mike serve --dev-addr 127.0.0.1:8000
+```
 
 `make serve` runs the same MkDocs dev server.
 
@@ -47,7 +54,7 @@ Open <http://127.0.0.1:8000>
 uv run mkdocs build --strict
 ```
 
-Link checking runs via `mkdocs-htmlproofer-plugin` during build. External links have a short timeout and a couple of retries.
+Internal links are checked during build via `mkdocs-htmlproofer-plugin`. External link checks are disabled in CI for stability (you can enable locally; see `mkdocs.yml`).
 
 ### 5) Initialize versioned docs (example: 2024 first release)
 
