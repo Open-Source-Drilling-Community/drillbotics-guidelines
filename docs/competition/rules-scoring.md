@@ -70,5 +70,5 @@ Judges may award the top of a category’s band when a documented novelty (hardw
 
 See track rubrics for examples and clarifications:
 
-- Mode Virtual (V) — Judging: ../tracks/group-a/judging.md
-- Mode Physical (P) — Judging: ../tracks/group-b/judging.md
+- [Mode Virtual (V) — Judging](../tracks/group-a/judging.md)
+- [Mode Physical (P) — Judging](../tracks/group-b/judging.md)
