@@ -1,6 +1,6 @@
 site_name: Drillbotics® Guidelines
 site_description: Official, versioned Drillbotics competition rules and resources.
-site_url: https://Open-Source-Drilling-Community.github.io/drillbotics-guidelines/latest/
+site_url: https://Open-Source-Drilling-Community.github.io/drillbotics-guidelines/
 repo_url: https://github.com/Open-Source-Drilling-Community/drillbotics-guidelines 
 repo_name: Drillbotics Guidelines
 edit_uri: edit/main/docs/
@@ -113,6 +113,7 @@ markdown_extensions:
   - def_list
   - md_in_html
   - tables
+  - pymdownx.highlight
   - toc:
       permalink: true
   # Ensure snippet includes like `--8<-- "_includes/file.md"` work
@@ -147,7 +148,7 @@ nav:
   - Home: index.md
   - Competition:
       - Overview: competition/index.md
-      - Competition Overview: competition/overview.md
+      - About: competition/overview.md
       - Timeline & Milestones: competition/timeline.md
       - Upcoming Dates: competition/upcoming.md
       - Rules & Scoring: competition/rules-scoring.md
