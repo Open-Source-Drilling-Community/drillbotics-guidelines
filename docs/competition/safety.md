@@ -17,7 +17,7 @@ Baseline expectations that apply to all teams, venues, and modes.
 
 Track‑specific details are on the respective pages:
 
-- [Mode Physical (P) — Safety & Risk](../../tracks/group-b/safety.md)
+- [Mode Physical (P) — Safety & Risk](../tracks/group-b/safety.md)
 - Mode Virtual (V) — general safety is minimal; still follow lab policies for any hardware‑in‑the‑loop setups.
 
 !!! warning "Mandatory Rule"
