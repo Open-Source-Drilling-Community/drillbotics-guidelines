@@ -100,6 +100,7 @@ extra_css:
 
 extra_javascript:
   - _assets/scripts/announcement.js
+  - _assets/scripts/sponsors-ribbon.js
   - _assets/scripts/copy-markdown.js
   - _assets/scripts/mermaid-theme.js
   - _assets/scripts/mathjax.js
