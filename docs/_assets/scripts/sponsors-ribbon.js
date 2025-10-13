@@ -81,11 +81,11 @@
       a.setAttribute('aria-label', 'Become a Sponsor');
       a.setAttribute('title', 'Become a Sponsor');
       // Inline heart icon (currentColor) + label
-      a.innerHTML = '
+      a.innerHTML = `
         <svg class="db-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path fill="currentColor" d="M12 21s-6.716-4.346-9.193-7.077C.41 11.34.764 7.72 3.23 5.69a5.01 5.01 0 0 1 6.54.38L12 8.39l2.23-2.32a5.01 5.01 0 0 1 6.54-.38c2.466 2.03 2.82 5.65.423 8.233C18.716 16.654 12 21 12 21z"/>
         </svg>
-        <span>Become a Sponsor</span>';
+        <span>Become a Sponsor</span>`;
       li.appendChild(a);
       list.appendChild(li);
     }
