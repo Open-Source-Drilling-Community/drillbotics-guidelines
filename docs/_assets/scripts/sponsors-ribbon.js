@@ -34,6 +34,26 @@
     ]
   };
 
+  // Normalize logo path relative to site base URL
+  function normalizeLogoPath(path) {
+    if (!path) return path;
+    // If already absolute (http/https), return as-is
+    if (path.startsWith('http://') || path.startsWith('https://')) {
+      return path;
+    }
+    // Use new URL() to resolve relative paths correctly
+    // This works with MkDocs' base URL structure (e.g., /drillbotics-guidelines/)
+    // by resolving relative to the document's base URI
+    try {
+      const resolved = new URL(path, document.baseURI);
+      return resolved.href;
+    } catch (e) {
+      // Fallback: return path as-is if URL construction fails
+      console.warn('Failed to resolve logo path:', path, e);
+      return path;
+    }
+  }
+
   function createRibbon(items, donationUrl) {
     const region = document.createElement('div');
     region.className = 'db-sponsors-ribbon';
@@ -60,11 +80,11 @@
       link.setAttribute('aria-label', `Visit ${item.name || 'sponsor'} website`);
 
       const img = document.createElement('img');
-      img.src = item.logo;
+      img.src = normalizeLogoPath(item.logo);
       img.alt = `Sponsor logo: ${item.name || 'Sponsor'}`;
       img.loading = 'lazy';
       img.decoding = 'async';
-      img.height = 36; // CSS constrains actual display; height is a perf hint
+      img.height = 44; // CSS constrains actual display; height is a perf hint
 
       link.appendChild(img);
       li.appendChild(link);
@@ -141,5 +161,48 @@
     // Recalculate once other async UI (like announcement) settles
     window.requestAnimationFrame(() => window.requestAnimationFrame(updateOffset));
     setTimeout(updateOffset, 400);
+
+    // Auto-hide on scroll down, show on scroll up
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+    const scrollThreshold = 100; // Don't hide until scrolled at least 100px
+    const scrollDelta = 10; // Minimum scroll movement to trigger hide/show
+
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+      
+      // Only hide if user has scrolled past the threshold
+      if (currentScrollY > scrollThreshold) {
+        // Check if scrolling down (and moved enough to matter)
+        if (currentScrollY > lastScrollY + scrollDelta) {
+          ribbon.classList.add('hidden');
+        }
+        // Check if scrolling up (and moved enough to matter)
+        else if (currentScrollY < lastScrollY - scrollDelta) {
+          ribbon.classList.remove('hidden');
+        }
+      } else {
+        // Always show ribbon when near the top
+        ribbon.classList.remove('hidden');
+      }
+      
+      lastScrollY = currentScrollY;
+      ticking = false;
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(handleScroll);
+        ticking = true;
+      }
+    }
+
+    // Check if user prefers reduced motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    // Only enable auto-hide if user doesn't prefer reduced motion
+    if (!prefersReducedMotion) {
+      window.addEventListener('scroll', onScroll, { passive: true });
+    }
   });
 })();
