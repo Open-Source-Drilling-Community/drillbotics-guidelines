@@ -896,3 +896,54 @@
   opacity: 1;
   transition-delay: .2s;
 }
+
+/* Footer visibility fixes (light mode) */
+[data-md-color-scheme="default"] {
+  /* Stronger contrast in light mode */
+  --db-footer-text: #0f172a;               /* high-contrast dark text */
+  --db-footer-link: #0c2d6d;               /* darker link color */
+  --db-footer-link-hover: #0d47a1;         /* brand on hover */
+  --db-footer-icon-bg: color-mix(in srgb, var(--db-primary) 24%, white 76%);
+  --db-footer-icon-hover: color-mix(in srgb, var(--db-primary) 34%, white 66%);
+}
+
+[data-md-color-scheme="default"] .md-footer {
+  color: var(--db-footer-text);
+}
+
+[data-md-color-scheme="default"] .md-copyright {
+  color: var(--db-footer-text);
+  opacity: .98;           /* ensure no dimming */
+  font-weight: 500;       /* subtle emphasis for legibility */
+}
+
+[data-md-color-scheme="default"] .md-footer a {
+  color: var(--db-footer-link);
+}
+[data-md-color-scheme="default"] .md-footer a:hover {
+  color: var(--db-footer-link-hover);
+}
+
+/* Enforce strong text color on meta & copyright in light mode */
+[data-md-color-scheme="default"] .md-footer-meta,
+[data-md-color-scheme="default"] .md-footer-meta__inner,
+[data-md-color-scheme="default"] .md-copyright {
+  color: var(--db-footer-text) !important;
+  opacity: 1 !important;
+}
+
+[data-md-color-scheme="default"] .md-social__link {
+  opacity: 1;                                   /* remove dimming */
+  color: var(--db-footer-text);                 /* drives svg currentColor */
+  background: var(--db-footer-icon-bg);         /* subtle chip for contrast */
+  border: 1px solid color-mix(in srgb, var(--db-primary) 40%, transparent) !important; /* stronger ring */
+}
+[data-md-color-scheme="default"] .md-social__link:hover {
+  background: var(--db-footer-icon-hover);
+}
+[data-md-color-scheme="default"] .md-social__link svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: currentColor !important;                 /* ensure icon inherits */
+  stroke: currentColor;                          /* cover stroke-based glyphs */
+}
