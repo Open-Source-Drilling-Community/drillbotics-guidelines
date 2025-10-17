@@ -7,19 +7,22 @@
 [:material-laptop: Mode Virtual (V)](tracks/group-a/overview.md){ .md-button .md-button--secondary }
 [:material-cog: Mode Physical (P)](tracks/group-b/overview.md){ .md-button .md-button--secondary }
 </div>
- 
-??? tip "New to Drillbotics? (expand)"
-    Skim the [Overview](competition/overview.md), then jump to the Quick Start below.
+  
+!!! success "Registration is Now Open!"
+    **Student teams can now register for the 2026 competition!**
+    
+    Submit your team registration at: **<https://drillbotics.com/2026-team-registration/>**
+    
+    Registration closes **2025-11-30 23:59** (Local Time)
 
-!!! info "Official Site, Archives, and Registration"
+!!! info "Official Site and Archives"
     - For news and additional context, visit the official site: <https://drillbotics.com/>
-    - To review previous years’ reports and winners, see the Archives: <https://drillbotics.com/archives/>
-    - Team registration is submitted on the official site. The registration link updates each season — check the site header or Guidelines page on <https://drillbotics.com/> when the window opens.
+    - To review previous years' reports and winners, see the Archives: <https://drillbotics.com/archives/>
 
 <div class="btn-row" markdown>
+[:material-form-select: Register Your Team](https://drillbotics.com/2026-team-registration/){ .md-button .md-button--primary }
 [:material-open-in-new: Official Site](https://drillbotics.com/){ .md-button .md-button--secondary }
 [:material-archive-outline: Archives (Previous Reports)](https://drillbotics.com/archives/){ .md-button .md-button--secondary }
-[:material-form-select: Team Registration (on drillbotics.com)](https://drillbotics.com/){ .md-button }
 </div>
 
 ## At-a-Glance Flow
@@ -101,7 +104,8 @@ Use this quick checklist to set up your team. See the linked pages for details.
 
 - [ ] Confirm eligibility, advisors, and team composition — [Overview](competition/overview.md)
 - [ ] Choose your track — [Mode Virtual (V)](tracks/group-a/overview.md) or [Mode Physical (P)](tracks/group-b/overview.md)
-- [ ] Register and note all deadlines — [Timeline](competition/timeline.md)
+- [ ] **Register your team at [https://drillbotics.com/2026-team-registration/](https://drillbotics.com/2026-team-registration/)** (Closes 2025-11-30)
+- [ ] Note all important deadlines — [Timeline](competition/timeline.md)
 - [ ] Set up your repo and communication channels — [Contributor Guide](contributor-guide.md)
 - [ ] Review deliverables and scoring — [Rules & Scoring](competition/rules-scoring.md)
 - [ ] Prepare your environment  

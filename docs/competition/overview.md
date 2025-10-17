@@ -6,6 +6,13 @@ tags:
 
 # Competition Overview
 
+!!! success "Registration is Now Open!"
+    **Student teams can now register for the 2026 competition!**
+    
+    Submit your team registration at: **<https://drillbotics.com/2026-team-registration/>**
+    
+    Registration closes **2025-11-30 23:59** (Local Time)
+
 This site hosts the official Drillbotics® competition guidelines in a versioned, diff-friendly format.
 
 ## How to Use This Site
