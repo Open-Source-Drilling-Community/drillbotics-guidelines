@@ -29,7 +29,7 @@
     donationUrl: 'https://drillbotics.com/donate',
     // Used when data file is missing; you can delete these once real data is in place
     fallbackSponsors: [
-      { name: 'Drilling Systems Automation Technical Section (DSATS)', url: 'https://www.spe-dsats.org/', logo: '_assets/images/sponsors/DSATS_logo.png' },
+      { name: 'Drilling Systems Advancement Technical Section (DSATS)', url: 'https://www.spe-dsats.org/', logo: '_assets/images/sponsors/DSATS_logo.png' },
       { name: 'Gibson Reports', url: 'https://www.gibsonreports.com/', logo: '_assets/images/sponsors/Gibson_reports_logo_black.png' }
     ]
   };

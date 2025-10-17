@@ -37,7 +37,7 @@
 
 <!-- # Orgs & references -->
 *[SPE]: Society of Petroleum Engineers
-*[DSATS]: Drilling Systems Automation Technical Section
+*[DSATS]: Drilling Systems Advancement Technical Section
 *[OSDC]: Open-Source Drilling Community
 *[WGS‑84]: World Geodetic System 1984
 *[WGS-84]: World Geodetic System 1984
