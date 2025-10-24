@@ -33,6 +33,9 @@ This site hosts the official Drillbotics® competition guidelines in a versioned
 [:octicons-milestone-24: Timeline & Milestones](timeline.md){ .md-button .md-button--primary }
 [:octicons-law-24: Rules & Scoring](rules-scoring.md){ .md-button }
 
+!!! info "Prizes and recognition — updates in progress"
+    Prizes are being actively reworked and improved for this cycle. Beyond the SPE/IADC paper publication opportunity, we expect to include additional forms of recognition, subject to available budget. More updates to come.
+
 ## Governance and Scope
 
 - Competition goals and constraints

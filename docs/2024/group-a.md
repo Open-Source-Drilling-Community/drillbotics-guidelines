@@ -679,6 +679,9 @@ Appendix A.
 
 ### Group A and Group B Prizes
 
+!!! info "Prizes and recognition — updates in progress"
+    For the current competition cycle, prizes are being actively reworked and improved. In addition to the SPE/IADC paper publication opportunity described here, we plan to include additional forms of recognition, contingent on available budget. More updates to come.
+
 1. The program committee of the Drilling Conference awarded the
     Drillbotics subcommittee a permanent slot[^3] in one of the drilling
     sessions at the conference. As per SPE’s customary procedures, the

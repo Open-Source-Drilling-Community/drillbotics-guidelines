@@ -10,6 +10,9 @@ status: updated
 
 This section summarizes the 2025.1 rules and how teams are scored. Track‑specific examples and clarifications live on the Judging pages.
 
+!!! info "Prizes and recognition — updates in progress"
+    The prize structure for the current cycle is being actively reworked and improved. In addition to the SPE/IADC paper publication opportunity, we plan to include additional forms of recognition, contingent on available budget. More updates to come.
+
 ## General Rules
 
 - Eligibility and team composition follow prior years; cite all external sources and code. Publishable artifacts are encouraged (see Resources → Downloads and OSDC references).
