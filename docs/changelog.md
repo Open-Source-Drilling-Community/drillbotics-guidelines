@@ -6,6 +6,7 @@ status: updated
 
 Notable changes to the Drillbotics Guidelines. Entries are in reverse chronological order.
 
+- 10-2025 **Prizes**: Added site-wide note that prizes and recognition are being actively reworked and improved beyond the SPE/IADC paper publication, subject to available budget; more updates to come. Callouts added on Competition Overview, Rules & Scoring, and above the prize sections in the 2024 archive pages.
 - 10-2025 **Registration**: Added prominent callouts announcing that registration is now open for the 2026 competition at <https://drillbotics.com/2026-team-registration/>; updated timeline table, main landing page, competition overview, and both track overview pages with registration information and deadlines. Added sponsors + donate button in banner display.
 - 09-2025 **v2025.1**: Finalized 2025–2026 cycle. Standardized naming to "Mode Virtual (V)" / "Mode Physical (P)" across headings and CTAs; published 2025.1 timeline windows; completed general Safety with cross‑links; updated Rules & Scoring with 2025.1 weights and **Edge‑AI Bonus** (optional, ≤10% default; ≤15% max); refreshed deliverables dates on Mode V/P pages; kept 2024 PDFs and archive labels unchanged.
 - 09-2025 **Edge‑AI**: Added explicit expectation for students to focus on data generation/fine‑tuning and compact multimodal model optimization within the centralized include used on Group A pages.
