@@ -34,19 +34,36 @@
     ]
   };
 
+  const SITE_SCOPE = (function () {
+    if (typeof window === 'undefined') return null;
+    const scope = window.__md_scope;
+    if (scope instanceof URL) return scope;
+    try {
+      return new URL('.', window.location.href);
+    } catch (_) {
+      return null;
+    }
+  })();
+
   // Normalize logo path relative to site base URL
   function normalizeLogoPath(path) {
     if (!path) return path;
-    // If already absolute (http/https), return as-is
-    if (path.startsWith('http://') || path.startsWith('https://')) {
+    // If already absolute (e.g., http(s):// or protocol-relative), return as-is
+    if (/^(?:[a-z][a-z\d+\-.]*:)?\/\//i.test(path)) {
       return path;
     }
-    // Use new URL() to resolve relative paths correctly
-    // This works with MkDocs' base URL structure (e.g., /drillbotics-guidelines/)
-    // by resolving relative to the document's base URI
     try {
-      const resolved = new URL(path, document.baseURI);
-      return resolved.href;
+      // Paths starting with ./ or ../ should stay relative to the current document
+      if (path.startsWith('./') || path.startsWith('../')) {
+        return new URL(path, document.baseURI).href;
+      }
+      // Root-relative paths should anchor to the origin
+      if (path.startsWith('/')) {
+        return new URL(path, window.location.origin).href;
+      }
+      // Otherwise resolve against the MkDocs site scope (version root) when available
+      const base = SITE_SCOPE || new URL('.', document.baseURI);
+      return new URL(path, base).href;
     } catch (e) {
       // Fallback: return path as-is if URL construction fails
       console.warn('Failed to resolve logo path:', path, e);
