@@ -2,8 +2,8 @@
 // Edit the message/date/link below. Dismissal persisted in localStorage.
 (function () {
   const CONFIG = {
-    key: 'db_announcement_v2',
-    message: 'Registration closes on 2025-11-30',
+    key: 'db_announcement_v3',
+    message: '🚨 Update: Registration Deadline Extended to December 31 2025 – Teams from 5 continents are already in. Don\'t miss your chance to compete!',
     linkLabel: 'See Timeline',
     url: 'drillbotics-guidelines/competition/timeline/',
     theme: 'info' // info | warning | success (visual only)
