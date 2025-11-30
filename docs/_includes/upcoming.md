@@ -6,7 +6,7 @@
 |---|---:|---|
 | Guidelines v2025.1 published | 2025-09-30 | |
 | **Registration open** | **Now open** | **Submit at [drillbotics.com/2026-team-registration](https://drillbotics.com/2026-team-registration/)** |
-| Registration closes | 2025-11-30 23:59 |  Local Time |
+| Registration closes | 2025-12-31 23:59 |  Extended — don't miss your chance |
 | Phase I Design Report | 2025-12-31 23:59 | Local Time |
 | Optional Phase I video | 2026-01-23 | Optional design video (both modes) |
 | Edge‑AI custom task pre‑approval | 2026-02-01 | Recommended; same JSON interface and offline rules |

@@ -9,11 +9,11 @@
 </div>
   
 !!! success "Registration is Now Open!"
-    **Student teams can now register for the 2026 competition!**
+    🚨 **Update: Registration Deadline Extended to December 31, 2025 — teams from 5 continents are already in. Don't miss your chance to compete!**
     
     Submit your team registration at: **<https://drillbotics.com/2026-team-registration/>**
     
-    Registration closes **2025-11-30 23:59** (Local Time)
+    Registration closes **2025-12-31 23:59** (Local Time)
 
 !!! info "Official Site and Archives"
     - For news and additional context, visit the official site: <https://drillbotics.com/>
@@ -104,7 +104,7 @@ Use this quick checklist to set up your team. See the linked pages for details.
 
 - [ ] Confirm eligibility, advisors, and team composition — [Overview](competition/overview.md)
 - [ ] Choose your track — [Mode Virtual (V)](tracks/group-a/overview.md) or [Mode Physical (P)](tracks/group-b/overview.md)
-- [ ] **Register your team at [https://drillbotics.com/2026-team-registration/](https://drillbotics.com/2026-team-registration/)** (Closes 2025-11-30)
+- [ ] **Register your team at [https://drillbotics.com/2026-team-registration/](https://drillbotics.com/2026-team-registration/)** (Closes 2025-12-31)
 - [ ] Note all important deadlines — [Timeline](competition/timeline.md)
 - [ ] Set up your repo and communication channels — [Contributor Guide](contributor-guide.md)
 - [ ] Review deliverables and scoring — [Rules & Scoring](competition/rules-scoring.md)

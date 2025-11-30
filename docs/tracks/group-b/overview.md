@@ -83,7 +83,7 @@ Weights and examples are on the Judging page.
 
 ## Getting Started Checklist
 
-- [ ] **Register your team at [https://drillbotics.com/2026-team-registration/](https://drillbotics.com/2026-team-registration/)** (Closes 2025-11-30)
+- [ ] **Register your team at [https://drillbotics.com/2026-team-registration/](https://drillbotics.com/2026-team-registration/)** (Closes 2025-12-31)
 - [ ] Confirm lab safety training, advisor oversight, and facility access; draft and socialize your safety plan.
 - [ ] Design a minimal, stable rig structure with proper guarding and emergency stops; verify power and footprint.
 - [ ] Select surface/downhole sensors; calibrate and specify DAQ rates/sync; implement reliable logging.
