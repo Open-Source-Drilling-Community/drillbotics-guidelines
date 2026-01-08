@@ -2,11 +2,12 @@
 // Edit the message/date/link below. Dismissal persisted in localStorage.
 (function () {
   const CONFIG = {
-    key: 'db_announcement_v3',
-    message: '🚨 Update: Registration Deadline Extended to December 31 2025 – Teams from 5 continents are already in. Don\'t miss your chance to compete!',
-    linkLabel: 'See Timeline',
-    url: 'drillbotics-guidelines/competition/timeline/',
-    theme: 'info' // info | warning | success (visual only)
+    // Bump the key when changing the message so previously-dismissed banners show again.
+    key: 'db_announcement_v4',
+    message: 'Phase I Design Reports: thank you to the teams who have submitted. Optional Phase I video due Jan 23, 2026 (local time).',
+    linkLabel: 'Deliverables & dates',
+    url: 'tracks/deliverables/',
+    theme: 'success' // info | warning | success (visual only)
   };
 
   try {
