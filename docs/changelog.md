@@ -6,6 +6,9 @@ status: updated
 
 Notable changes to the Drillbotics Guidelines. Entries are in reverse chronological order.
 
+- 01-2026 **Phase I**: Updated the site-wide banner and key landing/overview pages to thank teams for Phase I Design Report submissions, clarify that registration closed **2025-12-31 23:59** (Local Time), and highlight the optional Phase I video deadline (**2026-01-23**, Local Time).
+- 01-2026 **Sponsors**: Refreshed sponsor ribbon data and assets for the 2025–2026 cycle (including Baker Hughes, NOV, and Corva).
+- 01-2026 **Tooling**: Added a GitHub Actions workflow for strict MkDocs builds and automated `dev` deploys via `mike`; added helper script + source documents for maintaining the 2024 archive.
 - 10-2025 **Prizes**: Added site-wide note that prizes and recognition are being actively reworked and improved beyond the SPE/IADC paper publication, subject to available budget; more updates to come. Callouts added on Competition Overview, Rules & Scoring, and above the prize sections in the 2024 archive pages.
 - 10-2025 **Registration**: Added prominent callouts announcing that registration is now open for the 2026 competition at <https://drillbotics.com/2026-team-registration/>; updated timeline table, main landing page, competition overview, and both track overview pages with registration information and deadlines. Added sponsors + donate button in banner display.
 - 09-2025 **v2025.1**: Finalized 2025–2026 cycle. Standardized naming to "Mode Virtual (V)" / "Mode Physical (P)" across headings and CTAs; published 2025.1 timeline windows; completed general Safety with cross‑links; updated Rules & Scoring with 2025.1 weights and **Edge‑AI Bonus** (optional, ≤10% default; ≤15% max); refreshed deliverables dates on Mode V/P pages; kept 2024 PDFs and archive labels unchanged.

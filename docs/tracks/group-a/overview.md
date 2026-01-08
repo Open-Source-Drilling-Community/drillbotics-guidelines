@@ -84,7 +84,7 @@ Weights and rubrics are on the Judging page.
 
 ## Getting Started Checklist
 
-- [ ] **Register your team at [https://drillbotics.com/2026-team-registration/](https://drillbotics.com/2026-team-registration/)** (Closes 2025-12-31)
+- [ ] Confirm your team is registered (registration closed **2025-12-31**); if you missed the window, contact the committee at **competition@Drillbotics.com**
 - [ ] Review the Technical Specs for D‑WIS and OpenLab expectations.
 - [ ] Review the three Mode V cases and pick your initial target.
 - [ ] Stand up a minimal data flow: connect, discover signals, and log data.

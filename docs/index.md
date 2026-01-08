@@ -8,19 +8,18 @@
 [:material-cog: Mode Physical (P)](tracks/group-b/overview.md){ .md-button .md-button--secondary }
 </div>
   
-!!! success "Registration is Now Open!"
-    🚨 **Update: Registration Deadline Extended to December 31, 2025 — teams from 5 continents are already in. Don't miss your chance to compete!**
-    
-    Submit your team registration at: **<https://drillbotics.com/2026-team-registration/>**
-    
-    Registration closes **2025-12-31 23:59** (Local Time)
+!!! success "Phase I Design Reports"
+    Thank you to the teams who have submitted their **Phase I Design Reports** — committee review is underway.
+
+    **Optional Phase I video** is due **2026-01-23** (Local Time). See [Deliverables](tracks/deliverables.md) and the [Timeline](competition/timeline.md).
 
 !!! info "Official Site and Archives"
     - For news and additional context, visit the official site: <https://drillbotics.com/>
     - To review previous years' reports and winners, see the Archives: <https://drillbotics.com/archives/>
 
 <div class="btn-row" markdown>
-[:material-form-select: Register Your Team](https://drillbotics.com/2026-team-registration/){ .md-button .md-button--primary }
+[:material-calendar-check: Timeline & milestones](competition/timeline.md){ .md-button .md-button--primary }
+[:material-clipboard-text-outline: Deliverables](tracks/deliverables.md){ .md-button .md-button--secondary }
 [:material-open-in-new: Official Site](https://drillbotics.com/){ .md-button .md-button--secondary }
 [:material-archive-outline: Archives (Previous Reports)](https://drillbotics.com/archives/){ .md-button .md-button--secondary }
 </div>
@@ -104,7 +103,7 @@ Use this quick checklist to set up your team. See the linked pages for details.
 
 - [ ] Confirm eligibility, advisors, and team composition — [Overview](competition/overview.md)
 - [ ] Choose your track — [Mode Virtual (V)](tracks/group-a/overview.md) or [Mode Physical (P)](tracks/group-b/overview.md)
-- [ ] **Register your team at [https://drillbotics.com/2026-team-registration/](https://drillbotics.com/2026-team-registration/)** (Closes 2025-12-31)
+- [ ] Confirm your team is registered (registration closed **2025-12-31**); if you missed the window, contact the committee at **competition@Drillbotics.com**
 - [ ] Note all important deadlines — [Timeline](competition/timeline.md)
 - [ ] Set up your repo and communication channels — [Contributor Guide](contributor-guide.md)
 - [ ] Review deliverables and scoring — [Rules & Scoring](competition/rules-scoring.md)
