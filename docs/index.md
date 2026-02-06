@@ -8,10 +8,15 @@
 [:material-cog: Mode Physical (P)](tracks/group-b/overview.md){ .md-button .md-button--secondary }
 </div>
   
-!!! success "Phase I Design Reports"
-    Thank you to the teams who have submitted their **Phase I Design Reports** — committee review is underway.
+!!! success "Phase I Judging Results (2026)"
+    Phase 1 judging is complete. Finalists advancing to Phase 2 have been announced for **Mode Physical (P)** and **Mode Virtual (V)**.
 
-    **Optional Phase I video** is due **2026-01-23** (Local Time). See [Deliverables](tracks/deliverables.md) and the [Timeline](competition/timeline.md).
+    - **Mode Physical (P)**: ITBA, NTNU, PDEU, TAMU, TU Clausthal
+    - **Mode Virtual (V)**: PalSU + SunUU, UMaT Team A, UMaT Team B, UMaT Team C
+
+    Next: **Phase 2 teams** should prepare for **SPE Live (Feb 25, 2026)** and the **mandatory interoperability check for Mode V** (the committee will coordinate). Final competition day is **May/June 2026**. Drillbotics will have an exhibition booth at the **IADC/SPE Drilling Conference** (Mar 17-19, 2026) in **Galveston, Texas**.
+
+    [:material-trophy-outline: Official announcement](https://drillbotics.com/drillbotics-2025-2026-phase-2-teams-announcement/){ .md-button .md-button--primary }
 
 !!! info "Official Site and Archives"
     - For news and additional context, visit the official site: <https://drillbotics.com/>

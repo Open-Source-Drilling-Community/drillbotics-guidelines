@@ -6,6 +6,8 @@ status: updated
 
 Notable changes to the Drillbotics Guidelines. Entries are in reverse chronological order.
 
+- 02-2026 **Phase 1 Results**: Posted the 2026 Phase 1 judging results (Phase 2 finalists for Mode P and Mode V), updated the site-wide announcement banner and key landing pages, and refreshed the Upcoming table with SPE Live (Feb 25, 2026), the mandatory Mode V interoperability check, conference booth dates (Mar 17-19, 2026), and the May/June final competition window.
+- 02-2026 **Official announcement link**: Updated the site-wide banner and primary CTAs to link to the canonical Drillbotics.com post (while keeping a mirrored copy in this Guidelines site for redundancy).
 - 01-2026 **Phase I**: Updated the site-wide banner and key landing/overview pages to thank teams for Phase I Design Report submissions, clarify that registration closed **2025-12-31 23:59** (Local Time), and highlight the optional Phase I video deadline (**2026-01-23**, Local Time).
 - 01-2026 **Sponsors**: Refreshed sponsor ribbon data and assets for the 2025–2026 cycle (including Baker Hughes, NOV, and Corva).
 - 01-2026 **Tooling**: Added a GitHub Actions workflow for strict MkDocs builds and automated `dev` deploys via `mike`; added helper script + source documents for maintaining the 2024 archive.

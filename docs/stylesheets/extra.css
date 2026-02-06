@@ -176,8 +176,8 @@
   /* Match the site header color exactly */
   background: var(--md-primary-fg-color);
   color: #fff;
-  font-size: .70rem;
-  font-weight: 350;
+  font-size: .85rem;
+  font-weight: 500;
 }
 [data-md-color-scheme="slate"] .db-announcement {
   border-bottom-color: color-mix(in srgb, var(--db-primary) 55%, transparent);
@@ -210,11 +210,18 @@
   cursor: pointer;
   opacity: .7;
   color: inherit;
-  padding: .1rem;
+  padding: .35rem;
   margin-left: .75rem;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 999px;
 }
 .db-announcement__close:hover,
 .db-announcement__close:focus { opacity: 1; }
+.db-announcement__close:focus-visible {
+  outline: 2px solid color-mix(in srgb, white 85%, transparent);
+  outline-offset: 2px;
+}
 
 /* Make the header logo larger */
 .md-header__button.md-logo img {
