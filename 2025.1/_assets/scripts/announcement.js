@@ -3,10 +3,10 @@
 (function () {
   const CONFIG = {
     // Bump the key when changing the message so previously-dismissed banners show again.
-    key: 'db_announcement_v4',
-    message: 'Phase I Design Reports: thank you to the teams who have submitted. Optional Phase I video due Jan 23, 2026 (local time).',
-    linkLabel: 'Deliverables & dates',
-    url: 'tracks/deliverables/',
+    key: 'db_announcement_v5',
+    message: 'Phase I results (2026): Phase 2 finalists announced. Next: SPE Live Feb 25 + mandatory Mode V interop.',
+    linkLabel: 'See finalists + next steps',
+    url: 'https://drillbotics.com/drillbotics-2025-2026-phase-2-teams-announcement/',
     theme: 'success' // info | warning | success (visual only)
   };
 
@@ -68,7 +68,8 @@
     const close = document.createElement('button');
     close.className = 'db-announcement__close';
     close.setAttribute('aria-label', 'Dismiss announcement');
-    close.innerHTML = 'x';
+    close.setAttribute('title', 'Dismiss');
+    close.innerHTML = '&times;';
     close.onclick = function () {
       try { window.localStorage.setItem(CONFIG.key, 'dismissed'); } catch (_) {}
       banner.remove();
