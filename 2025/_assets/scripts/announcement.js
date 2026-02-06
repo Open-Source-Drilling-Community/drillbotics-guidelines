@@ -2,10 +2,12 @@
 // Edit the message/date/link below. Dismissal persisted in localStorage.
 (function () {
   const CONFIG = {
-    key: 'db_announcement_v1',
-    message: 'Registration closes on 2025-11-28 — see Timeline »',
-    url: 'competition/timeline/',
-    theme: 'info' // info | warning | success (visual only)
+    // Bump the key when changing the message so previously-dismissed banners show again.
+    key: 'db_announcement_v5',
+    message: 'Phase I results (2026): Phase 2 finalists announced. Next: SPE Live Feb 25 + mandatory Mode V interop.',
+    linkLabel: 'See finalists + next steps',
+    url: 'https://drillbotics.com/drillbotics-2025-2026-phase-2-teams-announcement/',
+    theme: 'success' // info | warning | success (visual only)
   };
 
   try {
@@ -47,20 +49,35 @@
   function buildBanner() {
     const banner = document.createElement('div');
     banner.className = 'db-announcement ' + CONFIG.theme;
+
+    const text = document.createElement('span');
+    text.className = 'db-announcement__text';
+    text.textContent = CONFIG.message;
+
+    const sep = document.createElement('span');
+    sep.className = 'db-announcement__sep';
+    sep.textContent = ' — ';
+
     const link = document.createElement('a');
     try {
       link.href = resolveUrl(CONFIG.url);
     } catch (_) { link.href = CONFIG.url; }
-    link.textContent = CONFIG.message;
+    link.textContent = CONFIG.linkLabel || CONFIG.url;
     link.className = 'db-announcement__link';
+
     const close = document.createElement('button');
     close.className = 'db-announcement__close';
     close.setAttribute('aria-label', 'Dismiss announcement');
-    close.innerHTML = '×';
+    close.setAttribute('title', 'Dismiss');
+    close.innerHTML = '&times;';
     close.onclick = function () {
       try { window.localStorage.setItem(CONFIG.key, 'dismissed'); } catch (_) {}
       banner.remove();
+      window.dispatchEvent(new CustomEvent('db:announcement-dismissed'));
     };
+
+    banner.appendChild(text);
+    banner.appendChild(sep);
     banner.appendChild(link);
     banner.appendChild(close);
     return banner;
@@ -71,6 +88,7 @@
     if (!header) return;
     const banner = buildBanner();
     header.after(banner);
+    window.dispatchEvent(new CustomEvent('db:announcement-mounted'));
   }
 
   if (document.readyState === 'loading') {
