@@ -1,0 +1,956 @@
+/* Minimal, non-Insiders tweaks for Material */
+
+/*
+  Brand tokens derived from the active Material palette
+  - Keeps overrides aligned with the configured palette colors
+  - Uses color-mix so light/dark schemes stay in family
+*/
+:root {
+  /* Ensure Material uses our deep blue as the brand primary */
+  --md-primary-fg-color: #0d47a1;
+  --md-primary-fg-color--light: #5472d3;
+  --md-primary-fg-color--dark: #002171;
+
+  --db-primary: var(--md-primary-fg-color);
+  --db-primary-outline: color-mix(in srgb, var(--db-primary) 20%, transparent);
+  --db-primary-shadow: color-mix(in srgb, var(--db-primary) 14%, transparent);
+  --db-primary-subtitle: color-mix(in srgb, var(--db-primary) 72%, white);
+  --db-hero-grad-start: color-mix(in srgb, var(--db-primary) 92%, black 8%);
+  --db-hero-grad-end: color-mix(in srgb, var(--db-primary) 75%, black 25%);
+  /* Match header/banner exactly to the configured primary */
+  --db-header-bg: var(--md-primary-fg-color);
+  --db-accent: var(--md-accent-fg-color);
+  --db-accent-outline: color-mix(in srgb, var(--db-accent) 25%, transparent);
+  --db-accent-bg: color-mix(in srgb, var(--db-accent) 12%, transparent);
+  --db-header-height: 0px;
+  --db-announcement-height: 0px;
+  --db-header-offset: 0px;
+  --db-footer-bg: color-mix(in srgb, white 88%, var(--db-primary) 12%);
+  --db-footer-border: color-mix(in srgb, var(--db-primary) 28%, transparent);
+  --db-footer-text: #1a1a1a;
+  --db-footer-link: var(--md-primary-fg-color--dark);
+  --db-footer-link-hover: var(--md-primary-fg-color);
+  --db-footer-icon-bg: color-mix(in srgb, var(--db-primary) 12%, white 88%);
+  --db-footer-icon-hover: color-mix(in srgb, var(--db-primary) 24%, white 76%);
+}
+
+[data-md-color-scheme="slate"] {
+  /* Keep brand primary identical in dark mode */
+  --md-primary-fg-color: #0d47a1;
+  --md-primary-fg-color--light: #5e87e0;
+  --md-primary-fg-color--dark: #082a63;
+
+  --db-primary-outline: color-mix(in srgb, var(--db-primary) 42%, transparent);
+  --db-primary-shadow: color-mix(in srgb, var(--db-primary) 65%, transparent);
+  --db-primary-subtitle: color-mix(in srgb, var(--db-primary) 68%, white);
+  --db-hero-grad-start: color-mix(in srgb, var(--db-primary) 88%, black 12%);
+  --db-hero-grad-end: color-mix(in srgb, var(--db-primary) 70%, black 30%);
+  --db-header-bg: var(--md-primary-fg-color);
+  --db-accent-outline: color-mix(in srgb, var(--db-accent) 55%, transparent);
+  --db-accent-bg: color-mix(in srgb, var(--db-accent) 20%, transparent);
+  --db-footer-bg: color-mix(in srgb, var(--db-primary) 34%, black 66%);
+  --db-footer-border: color-mix(in srgb, var(--db-primary) 58%, transparent);
+  --db-footer-text: color-mix(in srgb, white 88%, var(--db-primary) 12%);
+  --db-footer-link: color-mix(in srgb, var(--md-primary-fg-color--light) 85%, white 15%);
+  --db-footer-link-hover: var(--md-primary-fg-color--light);
+  --db-footer-icon-bg: color-mix(in srgb, var(--db-primary) 46%, transparent);
+  --db-footer-icon-hover: color-mix(in srgb, var(--db-primary) 65%, transparent);
+}
+
+/* Header/tab background tuned for legacy deep-blue tone */
+.md-header {
+  background: var(--db-header-bg);
+}
+
+.md-tabs {
+  background: color-mix(in srgb, var(--db-header-bg) 88%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--db-header-bg) 55%, transparent);
+}
+
+/* Subtle hero styling on the homepage */
+.hero {
+  margin: 1.2rem 0 1.4rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--db-hero-grad-start), var(--db-hero-grad-end));
+  color: #fff;
+  box-shadow: 0 20px 45px var(--db-primary-shadow);
+}
+[data-md-color-scheme="slate"] .hero {
+  box-shadow: 0 24px 45px color-mix(in srgb, var(--db-primary) 70%, transparent);
+}
+.hero .md-button { margin: .125rem .25rem; }
+.hero h3 { margin-bottom: 1rem; letter-spacing: .015em; }
+
+/* Small spacing refinements for grid cards */
+.md-typeset .grid.cards { gap: .6rem; }
+.md-typeset .grid.cards > ul > li {
+  padding: .85rem .95rem;
+  border-radius: 12px;
+  border: 1px solid var(--db-primary-outline);
+  box-shadow: 0 10px 28px var(--db-primary-shadow);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.md-typeset .grid.cards > ul > li .card-subtitle {
+  display: block;
+  margin-bottom: .35rem;
+  color: var(--db-primary-subtitle);
+  font-size: .78rem;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.md-typeset .grid.cards > ul > li p + .card-subtitle { margin-top: -.25rem; }
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--db-primary) 18%, transparent);
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
+  border-color: color-mix(in srgb, var(--db-primary) 55%, transparent);
+  box-shadow: 0 10px 28px color-mix(in srgb, var(--db-primary) 58%, transparent);
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover {
+  box-shadow: 0 12px 34px color-mix(in srgb, var(--db-primary) 68%, transparent);
+}
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li .card-subtitle {
+  color: color-mix(in srgb, var(--db-primary) 65%, white);
+}
+
+/* Icon alignment inside cards */
+.md-typeset .grid.cards svg {
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: middle;
+  margin-right: .2rem;
+}
+
+/* Button rows */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .75rem 0 1.25rem;
+  justify-content: center;
+}
+.btn-row .md-button { flex: 0 1 auto; }
+
+.md-typeset .md-button.md-button--secondary {
+  border: 1px solid var(--db-accent-outline);
+  color: var(--db-accent);
+  background: var(--db-accent-bg);
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--db-accent) 14%, transparent);
+  transition: background .15s ease, color .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.md-typeset .md-button.md-button--secondary:hover,
+.md-typeset .md-button.md-button--secondary:focus {
+  border-color: color-mix(in srgb, var(--db-accent) 45%, transparent);
+  background: color-mix(in srgb, var(--db-accent) 22%, transparent);
+  color: color-mix(in srgb, var(--db-accent) 85%, white);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--db-accent) 24%, transparent);
+}
+
+/* Highlight the active top-level navigation tab */
+.md-tabs__link--active {
+  border-bottom: 3px solid var(--db-primary);
+  margin-bottom: -3px;
+  font-weight: 600;
+}
+[data-md-color-scheme="slate"] .md-tabs__link--active {
+  border-bottom-color: color-mix(in srgb, var(--db-primary) 70%, white);
+}
+
+/* Keep the announcement banner readable with minimal styling */
+.db-announcement {
+  position: sticky;
+  top: var(--db-header-height, 0px);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .4rem;
+  padding: .65rem 1rem;
+  border-bottom: 1px solid var(--db-primary-outline);
+  /* Match the site header color exactly */
+  background: var(--md-primary-fg-color);
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 500;
+}
+[data-md-color-scheme="slate"] .db-announcement {
+  border-bottom-color: color-mix(in srgb, var(--db-primary) 55%, transparent);
+  /* Keep banner identical to header in dark mode too */
+  background: var(--md-primary-fg-color);
+  color: #fff;
+}
+.db-announcement__text { font-weight: 600; }
+.db-announcement__text,
+.db-announcement__link,
+.db-announcement__sep {
+  display: inline-flex;
+  align-items: center;
+}
+.db-announcement__link {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+.db-announcement__link:hover,
+.db-announcement__link:focus {
+  text-decoration: underline;
+}
+.db-announcement__sep { font-weight: 400; }
+.db-announcement__close {
+  border: 0;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: .7;
+  color: inherit;
+  padding: .35rem;
+  margin-left: .75rem;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 999px;
+}
+.db-announcement__close:hover,
+.db-announcement__close:focus { opacity: 1; }
+.db-announcement__close:focus-visible {
+  outline: 2px solid color-mix(in srgb, white 85%, transparent);
+  outline-offset: 2px;
+}
+
+/* Make the header logo larger */
+.md-header__button.md-logo img {
+  height: 90px;
+  width: auto;
+}
+@media (max-width: 600px) {
+  .md-header__button.md-logo img { height: 52px; }
+}
+
+/* Ensure the logo is visible in both light and dark modes */
+[data-md-color-scheme="default"] .md-header__button.md-logo img,
+[data-md-color-scheme="slate"] .md-header__button.md-logo img {
+  /* Force the black logo to white for contrast on dark header */
+  filter: brightness(0) invert(1);
+}
+
+/* Hide the repo link next to search and in the drawer */
+.md-header__source,
+.md-nav__source {
+  display: none !important;
+}
+
+/* Sponsors ribbon (site-wide) */
+.db-sponsors-ribbon {
+  position: sticky;
+  top: var(--db-header-offset, 0px);
+  z-index: 3; /* sit above content but below announcement/header */
+  background: var(--md-primary-fg-color);
+  color: #fff;
+  border-bottom: 1px solid var(--db-primary-outline);
+  box-shadow: 0 4px 16px var(--db-primary-shadow);
+  /* Slide-in animation */
+  animation: slideInFromTop 0.5s ease-out;
+  /* Smooth hide/show on scroll */
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.db-sponsors-ribbon.hidden {
+  transform: translateY(-100%);
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.db-sponsors-ribbon__inner {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.db-sponsors-ribbon__list {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  list-style: none;
+  margin: 0;
+  padding: .5rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  /* Hide scrollbar but keep functionality */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.db-sponsors-ribbon__list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Add "Proudly supported by" label */
+.db-sponsors-ribbon__list::before {
+  content: "2025 Sponsors";
+  font-size: .52rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  opacity: .75;
+  white-space: nowrap;
+  padding-right: .5rem;
+  margin-right: .25rem;
+  border-right: 1px solid color-mix(in srgb, white 25%, transparent);
+}
+
+/* Fade edges to hint scroll */
+.db-sponsors-ribbon__inner::before,
+.db-sponsors-ribbon__inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 28px;
+  pointer-events: none;
+  z-index: 2;
+}
+.db-sponsors-ribbon__inner::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--md-primary-fg-color), color-mix(in srgb, var(--md-primary-fg-color) 0%, transparent));
+}
+.db-sponsors-ribbon__inner::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--md-primary-fg-color), color-mix(in srgb, var(--md-primary-fg-color) 0%, transparent));
+}
+
+.db-sponsors-ribbon__item { 
+  scroll-snap-align: center;
+  /* Staggered fade-in animation */
+  animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.db-sponsors-ribbon__item:nth-child(1) { animation-delay: 0.1s; }
+.db-sponsors-ribbon__item:nth-child(2) { animation-delay: 0.2s; }
+.db-sponsors-ribbon__item:nth-child(3) { animation-delay: 0.3s; }
+.db-sponsors-ribbon__item:nth-child(4) { animation-delay: 0.4s; }
+.db-sponsors-ribbon__item:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.db-sponsors-ribbon__logo {
+  position: relative;
+  display: block;
+  padding: .45rem .75rem;
+  border-radius: 12px;
+  /* Semi-transparent white background with subtle border */
+  background: color-mix(in srgb, white 20%, transparent);
+  border: 1px solid color-mix(in srgb, white 32%, transparent);
+  box-shadow: 0 2px 10px color-mix(in srgb, black 10%, transparent);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, background .16s ease;
+  backdrop-filter: blur(6px);
+}
+
+.db-sponsors-ribbon__logo:hover,
+.db-sponsors-ribbon__logo:focus {
+  transform: translateY(-4px) rotate(-1.5deg);
+  background: color-mix(in srgb, white 30%, transparent);
+  border-color: color-mix(in srgb, white 55%, transparent);
+  box-shadow: 0 10px 24px color-mix(in srgb, white 15%, transparent), 0 0 16px color-mix(in srgb, white 8%, transparent);
+}
+
+/* Add subtle inner glow on hover */
+.db-sponsors-ribbon__logo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: radial-gradient(circle at center, color-mix(in srgb, white 15%, transparent), transparent 70%);
+  opacity: 0;
+  transition: opacity .2s ease;
+  pointer-events: none;
+}
+
+.db-sponsors-ribbon__logo:hover::before,
+.db-sponsors-ribbon__logo:focus::before {
+  opacity: 1;
+}
+
+.db-sponsors-ribbon__logo img {
+  display: block;
+  height: 44px;
+  width: auto;
+  /* Reduced grayscale for better logo visibility */
+  filter: grayscale(0.15) saturate(0.95) contrast(1.05) brightness(1.03);
+  transition: filter .2s ease;
+}
+
+[data-md-color-scheme="slate"] .db-sponsors-ribbon__logo {
+  /* Increase opacity and brightness for dark mode */
+  background: color-mix(in srgb, white 25%, transparent);
+  border-color: color-mix(in srgb, white 40%, transparent);
+}
+
+[data-md-color-scheme="slate"] .db-sponsors-ribbon__logo:hover,
+[data-md-color-scheme="slate"] .db-sponsors-ribbon__logo:focus {
+  background: color-mix(in srgb, white 35%, transparent);
+  border-color: color-mix(in srgb, white 60%, transparent);
+}
+
+.db-sponsors-ribbon__logo:hover img,
+.db-sponsors-ribbon__logo:focus img {
+  filter: none;
+}
+
+.db-sponsors-ribbon__cta {
+  margin-left: auto;
+}
+
+.db-sponsors-ribbon__cta .md-button {
+  margin: 0;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: .82rem;
+  /* Subtle pulse animation to draw attention */
+  animation: ctaPulse 3s ease-in-out infinite;
+}
+
+@keyframes ctaPulse {
+  0%, 100% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.25), 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Ensure CTA button is styled outside .md-typeset */
+.db-sponsors-ribbon .md-button {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: .5rem .85rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-weight: 600;
+  font-size: .8rem;
+  letter-spacing: 0.01em;
+  transition: all .2s ease;
+}
+
+.db-sponsors-ribbon .md-button:hover,
+.db-sponsors-ribbon .md-button:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+.db-sponsors-ribbon .md-button .db-icon {
+  width: 1em;
+  height: 1em;
+  transition: transform .2s ease;
+}
+
+.db-sponsors-ribbon .md-button:hover .db-icon {
+  transform: scale(1.1);
+}
+
+[data-md-color-scheme="slate"] .db-sponsors-ribbon .md-button {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+[data-md-color-scheme="slate"] .db-sponsors-ribbon .md-button:hover,
+[data-md-color-scheme="slate"] .db-sponsors-ribbon .md-button:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Add subtle gradient overlay to ribbon */
+.db-sponsors-ribbon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, 
+    color-mix(in srgb, white 0%, transparent) 0%,
+    color-mix(in srgb, white 3%, transparent) 50%,
+    color-mix(in srgb, white 0%, transparent) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.db-sponsors-ribbon__inner {
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .db-sponsors-ribbon {
+    animation: none !important;
+  }
+  .db-sponsors-ribbon__logo,
+  .db-sponsors-ribbon__logo img,
+  .db-sponsors-ribbon .md-button,
+  .db-sponsors-ribbon .md-button .db-icon,
+  .db-sponsors-ribbon__item {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Ensure custom Copy Markdown icon behaves like native action buttons */
+.db-copy-md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .2rem;
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.db-copy-text-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .2rem;
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.db-copy-rich-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .2rem;
+  pointer-events: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+/* Mermaid: adaptive colors for light/dark mode */
+:root {
+  --db-mm-edge: var(--md-default-fg-color--lighter);
+  --db-mm-text: var(--md-default-fg-color);
+  /* Light palette for custom classes */
+  --db-mm-startEnd-fill: #e1f5fe;
+  --db-mm-startEnd-stroke: #01579b;
+  --db-mm-decision-fill: #fff3e0;
+  --db-mm-decision-stroke: #e65100;
+  --db-mm-process-fill: #f3e5f5;
+  --db-mm-process-stroke: #4a148c;
+  --db-mm-feedback-fill: #ffebee;
+  --db-mm-feedback-stroke: #c62828;
+}
+
+[data-md-color-scheme="slate"] {
+  --db-mm-edge: var(--md-default-fg-color--lightest);
+  /* Force high-contrast text in dark mode */
+  --db-mm-text: rgba(255,255,255,.92);
+  /* Dark palette tuned for contrast on slate */
+  --db-mm-startEnd-fill: #0b3b57;
+  --db-mm-startEnd-stroke: #4fc3f7;
+  --db-mm-decision-fill: #3b2a17;
+  --db-mm-decision-stroke: #ffb74d;
+  --db-mm-process-fill: #2c1b36;
+  --db-mm-process-stroke: #ce93d8;
+  --db-mm-feedback-fill: #3a1a1a;
+  --db-mm-feedback-stroke: #ef9a9a;
+}
+
+/* Apply base text/edge colors */
+.mermaid svg { color: var(--db-mm-text); }
+.mermaid .edgePath path,
+.mermaid .flowchart-link { stroke: var(--db-mm-edge) !important; }
+.mermaid marker path,
+.mermaid .arrowheadPath { fill: var(--db-mm-edge) !important; stroke: var(--db-mm-edge) !important; }
+/* Cover both <text> and <foreignObject> labels */
+.mermaid .edgeLabel { color: var(--db-mm-text) !important; fill: var(--db-mm-text) !important; }
+.mermaid .nodeLabel,
+.mermaid .label,
+.mermaid text,
+.mermaid foreignObject div,
+.mermaid foreignObject span { color: var(--db-mm-text) !important; fill: var(--db-mm-text) !important; }
+
+/* Override classDef colors for better dark-mode contrast */
+.mermaid .node.startEnd rect,
+.mermaid .node.startEnd circle { fill: var(--db-mm-startEnd-fill) !important; stroke: var(--db-mm-startEnd-stroke) !important; }
+.mermaid .node.decision polygon,
+.mermaid .node.decision path { fill: var(--db-mm-decision-fill) !important; stroke: var(--db-mm-decision-stroke) !important; }
+.mermaid .node.process rect { fill: var(--db-mm-process-fill) !important; stroke: var(--db-mm-process-stroke) !important; }
+.mermaid .node.feedback rect { fill: var(--db-mm-feedback-fill) !important; stroke: var(--db-mm-feedback-stroke) !important; }
+
+/* Optional: subgraph clusters */
+.mermaid .cluster rect { stroke: var(--db-mm-edge) !important; }
+
+/*
+  Integrated ToC (toc.integrate) refinements
+  - Improves readability for long pages like Archive (2024)
+  - Keeps only first-level entries, shows a compact label, and
+    lightens the left rule so the nav remains the primary focus
+*/
+.md-nav--secondary {
+  /* soften the left rule and tighten spacing */
+  border-left: 1px solid rgba(13,71,161,.18);
+  margin-left: .15rem;
+  padding-left: .5rem;
+  font-size: .86em;
+  line-height: 1.25;
+}
+[data-md-color-scheme="slate"] .md-nav--secondary {
+  border-left-color: rgba(130,177,255,.32);
+}
+
+/* Make the "Table of contents" label visible and compact */
+.md-nav--secondary > .md-nav__title {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Show only first-level entries in the integrated ToC */
+.md-nav--secondary .md-nav__list > .md-nav__item > nav {
+  display: none;
+}
+
+/* Tidy long headings */
+.md-nav--secondary .md-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Mobile drawer nav cards */
+@media (max-width: 960px) {
+  .md-nav--primary .md-nav__item { margin-bottom: .4rem; }
+  .md-nav--primary .md-nav__link {
+    border: 1px solid rgba(13,71,161,.16);
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(13,71,161,.08);
+    padding: .65rem .85rem;
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  .md-nav--primary .md-nav__link:hover,
+  .md-nav--primary .md-nav__link:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(13,71,161,.12);
+  }
+}
+
+/* Upcoming table styling */
+.table-upcoming table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(13,71,161,.1);
+}
+.table-upcoming thead th,
+.table-upcoming tbody td {
+  padding: .85rem 1rem;
+}
+.table-upcoming thead th {
+  background: rgba(13,71,161,.12);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: .75rem;
+}
+.table-upcoming tbody tr:nth-child(even) td {
+  background: rgba(13,71,161,.04);
+}
+[data-md-color-scheme="slate"] .table-upcoming table {
+  box-shadow: 0 16px 38px rgba(4,9,20,.7);
+}
+[data-md-color-scheme="slate"] .table-upcoming thead th {
+  background: rgba(130,177,255,.2);
+}
+[data-md-color-scheme="slate"] .table-upcoming tbody tr:nth-child(even) td {
+  background: rgba(130,177,255,.12);
+}
+
+/* Footer styling - compact and subtle */
+.md-footer {
+  background: var(--db-footer-bg);
+  border-top: 1px solid var(--db-footer-border);
+  color: var(--db-footer-text);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.md-footer__inner {
+  padding: 0 1rem;
+}
+
+.md-footer a {
+  color: var(--db-footer-link);
+  text-decoration: none;
+  transition: color .15s ease;
+}
+
+.md-footer a:hover {
+  color: var(--db-footer-link-hover);
+  text-decoration: none;
+}
+
+.md-footer-meta {
+  background: transparent;
+  border-top: none;
+  padding: 0.5rem 0 0 0;
+}
+
+.md-footer-meta__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.md-copyright {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.md-social {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.md-social__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: transparent;
+  opacity: 0.85;
+  transition: all .15s ease;
+}
+
+.md-social__link:hover {
+  background: var(--db-footer-icon-hover);
+  opacity: 1;
+  text-decoration: none;
+}
+
+.md-social__link svg {
+  width: 1rem;
+  height: 1rem;
+  fill: #1a1a1a;
+}
+
+/* Footer navigation links */
+.md-footer__link {
+  padding: 0.5rem 0.75rem;
+  color: var(--db-footer-link);
+  font-size: 0.85rem;
+}
+
+.md-footer__link:hover {
+  color: var(--db-footer-link-hover);
+  background: transparent;
+}
+
+.md-footer__title {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.75;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.md-footer__direction {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background: var(--db-footer-bg);
+  border-top-color: var(--db-footer-border);
+  color: var(--db-footer-text);
+}
+
+[data-md-color-scheme="slate"] .md-footer a {
+  color: var(--db-footer-link);
+}
+
+[data-md-color-scheme="slate"] .md-footer a:hover {
+  color: var(--db-footer-link-hover);
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+  background: transparent;
+}
+
+[data-md-color-scheme="slate"] .md-social__link {
+  background: transparent;
+  opacity: 0.7;
+}
+
+[data-md-color-scheme="slate"] .md-social__link:hover {
+  background: var(--db-footer-icon-hover);
+  opacity: 1;
+}
+
+[data-md-color-scheme="slate"] .md-footer__link {
+  color: var(--db-footer-link);
+}
+
+[data-md-color-scheme="slate"] .md-footer__link:hover {
+  color: var(--db-footer-link-hover);
+}
+
+/* Faster, accessible tooltips for abbreviations (replaces native title) */
+.md-typeset abbr[data-tooltip] {
+  position: relative;
+  cursor: help;
+  text-decoration: underline dotted 1px;
+  text-underline-offset: 2px;
+}
+
+.md-typeset abbr[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, -6px);
+  z-index: 30;
+  opacity: 0;
+  pointer-events: none;
+  padding: .3rem .5rem;
+  border-radius: 4px;
+  font-size: .74rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--md-default-bg-color);
+  background: var(--md-default-fg-color);
+  box-shadow: 0 6px 20px color-mix(in srgb, black 25%, transparent);
+  transition: opacity .12s ease 0s, transform .12s ease 0s;
+}
+
+.md-typeset abbr[data-tooltip]::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% - 2px);
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, 50%) rotate(45deg);
+  z-index: 29;
+  opacity: 0;
+  pointer-events: none;
+  background: var(--md-default-fg-color);
+  transition: opacity .12s ease 0s;
+}
+
+.md-typeset abbr[data-tooltip]:hover::after,
+.md-typeset abbr[data-tooltip]:focus::after,
+.md-typeset abbr[data-tooltip]:active::after {
+  opacity: 1;
+  transform: translate(-50%, -10px);
+  /* Show after 0.2s; hide immediately on mouseout */
+  transition-delay: .2s;
+}
+
+.md-typeset abbr[data-tooltip]:hover::before,
+.md-typeset abbr[data-tooltip]:focus::before,
+.md-typeset abbr[data-tooltip]:active::before {
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+/* Footer visibility fixes (light mode) */
+[data-md-color-scheme="default"] {
+  /* Stronger contrast in light mode */
+  --db-footer-text: #0f172a;               /* high-contrast dark text */
+  --db-footer-link: #0c2d6d;               /* darker link color */
+  --db-footer-link-hover: #0d47a1;         /* brand on hover */
+  --db-footer-icon-bg: color-mix(in srgb, var(--db-primary) 24%, white 76%);
+  --db-footer-icon-hover: color-mix(in srgb, var(--db-primary) 34%, white 66%);
+}
+
+[data-md-color-scheme="default"] .md-footer {
+  color: var(--db-footer-text);
+}
+
+[data-md-color-scheme="default"] .md-copyright {
+  color: var(--db-footer-text);
+  opacity: .98;           /* ensure no dimming */
+  font-weight: 500;       /* subtle emphasis for legibility */
+}
+
+[data-md-color-scheme="default"] .md-footer a {
+  color: var(--db-footer-link);
+}
+[data-md-color-scheme="default"] .md-footer a:hover {
+  color: var(--db-footer-link-hover);
+}
+
+/* Enforce strong text color on meta & copyright in light mode */
+[data-md-color-scheme="default"] .md-footer-meta,
+[data-md-color-scheme="default"] .md-footer-meta__inner,
+[data-md-color-scheme="default"] .md-copyright {
+  color: var(--db-footer-text) !important;
+  opacity: 1 !important;
+}
+
+[data-md-color-scheme="default"] .md-social__link {
+  opacity: 1;                                   /* remove dimming */
+  color: var(--db-footer-text);                 /* drives svg currentColor */
+  background: var(--db-footer-icon-bg);         /* subtle chip for contrast */
+  border: 1px solid color-mix(in srgb, var(--db-primary) 40%, transparent) !important; /* stronger ring */
+}
+[data-md-color-scheme="default"] .md-social__link:hover {
+  background: var(--db-footer-icon-hover);
+}
+[data-md-color-scheme="default"] .md-social__link svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: currentColor !important;                 /* ensure icon inherits */
+  stroke: currentColor;                          /* cover stroke-based glyphs */
+}
