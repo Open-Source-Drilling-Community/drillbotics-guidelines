@@ -3,10 +3,10 @@
 (function () {
   const CONFIG = {
     // Bump the key when changing the message so previously-dismissed banners show again.
-    key: 'db_announcement_v5',
-    message: 'Phase I results (2026): Phase 2 finalists announced. Next: SPE Live Feb 25 + mandatory Mode V interop.',
-    linkLabel: 'See finalists + next steps',
-    url: 'https://drillbotics.com/drillbotics-2025-2026-phase-2-teams-announcement/',
+    key: 'db_announcement_v6',
+    message: '2026 Drillbotics results are published. Final Physical and Virtual Mode winners are now listed.',
+    linkLabel: 'View 2026 results',
+    url: 'competition/results-2026/',
     theme: 'success' // info | warning | success (visual only)
   };
 

@@ -24,6 +24,13 @@ tags:
     Registration, checkpoints, final submissions, judging.
     [:octicons-arrow-right-24: Dates »](timeline.md)
 
+- :material-trophy-outline: __2026 results__
+
+    <small class="card-subtitle">Final competition outcomes.</small>
+
+    Winners, paper invitation, and acknowledgements.
+    [:octicons-arrow-right-24: Results »](results-2026.md)
+
 - :material-shield-check: __Safety__
 
     <small class="card-subtitle">Baseline expectations for every team.</small>

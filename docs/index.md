@@ -8,15 +8,16 @@
 [:material-cog: Mode Physical (P)](tracks/group-b/overview.md){ .md-button .md-button--secondary }
 </div>
   
-!!! success "Phase I Judging Results (2026)"
-    Phase 1 judging is complete. Finalists advancing to Phase 2 have been announced for **Mode Physical (P)** and **Mode Virtual (V)**.
+!!! success "2026 Drillbotics competition results"
+    The 2026 Drillbotics competition cycle is complete. Final results have been published for **Mode Physical (P)** and **Mode Virtual (V)**.
 
-    - **Mode Physical (P)**: ITBA, NTNU, PDEU, TAMU, TU Clausthal
-    - **Mode Virtual (V)**: PalSU + SunUU, UMaT Team A, UMaT Team B, UMaT Team C
+    - **Mode Physical (P)**: ITBA placed 1st; TU Clausthal and NTNU share joint 2nd place.
+    - **Mode Virtual (V)**: the Palawan State University / Sunway University collaboration placed 1st; UMaT Well Control is runner-up.
 
-    Next: **Phase 2 teams** should prepare for **SPE Live (Feb 25, 2026)** and the **mandatory interoperability check for Mode V** (the committee will coordinate). Final competition day is **May/June 2026**. Drillbotics will have an exhibition booth at the **IADC/SPE Drilling Conference** (Mar 17-19, 2026) in **Galveston, Texas**.
+    ITBA has been invited to prepare the 2026 Drillbotics conference paper for the SPE Drilling Conference, March 9-11, 2027, in Stavanger, Norway. The 2027 Drillbotics rules will be published later in 2026.
 
-    [:material-trophy-outline: Official announcement](https://drillbotics.com/drillbotics-2025-2026-phase-2-teams-announcement/){ .md-button .md-button--primary }
+    [:material-trophy-outline: 2026 results](competition/results-2026.md){ .md-button .md-button--primary }
+    [:material-open-in-new: Public announcement](https://drillbotics.com/drillbotics-2026-competition-results/){ .md-button }
 
 !!! info "Official Site and Archives"
     - For news and additional context, visit the official site: <https://drillbotics.com/>
@@ -108,13 +109,14 @@ Use this quick checklist to set up your team. See the linked pages for details.
 
 - [ ] Confirm eligibility, advisors, and team composition — [Overview](competition/overview.md)
 - [ ] Choose your track — [Mode Virtual (V)](tracks/group-a/overview.md) or [Mode Physical (P)](tracks/group-b/overview.md)
-- [ ] Confirm your team is registered (registration closed **2025-12-31**); if you missed the window, contact the committee at **competition@Drillbotics.com**
-- [ ] Note all important deadlines — [Timeline](competition/timeline.md)
+- [ ] Watch for 2027 rules and registration updates, expected later in 2026
+- [ ] Review the completed 2026 cycle — [2026 Results](competition/results-2026.md)
+- [ ] Note all important deadlines once the next schedule is published — [Timeline](competition/timeline.md)
 - [ ] Set up your repo and communication channels — [Contributor Guide](contributor-guide.md)
 - [ ] Review deliverables and scoring — [Rules & Scoring](competition/rules-scoring.md)
 - [ ] Prepare your environment  
       Mode Virtual (V): OpenLab + D‑WIS;  Mode Physical (P): rig, sensors, and safety procedures — [Safety](competition/safety.md)
-- [ ] Submit Phase I materials; schedule Phase II planning — Deliverables pages
+- [ ] Prepare deliverables and schedule planning once the 2027 rules are published — Deliverables pages
 
 ## Upcoming
 

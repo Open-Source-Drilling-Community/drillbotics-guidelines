@@ -6,15 +6,16 @@ tags:
 
 # Competition Overview
 
-!!! success "Phase I Judging Results (2026)"
-    Phase 1 judging is complete. Finalists advancing to Phase 2 have been announced for **Mode Physical (P)** and **Mode Virtual (V)**.
+!!! success "2026 Drillbotics competition results"
+    The 2026 Drillbotics competition cycle is complete. Final results have been published for **Mode Physical (P)** and **Mode Virtual (V)**.
 
-    - **Mode Physical (P)**: ITBA, NTNU, PDEU, TAMU, TU Clausthal
-    - **Mode Virtual (V)**: PalSU + SunUU, UMaT Team A, UMaT Team B, UMaT Team C
+    - **Mode Physical (P)**: ITBA placed 1st; TU Clausthal and NTNU share joint 2nd place.
+    - **Mode Virtual (V)**: the Palawan State University / Sunway University collaboration placed 1st; UMaT Well Control is runner-up.
 
-    Next: **Phase 2 teams** should prepare for **SPE Live (Feb 25, 2026)** and the **mandatory interoperability check for Mode V** (the committee will coordinate). Final competition day is **May/June 2026**. Drillbotics will have an exhibition booth at the **IADC/SPE Drilling Conference** (Mar 17-19, 2026) in **Galveston, Texas**.
+    The 2027 Drillbotics rules will be published later in 2026, with notable changes expected.
 
-    [:octicons-trophy-24: Official announcement](https://drillbotics.com/drillbotics-2025-2026-phase-2-teams-announcement/){ .md-button .md-button--primary }
+    [:octicons-trophy-24: 2026 results](results-2026.md){ .md-button .md-button--primary }
+    [:material-open-in-new: Public announcement](https://drillbotics.com/drillbotics-2026-competition-results/){ .md-button }
 
 This site hosts the official Drillbotics® competition guidelines in a versioned, diff-friendly format.
 

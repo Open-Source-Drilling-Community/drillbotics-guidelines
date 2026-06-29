@@ -11,11 +11,11 @@ Phase I — Design (2025–2026):
 - Monthly reports: due on or before the final day of each month starting in October.
 - Phase I Design Report: due 31 Dec 2025, 23:59 Local Time; use the naming convention “2025 <School Abbrev> Phase I Design Report”.
 - Optional Design Video: ≤ 5 minutes, due by 23 Jan 2026.
-- Finalists announced: February 2026. See [Phase I Judging Results (2026)](../../competition/phase1-results-2026.md).
+- Final 2026 results: published June 2026. See [2026 Results](../../competition/results-2026.md).
 
 Phase II — Implementation and testing:
 
-- Mode Physical (P): model and controls development and rig construction; Phase II test occurs May/June 2026.
+- Mode Physical (P): model and controls development and rig construction; Phase II test occurred May/June 2026.
 - Pre‑recorded team presentation: submitted ~1 week before the test; judges prepare Q&A from it.
 
 !!! note "Edge‑deployable models"
